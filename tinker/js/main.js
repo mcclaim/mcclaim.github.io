@@ -1,4 +1,58 @@
 $(document).ready(function() {
+
+	// Marquee
+	$('.brands_wrapper').liMarquee({
+		direction: 'right',	
+		loop:-1,			
+		scrolldelay: 0,		
+		scrollamount:100,	
+		circular: true,		
+		drag: true			
+	});
+
+	// Wow js
+	new WOW().init();
+
+	animateCount();
+
+	// Count animate
+	var advan_item = $("section.advance_wrapper .advance_item");
+
+	// if ( $(window).scrollTop() >= $('.facts').offset().top ) {	
+
+	// 	$('.facts .list .item strong').each(function() {
+	// 		var number  = $(this);
+	// 		var currentNumber = number.text();
+	// 		$({numberValue: currentNumber}).animate({numberValue: number.attr('data-count')}, {
+	// 			duration: 4000,
+	// 			easing: 'linear',
+	// 			step: function() { 
+	// 				number.text(Math.ceil(this.numberValue)); 
+	// 			}
+	// 		});
+	// 	});
+	// }
+
+	$(window).scroll(function() {
+		animateCount();
+	});
+
+	function animateCount() {
+		if ( $(window).scrollTop() >= $('.advance_wrapper').offset() ) {	
+			$('.count').each(function () {
+			    $(this).prop('Counter',0).animate({
+			        Counter: $(this).text()
+			    }, {
+			        duration: 4000,
+			        easing: 'swing',
+			        step: function (now) {
+			            $(this).text(Math.ceil(now));
+			        }
+			    });
+			});
+		}
+	}
+
 	// Easy Scroll
 	$("html").easeScroll();
 
@@ -32,7 +86,7 @@ $(document).ready(function() {
 		items: 1,
 		loop: true,
 		autoplay: true,
-		smartSpeed: 400,
+		smartSpeed: 800,
 		nav: true,
 		navText : ["<i class='slider_arrows left_arrow'></i>","<i class='slider_arrows right_arrow''></i>"]
 	});
@@ -62,11 +116,9 @@ $(document).ready(function() {
 	var owl = $(".services_wrapper .carousel");
 	owl.owlCarousel({
 		autoPlay: true, 
-		nav : true, 
+		nav : true,
 		slideSpeed : 300,
-		autoplay: true,
-		loop: true,
-		paginationSpeed : 400,			     
+		paginationSpeed : 400,		     
 		pagination:true,
 		navText : ["<i class='slider_arrows left_arrow'></i>","<i class='slider_arrows right_arrow''></i>"],
 		items: 1,
@@ -139,13 +191,13 @@ $(document).ready(function() {
 	});
 
 	// Active item focus
-	var scope = $("section.scope_wrapper .scope_item");
-	scope.mouseover(function(event) {
-		scope.addClass("active_item");
-		$(this).removeClass("active_item");
-	});
-	scope.mouseleave(function(event) {
-		scope.removeClass("active_item");
-	});
+	// var scope = $("section.scope_wrapper .scope_item");
+	// scope.mouseover(function(event) {
+	// 	scope.addClass("active_item");
+	// 	$(this).removeClass("active_item");
+	// });
+	// scope.mouseleave(function(event) {
+	// 	scope.removeClass("active_item");
+	// });
 
 });
