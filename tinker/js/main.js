@@ -115,10 +115,11 @@ $(document).ready(function() {
 
 	var owl = $(".services_wrapper .carousel");
 	owl.owlCarousel({
-		autoPlay: true, 
 		nav : true,
 		slideSpeed : 300,
-		paginationSpeed : 400,		     
+		autoplay: true,
+		loop: true,
+		paginationSpeed : 400,   
 		pagination:true,
 		navText : ["<i class='slider_arrows left_arrow'></i>","<i class='slider_arrows right_arrow''></i>"],
 		items: 1,
@@ -132,16 +133,17 @@ $(document).ready(function() {
 				owl.trigger('to.owl.carousel', index_li);
 			});
 
-		}
-	});
+		},
+		onChanged: function(event) {
+			var currentIndex = event.item.index - (event.relatedTarget._clones.length / 2) + 1;
 
+			if (currentIndex === 0) {
+				currentIndex = 6;
+			}
 
-	owl.on('changed.owl.carousel', function(event) {
-		setTimeout(function() {
-			var current_slide = $('.services_wrapper .right .carousel .owl-item.active').index()+1;
 			$('.services_wrapper .left ul li a').addClass('disable');
-			$('.services_wrapper .left ul li:nth-child('+current_slide+') a').removeClass('disable');
-		},1);
+			$('.services_wrapper .left ul li:nth-child(' + currentIndex + ') a').removeClass('disable');
+		}
 	});
 
 	// Custom Select
