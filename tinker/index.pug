@@ -1,0 +1,915 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="utf-8")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1')
+		meta(name='MobileOptimized', content='width')
+		meta(name='HandheldFriendly', content='true')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='msapplication-tap-highlight', content='no')
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Document
+		link(href="css/bootstrap.min.css" rel="stylesheet")
+		link(href="css/owl.css" rel="stylesheet")
+		link(href="css/owl_default.css" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+		| <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+		| <!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
+	body
+		.mobile_menu_close
+
+		header
+			.header_wrapper
+				.header_tablet_inform
+					button(type="button" class="custom_navbar_toggle")
+						span.icon-bar
+						span.icon-bar
+					a(href="javascript:void(0);").tablet_logo
+						img(src="images/logo_white.png")
+					a(href="javascript:void(0);").tablet_cart
+
+				.header_sections
+					.header_inform_wrapper.login_in_site
+						a(href="tel:1-800-987-0654 321").phone 1-800-987-0654 321
+						.dropdown
+							a(href="javascript:void(0);" id="language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").lang Русский
+								span.drop_arrow
+							ul.custom_dropdown.dropdown-menu(aria-labelledby='language')
+								li
+									a(href='#').lang_eng English
+								li.lang_active
+									a(href='#').lang_rus Русский
+								li
+									a(href='#').lang_spain Spanish
+
+						.dropdown
+							a(href="javascript:void(0);"  id="money" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").money USD
+								span.drop_arrow
+
+							ul.custom_dropdown.money_drop.dropdown-menu(aria-labelledby='money')
+								li.lang_active
+									a(href='#') USD
+								li
+									a(href='#') RUB
+								li
+									a(href='#') EURO
+
+						.world_time_wrapper
+							.world_time New York:
+								span  12:36
+							.world_time Москва:
+								span  18:36
+							.world_time Berlin:
+								span  12:36
+							.world_time Dubai:
+								span  18:36
+						.profile_wrapper
+							.profile_registration 
+								a(href="javascript:void(0);").enter_cabinet Войти 
+								|  или 
+								a(href="javascript:void(0);").registration Зарегистрироваться
+
+							.profile_img
+								img(src="images/icons/user.png")
+							.profile_cabinet
+								.profile_name Влад Гончаров
+								a(href="javascript:void(0);") Личный кабинет
+							.profile_inform
+								span Тип цен: ОПТ
+								a(href="javascript:void(0);") Выйти
+
+					.main_menu_wrapper
+						a(href="javascript:void(0);").logo
+							img(src="images/logo.png")
+						.main_menu
+							ul
+								li.active
+									a(href="javascript:void(0);") Главная
+								li
+									a(href="javascript:void(0);") Сотрудничество
+								li
+									a(href="javascript:void(0);") Условия
+								li
+									a(href="javascript:void(0);") О компании
+								li
+									a(href="javascript:void(0);") Товары из США
+								li
+									a(href="javascript:void(0);") Доставка
+								li
+									a(href="javascript:void(0);") Контакты
+						.cart_wrapper
+							a(href="javascript:void(0);")
+								span.cart
+								span 2 ШТ.
+					
+					.tablet_phone
+						a(href="tel: 1-800-987-0654 321") 1-800-987-0654 321
+					.tablet_money
+						div.currency Валюта
+						div.currency_current USD
+					.tablet_lang
+						div.lang_choose Язык сайта
+						div.lang_current Русский
+
+		section.slider_wrapper
+			.slider.owl-carousel
+				.slider_item
+					.slider_img(style="background-image: url('images/slider.jpg')")
+						.slider_inform_wrapper
+							h3 ИНТЕРЕСНЫЙ ЗАГОЛОВОК
+							.slider_inform
+								p Наша компания занимается оптовой продажей автозапчастей и аксессуаров для автомобилей всех марок.
+							a(href="javascript:void(0);") Перейти к каталогу
+							
+				.slider_item
+					.slider_img(style="background-image: url('images/slider.jpg')")
+						.slider_inform_wrapper
+							h3 ИНТЕРЕСНЫЙ ЗАГОЛОВОК
+							.slider_inform
+								p Наша компания занимается оптовой продажей автозапчастей и аксессуаров для автомобилей всех марок.
+							a(href="javascript:void(0);") Перейти к каталогу
+
+				.slider_item
+					.slider_img(style="background-image: url('images/slider.jpg')")
+						.slider_inform_wrapper
+							h3 ИНТЕРЕСНЫЙ ЗАГОЛОВОК
+							.slider_inform
+								p Наша компания занимается оптовой продажей автозапчастей и аксессуаров для автомобилей всех марок.
+							a(href="javascript:void(0);") Перейти к каталогу
+
+		section.search_wrapper
+			.tabs_wrapper
+				// Nav tabs
+				ul.nav.nav-tabs(role='tablist')
+					li(role='presentation')
+						a(href='#index_number', aria-controls='index_number', role='tab', data-toggle='tab')
+							i.index_icon 
+							| По номеру
+					li.active(role='presentation')
+						a(href='#brand', aria-controls='brand', role='tab', data-toggle='tab') 
+							i.brand_icon 
+							| Выбор марки
+					li(role='presentation')
+						a(href='#article', aria-controls='article', role='tab', data-toggle='tab') 
+							i.article_icon 
+							| Поиск по артикулу
+
+				// Tab panes
+				.tab-content
+					#index_number.tab-pane.fade(role='tabpanel') 
+						form
+							.input_group
+								input(type="text" placeholder="Введите номер товара")
+								input(type="submit" value="Поиск")
+							p Например: 
+								a(href="javascript:void(0);") A3461289
+					#brand.tab-pane.fade.in.active(role='tabpanel')
+						form
+							select#release_year
+								option(value='hide') Год выпуска
+								option(value='2020', rel='icon-temperature') 2020
+								option(value='2019') 2019
+								option(value='2018') 2018
+								option(value='2017') 2017
+								option(value='2016') 2016
+
+							select#release_brand
+								option(value='hide') Марка
+								option(value='Audi', rel='icon-temperature') Audi
+								option(value='Opel') Opel
+								option(value='Catalyst') Catalyst
+								option(value='BMW') BMW
+								option(value='Jeep') Jeep
+
+							select#release_model
+								option(value='hide') Модель
+								option(value='Audi', rel='icon-temperature') Audi
+								option(value='Opel') Opel
+								option(value='Catalyst') Catalyst
+								option(value='BMW') BMW
+								option(value='Jeep') Jeep
+							input(type="submit" value="Поиск")
+
+					#article.tab-pane.fade(role='tabpanel')
+						form
+							.input_group
+								input(type="text" placeholder="Введите артикул товара")
+								input(type="submit" value="Поиск")
+							p Например: 
+								a(href="javascript:void(0);") 332309261243
+
+		section.advantage_wrapper
+			h2 Наши преимущества
+			.advantage_item_wrapper
+				.advantage_item
+					.advantage_img
+						img(src="images/icons/advantage/1.png")
+					.advantage_text 
+						| Оптовые 
+						br 
+						| поставки
+
+				.advantage_item
+					.advantage_img
+						img(src="images/icons/advantage/2.png")
+					.advantage_text
+						| Онлайн 
+						br
+						| проценка
+
+				.advantage_item
+					.advantage_img
+						img(src="images/icons/advantage/3.png")
+					.advantage_text 
+						| Полная
+						br
+						| страховка
+
+				.advantage_item
+					.advantage_img
+						img(src="images/icons/advantage/4.png")
+					.advantage_text 
+						| Удобный
+						br
+						| сервис
+
+				.advantage_item
+					.advantage_img
+						img(src="images/icons/advantage/5.png")
+					.advantage_text 
+						| Без учета
+						br 
+						| объёма
+
+				.advantage_item
+					.advantage_img
+						img(src="images/icons/advantage/6.png")
+					.advantage_text 
+						| Поддержка
+						br
+						| клиентов
+
+				.advantage_item
+					.advantage_img
+						img(src="images/icons/advantage/7.png")
+					.advantage_text 
+						| Консолидация
+						br
+						| грузов
+
+		section.advance_wrapper
+			.advance_item 194
+				span Countries
+			.advance_item 7538
+				span Companies
+			.advance_item 115M
+				span + Parts
+			.advance_item 34K
+				span daily part searches
+
+		section.scope_wrapper
+			h2 Наши возможности
+			.scope_item_wrapper
+				.row
+					.col-xs-12.col-sm-12.col-md-4
+						.scope_item.scope_item_1
+							h4 Запчасти для авто
+							a(href="javascript:void(0);") Посмотреть
+
+					.col-xs-12.col-sm-12.col-md-4
+						.scope_item.scope_item_2
+							h4 Запчасти для СПЕЦТЕХНИКИ
+							a(href="javascript:void(0);") Посмотреть
+
+					.col-xs-12.col-sm-12.col-md-4
+						.scope_item.scope_item_3
+							h4 Запчасти для МОТО
+							a(href="javascript:void(0);") Посмотреть
+
+		section.brands_wrapper
+			svg(version='1.1', xmlns='http://www.w3.org/2000/svg' style="display: none;")
+				filter#greyscale
+					fecolormatrix(type='matrix', values='0.3333 0.3333 0.3333 0 0\
+					0.3333 0.3333 0.3333 0 0\
+					0.3333 0.3333 0.3333 0 0\
+					0      0      0      1 0')
+			img(src="images/brands/brand_1.png")
+			img(src="images/brands/brand_2.png")
+			img(src="images/brands/brand_3.png")
+			img(src="images/brands/brand_4.png")
+			img(src="images/brands/brand_5.png")
+			img(src="images/brands/brand_6.png")
+			img(src="images/brands/brand_7.png")
+			img(src="images/brands/brand_8.png")
+			img(src="images/brands/brand_9.png")
+			img(src="images/brands/brand_10.png")
+			img(src="images/brands/brand_11.png")
+			img(src="images/brands/brand_12.png")
+			img(src="images/brands/brand_13.png")
+			img(src="images/brands/brand_14.png")
+
+		section.services_wrapper
+			h2 Наши услуги
+			.service_carousel_wrapper.row
+				.left
+					ul
+						li
+							a(href='#')
+								| Оптимизация антифрод системы
+								span(style='left: 337px; width: 223px;')
+						li
+							a.disable(href='#')
+								| Консалтинг в сфере
+								span(style='left: 377px; width: 183px;')
+						li
+							a.disable(href='#')
+								| Анализ маркетинговых стратегий
+								span(style='left: 342px; width: 218px;')
+						li
+							a.disable(href='#')
+								| Аудит финансовых процессов
+								span(style='left: 310px; width: 250px;')
+						li
+							a.disable(href='#')
+								| Удаленная служба поддержки
+								span(style='left: 314px; width: 246px;')
+						li
+							a.disable(href='#')
+								| Полноценная настройка
+								span(style='left: 496px; width: 64px;')
+				.right
+					.carousel.owl-carousel
+						.service_item
+							h3 
+								| Оптимизация антифрод 
+								br 
+								| системы
+							.right_inform
+								p С феноменологической точки зрения, начальная стадия проведения исследования откровенна. Потребление переворачивает фактор коммуникации. Поэтому эгоцентризм раскручивает из ряда вон выходящий импульс. Действие интегрирует архетип, повышая конкуренцию.
+						.service_item
+							h3  Консалтинг в сфере
+							.right_inform
+								p С феноменологической точки зрения, начальная стадия проведения исследования откровенна. Потребление переворачивает фактор коммуникации. Поэтому эгоцентризм раскручивает из ряда вон выходящий импульс. Действие интегрирует архетип, повышая конкуренцию.
+						.service_item
+							h3 
+								| Анализ маркетинговых 
+								br 
+								| стратегий
+							.right_inform
+								p С феноменологической точки зрения, начальная стадия проведения исследования откровенна. Потребление переворачивает фактор коммуникации. Поэтому эгоцентризм раскручивает из ряда вон выходящий импульс. Действие интегрирует архетип, повышая конкуренцию.
+						.service_item
+							h3 
+								| Аудит финансовых
+								br 
+								| процессов
+							.right_inform
+								p С феноменологической точки зрения, начальная стадия проведения исследования откровенна. Потребление переворачивает фактор коммуникации. Поэтому эгоцентризм раскручивает из ряда вон выходящий импульс. Действие интегрирует архетип, повышая конкуренцию.
+
+						.service_item
+							h3 
+								| Удаленная служба
+								br 
+								| поддержки
+							.right_inform
+								p С феноменологической точки зрения, начальная стадия проведения исследования откровенна. Потребление переворачивает фактор коммуникации. Поэтому эгоцентризм раскручивает из ряда вон выходящий импульс. Действие интегрирует архетип, повышая конкуренцию.
+
+						.service_item
+							h3 
+								| Полноценная настройка 
+								br 
+								| процессов
+							.right_inform
+								p С феноменологической точки зрения, начальная стадия проведения исследования откровенна. Потребление переворачивает фактор коммуникации. Поэтому эгоцентризм раскручивает из ряда вон выходящий импульс. Действие интегрирует архетип, повышая конкуренцию.
+
+		section.goods_wrapper
+			.goods_tab_wrap
+				ul.nav.nav-tabs(role='tablist')
+					li.active(role='presentation')
+						a(href='#popular', aria-controls='popular', role='tab', data-toggle='tab') Популярное
+					li(role='presentation')
+						a(href='#recommen', aria-controls='recommen', role='tab', data-toggle='tab') Рекомендации
+					li(role='presentation')
+						a(href='#ware', aria-controls='ware', role='tab', data-toggle='tab') Товары
+
+			// Tab panes
+			.tab-content
+				#popular.tab-pane.fade.in.active(role='tabpanel')
+					.row
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_1.jpg")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") T-Rex®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_2.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") BedRug Bed Mat
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_3.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") BedRug Bed Mat
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_4.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") KW Suspensions®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_1.jpg")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") T-Rex®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_2.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") BedRug Bed Mat
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.hidden-sm.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_3.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") KW Suspensions®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.hidden-sm.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_4.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") KW Suspensions®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+				#recommen.tab-pane.fade(role='tabpanel') 
+					.row
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_1.jpg")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") T-Rex®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_2.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") BedRug Bed Mat
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_3.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") BedRug Bed Mat
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_4.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") KW Suspensions®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_1.jpg")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") T-Rex®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_2.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") BedRug Bed Mat
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.hidden-sm.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_3.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") KW Suspensions®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.hidden-sm.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_4.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") KW Suspensions®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+				#ware.tab-pane.fade(role='tabpanel') 
+					.row
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_1.jpg")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") T-Rex®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_2.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") BedRug Bed Mat
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_3.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") BedRug Bed Mat
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_4.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") KW Suspensions®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_1.jpg")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") T-Rex®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.col-sm-6.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_2.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") BedRug Bed Mat
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.hidden-sm.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_3.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") KW Suspensions®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+
+						.col-xs-12.hidden-sm.col-md-3
+							.goods_item
+								.goods_img
+									img(src="images/popular/popular_4.png")
+								.goods_inform
+									.goods_title
+										a(href="javascript:void(0);") KW Suspensions®
+										.goods_category Billet Grilles
+									.goods_price
+										| $54
+										sup 99
+				.custom_btn_wrap
+					a(href="javascript:void(0);").custom_btn Показать каталог
+
+		section.news_wrapper
+			.title_carousel.owl-carousel
+				.title_item
+					h2  НОВОСТИ
+				.title_item
+					h2  НОВОСТИ2
+
+			.news_item_wrapper
+				.row
+					.col-xs-12.col-sm-6.col-md-4
+						.news_item
+							.news_img
+								img(src="images/news_1.png")
+							.news_title
+								a(href="javascript:void(0);") Громкий заголовок новости
+							.news_date 25 июня 2017
+							.news_inform
+								p Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.
+
+					.col-xs-12.col-sm-6.col-md-4
+						.news_item
+							.news_img
+								img(src="images/news_1.png")
+							.news_title
+								a(href="javascript:void(0);") Громкий заголовок новости
+							.news_date 25 июня 2017
+							.news_inform
+								p Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.
+
+					.col-xs-12.col-sm-6.col-md-4
+						.news_item
+							.news_img
+								img(src="images/news_1.png")
+							.news_title
+								a(href="javascript:void(0);") Громкий заголовок новости
+							.news_date 25 июня 2017
+							.news_inform
+								p Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.
+
+					.col-xs-12.col-sm-6.hidden-md.hidden-lg
+						.news_item
+							.news_img
+								img(src="images/news_1.png")
+							.news_title
+
+
+								a(href="javascript:void(0);") Громкий заголовок новости
+							.news_date 25 июня 2017
+							.news_inform
+								p Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.
+				.custom_btn_wrap
+					a(href="javascript:void(0);").custom_btn Архив новостей
+
+		section.feedback_wrapper
+			h2 ОТЗЫВЫ
+			.feedback_carousel_wrapper
+				.feedback_carousel.owl-carousel
+					.feedback_item_wrapper
+						.feedback_item
+							.feedback_img
+								img(src="images/feedback/1.jpg")
+							.feedback_author_name Влад Гончаров
+							span.star
+								img(src="images/icons/5star.png")
+							.feedback_inform
+								p Предсознательное иллюстрирует девиантный филогенез. Восприятие, на первый взгляд, отчуждает генезис. Филогенез, например, слабопроницаем. Действие притягивает депрессивный инсайт. 
+
+						.feedback_item
+							.feedback_img
+								img(src="images/feedback/2.jpg")
+							.feedback_author_name Степан Смирнов
+							span.star
+								img(src="images/icons/5star.png")
+							.feedback_inform
+								p Предсознательное иллюстрирует девиантный филогенез. Восприятие, на первый взгляд, отчуждает генезис. Филогенез, например, слабопроницаем. Действие притягивает депрессивный инсайт. 
+
+						.feedback_item
+							.feedback_img
+								img(src="images/feedback/3.jpg")
+							.feedback_author_name Алексей Норишев
+							span.star
+								img(src="images/icons/5star.png")
+							.feedback_inform
+								p Предсознательное иллюстрирует девиантный филогенез. Восприятие, на первый взгляд, отчуждает генезис. Филогенез, например, слабопроницаем. Действие притягивает депрессивный инсайт. 
+
+					.feedback_item_wrapper
+						.feedback_item
+							.feedback_img
+								img(src="images/feedback/1.jpg")
+							.feedback_author_name Влад Гончаров
+							span.star
+								img(src="images/icons/5star.png")
+							.feedback_inform
+								p Предсознательное иллюстрирует девиантный филогенез. Восприятие, на первый взгляд, отчуждает генезис. Филогенез, например, слабопроницаем. Действие притягивает депрессивный инсайт. 
+
+						.feedback_item
+							.feedback_img
+								img(src="images/feedback/2.jpg")
+							.feedback_author_name Степан Смирнов
+							span.star
+								img(src="images/icons/5star.png")
+							.feedback_inform
+								p Предсознательное иллюстрирует девиантный филогенез. Восприятие, на первый взгляд, отчуждает генезис. Филогенез, например, слабопроницаем. Действие притягивает депрессивный инсайт. 
+
+						.feedback_item
+							.feedback_img
+								img(src="images/feedback/3.jpg")
+							.feedback_author_name Алексей Норишев
+							span.star
+								img(src="images/icons/5star.png")
+							.feedback_inform
+								p Предсознательное иллюстрирует девиантный филогенез. Восприятие, на первый взгляд, отчуждает генезис. Филогенез, например, слабопроницаем. Действие притягивает депрессивный инсайт. 
+
+				.custom_btn_wrap
+					a(href="#"  data-toggle="modal" data-target="#newFeedback").custom_btn Добавить отзыв
+
+				// Modal
+				#newFeedback.modal.new_feedback.fade(tabindex='-1', role='dialog', aria-labelledby='newFeedback')
+					.modal-dialog(role='document')
+						.modal-content
+							.modal-header
+								button.close(type='button', data-dismiss='modal', aria-label='Close')
+								h4#myModalLabel.modal-title Опубликовать отзыв
+							.modal-body
+								form(enctype="multipart/form-data" method="post")
+									.row
+										.col-xs-12.col-sm-5.col-md-4.col-lg-3
+											.avatar_block
+												.avatar_wrapper
+													.avatar
+												.push_avatar
+													input(type="file" id="push_img")
+													label(for="push_img") Выбрать фото
+												.avatar_inform Загрузите изображение в формате JPG, GIF или PNG.
+
+										.col-xs-12.col-sm-7.col-md-8.col-lg-9
+											input(type="text" placeholder="Ваше имя").form-control
+											input(type="text" placeholder="Фамилия").form-control
+											select.form-control
+												span.caret
+												option(value='hide') Выберите оценку
+												option(value="5") 5
+												option(value="4") 4
+												option(value="3") 3
+												option(value="2") 2
+												option(value="1") 1
+											textarea.form-control(placeholder="Ваш отзыв")
+											input(type="submit" value="Отправить отзыв")
+
+		
+		footer
+			.footer_column1_wrapper
+				.footer_column1
+					.footer_item1
+						.footer_logo_img
+							a(href="javascript:void(0);")
+								img(src="images/logo_white.png")
+						span.red_line
+						.footer_inform
+							p Наша компания занимается оптовой продажей автозапчастей и аксессуаров для автомобилей всех марок.
+							p 
+								strong АДРЕС: 
+								| г.Москва, МКАД 33км., м.Аннино, ТК "АВТОЗАПЧАСТИ", 2-ой этаж, пав. №227
+					.footer_item2
+						h3 МЕНЮ САЙТА
+						span.red_line
+						ul
+							li
+								a(href="javascript:void(0);") Страница 1
+							li
+								a(href="javascript:void(0);") Страница 2
+							li
+								a(href="javascript:void(0);") Страница 3
+							li
+								a(href="javascript:void(0);") Страница 4
+							li
+								a(href="javascript:void(0);") Страница 5
+					.footer_item2.footer_item3
+						h3 КАТАЛОГ ЗАПЧАСТЕЙ
+						span.red_line
+						ul
+							li
+								a(href="javascript:void(0);") Для двигателей
+							li
+								a(href="javascript:void(0);") Для трансмиссий
+							li
+								a(href="javascript:void(0);") Для топливных насосов
+							li
+								a(href="javascript:void(0);") Для генераторов
+							li
+								a(href="javascript:void(0);") Для коленчатых валов
+						ul
+							li
+								a(href="javascript:void(0);") Для ходовой и гусениц
+							li
+								a(href="javascript:void(0);") Для бурения
+							li
+								a(href="javascript:void(0);") Для траншеекопателей
+							li
+								a(href="javascript:void(0);") Ремни и детали
+							li
+								a(href="javascript:void(0);") Для грузовиков и тягачей
+			.footer_column2_wrapper
+				.footer_column2
+					.footer_item1
+						p © 2017 ALFEXPO. Все права защищены.
+					.footer_item2
+						.dropup
+							a(href="javascript:void(0);" id="footer_language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").lang Русский
+								span.drop_arrow
+							ul.custom_dropdown.dropdown-menu(aria-labelledby='footer_language')
+								li
+									a(href='#').lang_eng English
+								li.lang_active
+									a(href='#').lang_rus Русский
+								li
+									a(href='#').lang_spain Spanish
+
+		script(src="js/jquery.min.js")
+		script(src="js/owl.carousel.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/textarea.autosize.min.js")
+		script(src="js/jquery.easeScroll.js")
+		script(src="js/main.js")
+			
