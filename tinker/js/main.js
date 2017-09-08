@@ -64,6 +64,8 @@ $(document).ready(function() {
 		autoPlay: true, 
 		nav : true, 
 		slideSpeed : 300,
+		autoplay: true,
+		loop: true,
 		paginationSpeed : 400,			     
 		pagination:true,
 		navText : ["<i class='slider_arrows left_arrow'></i>","<i class='slider_arrows right_arrow''></i>"],
