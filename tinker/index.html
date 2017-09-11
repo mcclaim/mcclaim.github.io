@@ -9,14 +9,14 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
     <title>Title</title>
-    <link rel="stylesheet" href="../css/index.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
   </head>
   <body>
     <div class="mobile_menu_close"></div>
     <header>
       <div class="header_wrapper">
-        <div class="header_tablet_inform">
-          <button class="custom_navbar_toggle" type="button"><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="tablet_logo" href="javascript:void(0);"><img src="images/logo_white.png"></a><a class="tablet_cart" href="javascript:void(0);"></a>
+        <div class="header_tablet_inform"><a class="tablet_cart" href="javascript:void(0);"></a><a class="tablet_logo" href="javascript:void(0);"><img src="images/logo_white.png"></a>
+          <button class="custom_navbar_toggle" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
         </div>
         <div class="header_sections">
           <div class="header_inform_wrapper login_in_site"><a class="phone" href="tel:1-800-987-0654 321">1-800-987-0654 321</a>
@@ -208,11 +208,11 @@
         </div>
       </div>
     </section>
-    <section class="advance_wrapper">
-      <div class="advance_item wow fadeInDown"> <span class="count" data-count="217">217</span><span class="sub">Countries</span></div>
-      <div class="advance_item wow fadeInDown" data-wow-delay="0.3s">75<span class="count" data-count="38">38</span><span class="sub">Companies</span></div>
-      <div class="advance_item wow fadeInDown" data-wow-delay="0.6s"> <span class="count" data-count="115">115</span>M<span class="sub">+ Parts</span></div>
-      <div class="advance_item wow fadeInDown" data-wow-delay="0.9s"> <span class="count" data-count="34">34</span>K<span class="sub">daily part searches</span></div>
+    <section class="advance_wrapper" data-type="background" data-speed="3">
+      <div class="advance_item wow fadeInDown"> <span class="count" data-count="217">0</span><span class="sub">Countries</span></div>
+      <div class="advance_item wow fadeInDown" data-wow-delay="0.5s">75<span class="count" data-count="38">0</span><span class="sub">Companies</span></div>
+      <div class="advance_item wow fadeInDown" data-wow-delay="1.0s"> <span class="count" data-count="115">0</span>M<span class="sub">+ Parts</span></div>
+      <div class="advance_item wow fadeInDown" data-wow-delay="1.5s"> <span class="count" data-count="34">0</span>K<span class="sub">daily part searches</span></div>
     </section>
     <section class="scope_wrapper">
       <h2>Наши возможности</h2>
@@ -587,54 +587,59 @@
       </div>
     </section>
     <section class="news_wrapper">
-      <div class="title_carousel owl-carousel">
+      <div class="title_carousel">
         <div class="title_item">
           <h2> НОВОСТИ</h2>
         </div>
-        <div class="title_item">
-          <h2> НОВОСТИ2</h2>
-        </div>
       </div>
       <div class="news_item_wrapper">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="news_item">
-              <div class="news_img"><img src="images/news_1.png"></div>
-              <div class="news_title"><a href="javascript:void(0);">Громкий заголовок новости</a></div>
-              <div class="news_date">25 июня 2017</div>
-              <div class="news_inform">
-                <p>Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.</p>
-              </div>
+        <div class="owl-carousel">
+          <div class="news_item">
+            <div class="news_img"><img src="images/news_1.png"></div>
+            <div class="news_title"><a href="javascript:void(0);">Громкий заголовок новости</a></div>
+            <div class="news_date">25 июня 2017</div>
+            <div class="news_inform">
+              <p>Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.</p>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="news_item">
-              <div class="news_img"><img src="images/news_1.png"></div>
-              <div class="news_title"><a href="javascript:void(0);">Громкий заголовок новости</a></div>
-              <div class="news_date">25 июня 2017</div>
-              <div class="news_inform">
-                <p>Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.</p>
-              </div>
+          <div class="news_item">
+            <div class="news_img"><img src="images/news_1.png"></div>
+            <div class="news_title"><a href="javascript:void(0);">Громкий заголовок новости</a></div>
+            <div class="news_date">25 июня 2017</div>
+            <div class="news_inform">
+              <p>Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.</p>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="news_item">
-              <div class="news_img"><img src="images/news_1.png"></div>
-              <div class="news_title"><a href="javascript:void(0);">Громкий заголовок новости</a></div>
-              <div class="news_date">25 июня 2017</div>
-              <div class="news_inform">
-                <p>Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.</p>
-              </div>
+          <div class="news_item">
+            <div class="news_img"><img src="images/news_1.png"></div>
+            <div class="news_title"><a href="javascript:void(0);">Громкий заголовок новости</a></div>
+            <div class="news_date">25 июня 2017</div>
+            <div class="news_inform">
+              <p>Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.</p>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 hidden-md hidden-lg">
-            <div class="news_item">
-              <div class="news_img"><img src="images/news_1.png"></div>
-              <div class="news_title"><a href="javascript:void(0);">Громкий заголовок новости</a></div>
-              <div class="news_date">25 июня 2017</div>
-              <div class="news_inform">
-                <p>Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.</p>
-              </div>
+          <div class="news_item">
+            <div class="news_img"><img src="images/news_1.png"></div>
+            <div class="news_title"><a href="javascript:void(0);">Громкий заголовок новости</a></div>
+            <div class="news_date">25 июня 2017</div>
+            <div class="news_inform">
+              <p>Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.</p>
+            </div>
+          </div>
+          <div class="news_item">
+            <div class="news_img"><img src="images/news_1.png"></div>
+            <div class="news_title"><a href="javascript:void(0);">Громкий заголовок новости</a></div>
+            <div class="news_date">25 июня 2017</div>
+            <div class="news_inform">
+              <p>Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.</p>
+            </div>
+          </div>
+          <div class="news_item">
+            <div class="news_img"><img src="images/news_1.png"></div>
+            <div class="news_title"><a href="javascript:void(0);">Громкий заголовок новости</a></div>
+            <div class="news_date">25 июня 2017</div>
+            <div class="news_inform">
+              <p>Таргетирование, анализируя результаты рекламной кампании, масштабирует процесс стратегического планирования. В общем, потребление подсознательно тормозит направленный маркетинг.</p>
             </div>
           </div>
         </div>
@@ -794,7 +799,7 @@
         </div>
       </div>
     </footer>
-    <script src="../js/libs.min.js"></script>
-    <script src="../js/common.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
   </body>
 </html>
