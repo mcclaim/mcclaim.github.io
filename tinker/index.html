@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="css/index.min.css">
   </head>
   <body>
+    <div id="startup">
+      <div class="spinner">
+        <svg class="spinner-container" width="65px" height="65px" viewbox="0 0 52 52">
+          <circle class="path" cx="26px" cy="26px" r="20px" fill="none" stroke-width="4px"></circle>
+        </svg>
+      </div>
+    </div>
     <div class="mobile_menu_close"></div>
     <header>
       <div class="header_wrapper">
@@ -19,34 +26,36 @@
           <button class="custom_navbar_toggle" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
         </div>
         <div class="header_sections">
-          <div class="header_inform_wrapper login_in_site"><a class="phone" href="tel:1-800-987-0654 321">1-800-987-0654 321</a>
-            <div class="dropdown"><a class="lang" href="javascript:void(0);" id="language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Русский<span class="drop_arrow"></span></a>
-              <ul class="custom_dropdown dropdown-menu" aria-labelledby="language">
-                <li><a class="lang_eng" href="#">English</a></li>
-                <li class="lang_active"><a class="lang_rus" href="#">Русский</a></li>
-                <li><a class="lang_spain" href="#">Spanish</a></li>
-              </ul>
-            </div>
-            <div class="dropdown"><a class="money" href="javascript:void(0);" id="money" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">USD<span class="drop_arrow"></span></a>
-              <ul class="custom_dropdown money_drop dropdown-menu" aria-labelledby="money">
-                <li class="lang_active"><a href="#">USD</a></li>
-                <li><a href="#">RUB</a></li>
-                <li><a href="#">EURO</a></li>
-              </ul>
-            </div>
-            <div class="world_time_wrapper">
-              <div class="world_time">New York:<span> 12:36</span></div>
-              <div class="world_time">Москва:<span> 18:36</span></div>
-              <div class="world_time">Berlin:<span> 12:36</span></div>
-              <div class="world_time">Dubai:<span> 18:36</span></div>
-            </div>
-            <div class="profile_wrapper">
-              <div class="profile_registration"> <a class="enter_cabinet" href="javascript:void(0);">Войти </a> или <a class="registration" href="javascript:void(0);">Зарегистрироваться</a></div>
-              <div class="profile_img"><img src="images/icons/user.png"></div>
-              <div class="profile_cabinet">
-                <div class="profile_name">Влад Гончаров</div><a href="javascript:void(0);">Личный кабинет</a>
+          <div class="header_black_bg">
+            <div class="header_inform_wrapper login_in_site"><a class="phone" href="tel:1-800-987-0654 321">1-800-987-0654 321</a>
+              <div class="dropdown"><a class="lang" href="javascript:void(0);" id="language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Русский<span class="drop_arrow"></span></a>
+                <ul class="custom_dropdown dropdown-menu" aria-labelledby="language">
+                  <li><a class="lang_eng" href="#">English</a></li>
+                  <li class="lang_active"><a class="lang_rus" href="#">Русский</a></li>
+                  <li><a class="lang_spain" href="#">Spanish</a></li>
+                </ul>
               </div>
-              <div class="profile_inform"><span>Тип цен: ОПТ</span><a href="javascript:void(0);">Выйти</a></div>
+              <div class="dropdown"><a class="money" href="javascript:void(0);" id="money" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">USD<span class="drop_arrow"></span></a>
+                <ul class="custom_dropdown money_drop dropdown-menu" aria-labelledby="money">
+                  <li class="lang_active"><a href="#">USD</a></li>
+                  <li><a href="#">RUB</a></li>
+                  <li><a href="#">EURO</a></li>
+                </ul>
+              </div>
+              <div class="world_time_wrapper">
+                <div class="world_time">New York:<span> 12:36</span></div>
+                <div class="world_time">Москва:<span> 18:36</span></div>
+                <div class="world_time">Berlin:<span> 12:36</span></div>
+                <div class="world_time">Dubai:<span> 18:36</span></div>
+              </div>
+              <div class="profile_wrapper">
+                <div class="profile_registration"> <a class="enter_cabinet" href="javascript:void(0);">Войти </a> или <a class="registration" href="javascript:void(0);">Зарегистрироваться</a></div>
+                <div class="profile_img"><img src="images/icons/user.png"></div>
+                <div class="profile_cabinet">
+                  <div class="profile_name">Влад Гончаров</div><a href="javascript:void(0);">Личный кабинет</a>
+                </div>
+                <div class="profile_inform"><span>Тип цен: ОПТ</span><a href="javascript:void(0);">Выйти</a></div>
+              </div>
             </div>
           </div>
           <div class="main_menu_wrapper"><a class="logo" href="javascript:void(0);"><img src="images/logo.png"></a>
@@ -208,10 +217,10 @@
         </div>
       </div>
     </section>
-    <section class="advance_wrapper" data-type="background" data-speed="3">
+    <section class="advance_wrapper" data-type="background">
       <div class="advance_item wow fadeInDown"> <span class="count" data-count="217">0</span><span class="sub">Countries</span></div>
       <div class="advance_item wow fadeInDown" data-wow-delay="0.5s">75<span class="count" data-count="38">0</span><span class="sub">Companies</span></div>
-      <div class="advance_item wow fadeInDown" data-wow-delay="1.0s"> <span class="count" data-count="115">0</span>M<span class="sub">+ Parts</span></div>
+      <div class="advance_item wow fadeInDown" data-wow-delay="1.0s"> <span class="count" data-count="115">0</span>M<span class="sub">+ Parts Marts</span></div>
       <div class="advance_item wow fadeInDown" data-wow-delay="1.5s"> <span class="count" data-count="34">0</span>K<span class="sub">daily part searches</span></div>
     </section>
     <section class="scope_wrapper">
@@ -236,7 +245,24 @@
         </div>
       </div>
     </section>
-    <section class="brands_wrapper"><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_1.png"></a><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_2.png"></a><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_3.png"></a><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_4.png"></a><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_5.png"></a><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_6.png"></a><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_7.png"></a><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_8.png"></a><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_9.png"></a><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_10.png"></a><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_11.png"></a><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_12.png"></a><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_13.png"></a><a class="brand_item" href="javascript:void(0);"><img src="images/brands/brand_14.png"></a></section>
+    <section class="brands_wrapper carouselTicker" id="carouselTicker">
+      <ul class="carouselTicker__list">
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_1.png"></a></li>
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_2.png"></a></li>
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_3.png"></a></li>
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_4.png"></a></li>
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_5.png"></a></li>
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_6.png"></a></li>
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_7.png"></a></li>
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_8.png"></a></li>
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_9.png"></a></li>
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_10.png"></a></li>
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_11.png"></a></li>
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_12.png"></a></li>
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_13.png"></a></li>
+        <li class="carouselTicker__item"><a href="#"><img src="images/brands/brand_14.png"></a></li>
+      </ul>
+    </section>
     <section class="services_wrapper">
       <h2>Наши услуги</h2>
       <div class="service_carousel_wrapper row">
@@ -712,11 +738,8 @@
                     <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
                       <div class="avatar_block">
                         <div class="avatar_wrapper">
-                          <div class="avatar"></div>
-                        </div>
-                        <div class="push_avatar">
+                          <label class="avatar" for="push_img"></label>
                           <input type="file" id="push_img">
-                          <label for="push_img">Выбрать фото</label>
                         </div>
                         <div class="avatar_inform">Загрузите изображение в формате JPG, GIF или PNG.</div>
                       </div>
