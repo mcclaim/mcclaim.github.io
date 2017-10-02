@@ -48,7 +48,7 @@ $(document).ready(function() {
 	});
 
 	// Countdown
-	$(".count-down").countdown("2017/10/25", function(event) {
+	$(".count-down").countdown("2017/10/03 09:34:56", function(event) {
 		$('.timer .month').text(
 			event.strftime('%-m')
 		);

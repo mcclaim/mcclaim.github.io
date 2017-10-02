@@ -147,9 +147,12 @@ header {
     		.timer {
     			span {
     				display: inline-block;
-    				padding: 10px 12px;
+    				width: 46px;
+    				height: 46px;
     				border: 1px solid $color1;
     				margin: 0 14px 0 0;
+				    text-align: center;
+					line-height: 46px;
     				&:last-child {
     					margin-right: 0;
     				}
@@ -1438,8 +1441,11 @@ footer {
 			    }
 			    .timer {
 			    	span {
-		    		    padding: 5px 7px;
+		    		    width: 30px;
+		    		    height: 30px;
 		    		    border-color: #fff;
+		    		    text-align: center;
+						line-height: 30px;
 			    	}
 			    }
 			}

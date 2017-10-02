@@ -137,9 +137,12 @@ header .top_line .time_wrap .time_info {
 }
 header .top_line .time_wrap .timer span {
     display: inline-block;
-    padding: 10px 12px;
+    width: 46px;
+    height: 46px;
     border: 1px solid #9f7e4a;
     margin: 0 14px 0 0;
+    text-align: center;
+    line-height: 46px;
     color: #fff;
 }
 header .top_line .time_wrap .timer span:last-child {
@@ -1376,8 +1379,11 @@ footer .section_links_to .custom_btn:first-child {
         text-align: center;
     }
     header .top_line .time_wrap .timer span {
-        padding: 5px 7px;
+        width: 30px;
+        height: 30px;
         border-color: #fff;
+        text-align: center;
+        line-height: 30px;
     }
     section.best_perfume_wrapper {
         padding: 0 15px;
