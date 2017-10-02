@@ -30,7 +30,7 @@ html(lang="ru-Ru")
 						a(href="javascript:void(0);") Versace Man Eau Fraiche
 			.header_container
 				.top_line
-					.time_wrap
+					.time_wrap.count-down
 						.time_info
 							| До конца акции
 							br
@@ -45,7 +45,7 @@ html(lang="ru-Ru")
 							span 2503
 
 						.top_cart
-							a#top_cart_link(href='#')
+							a#top_cart_link(href='#' data-toggle="modal" data-target="#cartModal")
 								img(alt='Корзина', src='images/icons/cart.png')
 								span.badge_number_wrapper
 									span.badge_number 5
@@ -53,6 +53,7 @@ html(lang="ru-Ru")
 									span.price_amount
 										| 1,508 
 										span.price_curse руб.
+
 				.header_sale_wrapper
 					.header_sale_title
 						h1 ВНИМАНИЕ!
@@ -69,6 +70,146 @@ html(lang="ru-Ru")
 							span РАСПРОДАЕМ ВСЕ 
 							br 
 							| ЧТО ЕСТЬ ПО ЦЕНАМ НИЖЕ ЗАКУПОЧНЫХ
+
+		#cartModal.cartModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='cartModalLabel')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+						h4#cartModalLabel.modal-title Ваша корзина
+					.modal-body
+						.wrap_table
+							table.table.table-striped.table-hover.cart(cellspacing='0')
+								thead
+									tr
+										th.first.product-name(colspan='2') Наименование
+										th.product-price Цена
+										th.product-quantity Количество
+										th.product-subtotal Итого
+										th
+								tbody
+									tr.cart_item
+										td.product-thumbnail.product_foto
+											a(href='#')
+												img(src='images/product_cart.png')
+										td.product-name.first
+											.duhi-brend
+												| Hugo Boss
+											div
+												| Boss N6 100 ml
+										td.product-price.rice(title="Цена")
+											.strike
+												| 2686
+												span.cart_price_symbol
+											.sale_price
+												span.amount
+													| 377
+													span.cart_price_symbol
+										td.product-quantity
+											.text-center
+												.quantity
+													input.input-text(type='number', step='1', min='1', max='', name='quantity', value='1', title='Кол-во', size='4', pattern='[0-9]*', inputmode='numeric')
+										td.product-subtotal
+											span.amount
+												| 377 
+												span.cart_price_symbol руб.
+										td
+											a.btn-del.remove(href='#', aria-label='Удалить эту позицию', title="Удалить эту позицию") ×
+
+									tr.cart_item
+										td.product-thumbnail.product_foto
+											a(href='#')
+												img(src='images/product_cart.png')
+										td.product-name.first
+											.duhi-brend
+												| Hugo Boss
+											div
+												| Boss N6 100 ml
+										td.product-price.rice(title="Цена")
+											.strike
+												| 2686
+												span.cart_price_symbol
+											.sale_price
+												span.amount
+													| 377
+													span.cart_price_symbol
+										td.product-quantity
+											.text-center
+												.quantity
+													input.input-text(type='number', step='1', min='1', max='', name='quantity', value='1', title='Кол-во', size='4', pattern='[0-9]*', inputmode='numeric')
+										td.product-subtotal
+											span.amount
+												| 377 
+												span.cart_price_symbol руб.
+										td
+											a.btn-del.remove(href='#', aria-label='Удалить эту позицию', title="Удалить эту позицию") ×
+
+									tr.cart_item
+										td.product-thumbnail.product_foto
+											a(href='#')
+												img(src='images/product_cart2.jpg')
+										td.product-name.first
+											.duhi-brend
+												| Dolce & Gabbana 
+											div
+												| L’Imperatrice 3 100 ml
+										td.product-price.rice(title="Цена")
+											.strike
+												| 2686
+												span.cart_price_symbol
+											.sale_price
+												span.amount
+													| 377
+													span.cart_price_symbol
+										td.product-quantity
+											.text-center
+												.quantity
+													input.input-text(type='number', step='1', min='1', max='', name='quantity', value='1', title='Кол-во', size='4', pattern='[0-9]*', inputmode='numeric')
+										td.product-subtotal
+											span.amount
+												| 377 
+												span.cart_price_symbol руб.
+										td
+											a.btn-del.remove(href='#', aria-label='Удалить эту позицию', title="Удалить эту позицию") ×
+
+									tr.cart_item
+										td.product-thumbnail.product_foto
+											a(href='#')
+												img(src='images/product_cart.png')
+										td.product-name.first
+											.duhi-brend
+												| Hugo Boss
+											div
+												| Boss N6 100 ml
+										td.product-price.rice(title="Цена")
+											.strike
+												| 2686
+												span.cart_price_symbol
+											.sale_price
+												span.amount
+													| 377
+													span.cart_price_symbol
+										td.product-quantity
+											.text-center
+												.quantity
+													input.input-text(type='number', step='1', min='1', max='', name='quantity', value='1', title='Кол-во', size='4', pattern='[0-9]*', inputmode='numeric')
+										td.product-subtotal
+											span.amount
+												| 377 
+												span.cart_price_symbol руб.
+										td
+											a.btn-del.remove(href='#', aria-label='Удалить эту позицию', title="Удалить эту позицию") ×
+							.cart_collaterals
+								.cost
+									| Итого: 
+									span.total
+										| 1,350 
+										span.total_currencySymbol руб.
+							.cart_buttons
+								a(href="javascript:void(0);").custom_btn.btn_continue Продолжить покупки
+								a(href="javascript:void(0);").custom_btn.btn_buy Оформить заказ
+
 
 		section.best_perfume_wrapper
 			.best_perfume
@@ -97,10 +238,10 @@ html(lang="ru-Ru")
 			.section_links
 				h2 Найди свой аромат
 				.section_links_to
-					a(href="javascript:void(0);").custom_btn Женские духи
-					a(href="javascript:void(0);").custom_btn Мужские духи
+					a(href="#woman_parfum").custom_btn Женские духи
+					a(href="#man_parfum").custom_btn Мужские духи
 
-		.products_wrapper
+		.products_wrapper(id="woman_parfum")
 			h2 Женские
 			.products_item_wrapper
 				.row
@@ -274,7 +415,7 @@ html(lang="ru-Ru")
 							a(href="javascript:void(0);").custom_btn Заказать
 				a(href="javascript:void(0);").custom_btn.show_more Показать еще
 
-		.products_wrapper
+		.products_wrapper(id="man_parfum")
 			h2 Мужские
 			.products_item_wrapper
 				.row
@@ -470,13 +611,111 @@ html(lang="ru-Ru")
 								label(for="phone") Введите ваш телефон
 							input(type="submit" value="Найти духи").custom_btn
 
+		section.advantage_wrapper
+			h2 ДОСТОИНСТВА НАШЕГО МАГАЗИНА
+			.advantage_item_wrapper
+				.row
+					.col-xs-12.col-sm-4
+						.advantage_item
+							p Оригинальная продукция из Европы
+						.advantage_item
+							p Звание лучшего магазина духов 2016
+						.advantage_item
+							p 60 000 положительных отзывов о работе и сервисе
+					.col-xs-12.col-sm-4
+						.advantage_img
+							img(src="images/advantage.png")
+					.col-xs-12.col-sm-4
+						.advantage_item
+							p 45% клиентов возвращается к нам снова и снова
+						.advantage_item
+							p Стойкость парфюма 8 и больше часов
+						.advantage_item
+							p Доставка по всей Украине в течение 2 дней
 
-				
+		section.score_wrapper
+			.score_inform_wrapper
+				.score_title 
+					span НАШИ КЛИЕНТЫ 
+					| ВСЕГДА ОСТАЮТСЯ ДОВОЛЬНЫ
+				.score_img
+					img(src="images/score_full.png")
+					img(src="images/score_full.png")
+					img(src="images/score_full.png")
+					img(src="images/score_full.png")
+					img(src="images/score.png")
+				.score_inform 
+					span 95,6% 
+					| покупателей оценило 
+					br 
+					| духи в 5 из 5
+
+		section.feedback_wrapper
+			h2 Отзывы
+			.feedback_slider_wrapper
+				.feedback_slider_item
+					.feedback_slider_container
+						.slider_img
+							img(src="images/feedback_img.jpg")
+						.slider_inform_wrapper
+							.slider_inform_title Инна Лукина
+							.slider_inform 
+								p Для тех, кто жаждет покорения женских сердец, создан новый парфюм Antonio Banderas The Golden Secret . Это таинственный аромат является холодным оружием для своего владельца. Он создан для заядлых ловеласов. Парфюм привносит в их образ больше магии и загадочности .Дразнящие, дерзкие и сексуальные ноты не оставят равнодушной ни одну женщину. Все попадут под действие этого запаха.
+
+				.feedback_slider_item
+					.feedback_slider_container
+						.slider_img
+							img(src="images/feedback_img.jpg")
+						.slider_inform_wrapper
+							.slider_inform_title Инна Лукина
+							.slider_inform 
+								p Для тех, кто жаждет покорения женских сердец, создан новый парфюм Antonio Banderas The Golden Secret . Это таинственный аромат является холодным оружием для своего владельца. Он создан для заядлых ловеласов. Парфюм привносит в их образ больше магии и загадочности .Дразнящие, дерзкие и сексуальные ноты не оставят равнодушной ни одну женщину. Все попадут под действие этого запаха.
+
+				.feedback_slider_item
+					.feedback_slider_container
+						.slider_img
+							img(src="images/feedback_img.jpg")
+						.slider_inform_wrapper
+							.slider_inform_title Инна Лукина
+							.slider_inform 
+								p Для тех, кто жаждет покорения женских сердец, создан новый парфюм Antonio Banderas The Golden Secret . Это таинственный аромат является холодным оружием для своего владельца. Он создан для заядлых ловеласов. Парфюм привносит в их образ больше магии и загадочности .Дразнящие, дерзкие и сексуальные ноты не оставят равнодушной ни одну женщину. Все попадут под действие этого запаха.
+
+				.feedback_slider_item
+					.feedback_slider_container
+						.slider_img
+							img(src="images/feedback_img.jpg")
+						.slider_inform_wrapper
+							.slider_inform_title Инна Лукина
+							.slider_inform 
+								p Для тех, кто жаждет покорения женских сердец, создан новый парфюм Antonio Banderas The Golden Secret . Это таинственный аромат является холодным оружием для своего владельца. Он создан для заядлых ловеласов. Парфюм привносит в их образ больше магии и загадочности .Дразнящие, дерзкие и сексуальные ноты не оставят равнодушной ни одну женщину. Все попадут под действие этого запаха.
+
+		section.contacts_wrapper
+			h2 Наши координаты
+			.contacts_maps
+				.contacts_info_wrapper
+					.contacts_info_title ГЛАВНЫЙ ОФИС НАХОДИТСЯ
+					.contacts_info
+						.contacts_info_icon.contacts_info_place Россия, Санкт-Петербург, проспект Ветеранов, 147
+						.contacts_info_icon.contacts_info_company Вы можете совершить покупку в интернет-магазине, находясь в любой точке России
+						.contacts_info_icon.contacts_info_pay ОПЛАЧИВАЙТЕ ЗАКАЗ ПРИ ПОЛУЧЕНИИ! МЫ ГАРАНТИРУЕМ ВЫСОКОЕ КАЧЕСТВО И СООТВЕТСТВИЕ ТРЕБОВАНИЯМ
+
 		footer
+			.footer_border_container
+				.footer_border
+					.footer_border_info_wrapper
+						.footer_border_title Поспешите купить аромат мирового бренда
+						.footer_border_subtitle По самой низкой цене!
+				.section_links_to
+					a(href="#woman_parfum").custom_btn Женские духи
+					a(href="#man_parfum").custom_btn Мужские духи
 			
 
 
 		script(src="js/jquery.min.js")
 		script(src="js/bootstrap.min.js")
 		script(src="js/slick.min.js")
+		script(src="js/jquery.maskedinput.min.js")
+		script(src="js/jquery.countdown.min.js")
+		script(src="js/jcf.js")
+		script(src="js/jcf.number.js")
 		script(src="js/main.js")

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Porfum</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="add_new_product_wrapper">
+        <div class="add_new_product">
+          <div class="add_new_product_img"><img src="images/icons/cart_add.png"></div>
+          <div class="add_new_product_inform"><span class="new_author"><strong>Алексей Черных </strong>из Красноярска </span>приобрел <a href="javascript:void(0);">Versace Man Eau Fraiche</a></div>
+        </div>
+      </div>
+      <div class="header_container">
+        <div class="top_line">
+          <div class="time_wrap count-down">
+            <div class="time_info">До конца акции<br>осталось:</div>
+            <div class="timer"><span class="hours">11</span><span class="minutes">12</span><span class="seconds">20</span></div>
+          </div>
+          <div class="top_line_right">
+            <div class="shopping_today hidden-xs hidden-sm">Заказов сегодня <span>2503</span></div>
+            <div class="top_cart"><a id="top_cart_link" href="#" data-toggle="modal" data-target="#cartModal"><img alt="Корзина" src="images/icons/cart.png"><span class="badge_number_wrapper"><span class="badge_number">5</span></span><span class="hidden-xs"><span class="price_amount">1,508 <span class="price_curse">руб.</span></span></span></a></div>
+          </div>
+        </div>
+        <div class="header_sale_wrapper">
+          <div class="header_sale_title">
+            <h1>ВНИМАНИЕ!</h1>
+            <h4>ПОСЛЕДНИЕ ДНИ МАГАЗИНА</h4>
+          </div>
+          <div class="header_sale_item_wrapper">
+            <div class="header_sale_item_price">ВСЕ ПО  <span class="perfum_price">3695 </span>рублей</div>
+            <div class="header_sale_item_img"><img src="images/header_perfum.jpg"></div>
+            <div class="header_sale_item_inform"><span>РАСПРОДАЕМ ВСЕ </span><br>ЧТО ЕСТЬ ПО ЦЕНАМ НИЖЕ ЗАКУПОЧНЫХ</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="cartModal modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="cartModalLabel">Ваша корзина</h4>
+          </div>
+          <div class="modal-body">
+            <div class="wrap_table">
+              <table class="table table-striped table-hover cart" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th class="first product-name" colspan="2">Наименование</th>
+                    <th class="product-price">Цена</th>
+                    <th class="product-quantity">Количество</th>
+                    <th class="product-subtotal">Итого</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="cart_item">
+                    <td class="product-thumbnail product_foto"><a href="#"><img src="images/product_cart.png"></a></td>
+                    <td class="product-name first">
+                      <div class="duhi-brend">Hugo Boss</div>
+                      <div>Boss N6 100 ml</div>
+                    </td>
+                    <td class="product-price rice" title="Цена">
+                      <div class="strike">2686<span class="cart_price_symbol"></span></div>
+                      <div class="sale_price"><span class="amount">377<span class="cart_price_symbol"></span></span></div>
+                    </td>
+                    <td class="product-quantity">
+                      <div class="text-center">
+                        <div class="quantity">
+                          <input class="input-text" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="product-subtotal"><span class="amount">377 <span class="cart_price_symbol">руб.</span></span></td>
+                    <td><a class="btn-del remove" href="#" aria-label="Удалить эту позицию" title="Удалить эту позицию">×</a></td>
+                  </tr>
+                  <tr class="cart_item">
+                    <td class="product-thumbnail product_foto"><a href="#"><img src="images/product_cart.png"></a></td>
+                    <td class="product-name first">
+                      <div class="duhi-brend">Hugo Boss</div>
+                      <div>Boss N6 100 ml</div>
+                    </td>
+                    <td class="product-price rice" title="Цена">
+                      <div class="strike">2686<span class="cart_price_symbol"></span></div>
+                      <div class="sale_price"><span class="amount">377<span class="cart_price_symbol"></span></span></div>
+                    </td>
+                    <td class="product-quantity">
+                      <div class="text-center">
+                        <div class="quantity">
+                          <input class="input-text" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="product-subtotal"><span class="amount">377 <span class="cart_price_symbol">руб.</span></span></td>
+                    <td><a class="btn-del remove" href="#" aria-label="Удалить эту позицию" title="Удалить эту позицию">×</a></td>
+                  </tr>
+                  <tr class="cart_item">
+                    <td class="product-thumbnail product_foto"><a href="#"><img src="images/product_cart2.jpg"></a></td>
+                    <td class="product-name first">
+                      <div class="duhi-brend">Dolce & Gabbana </div>
+                      <div>L’Imperatrice 3 100 ml</div>
+                    </td>
+                    <td class="product-price rice" title="Цена">
+                      <div class="strike">2686<span class="cart_price_symbol"></span></div>
+                      <div class="sale_price"><span class="amount">377<span class="cart_price_symbol"></span></span></div>
+                    </td>
+                    <td class="product-quantity">
+                      <div class="text-center">
+                        <div class="quantity">
+                          <input class="input-text" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="product-subtotal"><span class="amount">377 <span class="cart_price_symbol">руб.</span></span></td>
+                    <td><a class="btn-del remove" href="#" aria-label="Удалить эту позицию" title="Удалить эту позицию">×</a></td>
+                  </tr>
+                  <tr class="cart_item">
+                    <td class="product-thumbnail product_foto"><a href="#"><img src="images/product_cart.png"></a></td>
+                    <td class="product-name first">
+                      <div class="duhi-brend">Hugo Boss</div>
+                      <div>Boss N6 100 ml</div>
+                    </td>
+                    <td class="product-price rice" title="Цена">
+                      <div class="strike">2686<span class="cart_price_symbol"></span></div>
+                      <div class="sale_price"><span class="amount">377<span class="cart_price_symbol"></span></span></div>
+                    </td>
+                    <td class="product-quantity">
+                      <div class="text-center">
+                        <div class="quantity">
+                          <input class="input-text" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="product-subtotal"><span class="amount">377 <span class="cart_price_symbol">руб.</span></span></td>
+                    <td><a class="btn-del remove" href="#" aria-label="Удалить эту позицию" title="Удалить эту позицию">×</a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="cart_collaterals">
+                <div class="cost">Итого: <span class="total">1,350 <span class="total_currencySymbol">руб.</span></span></div>
+              </div>
+              <div class="cart_buttons"><a class="custom_btn btn_continue" href="javascript:void(0);">Продолжить покупки</a><a class="custom_btn btn_buy" href="javascript:void(0);">Оформить заказ</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="best_perfume_wrapper">
+      <div class="best_perfume">
+        <h2>Духи лучших производителей</h2>
+        <div class="best_perfume_item_wrapper">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <div class="best_perfume_item">
+                <div class="best_perfume_item_img"><img src="images/best_perfume/best_perfume1.png"></div>
+                <div class="best_perfume_item_inform">
+                  <p>Запах духов идентичен оригинальному (90-100%)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="best_perfume_item">
+                <div class="best_perfume_item_img"><img src="images/best_perfume/best_perfume2.png"></div>
+                <div class="best_perfume_item_inform">
+                  <p>Цены в 3-5 раз ниже цен на оригиналы</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="best_perfume_item">
+                <div class="best_perfume_item_img"><img src="images/best_perfume/best_perfume3.png"></div>
+                <div class="best_perfume_item_inform">
+                  <p>Стойкость соотвествует оригинальной</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section_links_wrapper">
+      <div class="section_links">
+        <h2>Найди свой аромат</h2>
+        <div class="section_links_to"><a class="custom_btn" href="#woman_parfum">Женские духи</a><a class="custom_btn" href="#man_parfum">Мужские духи</a></div>
+      </div>
+    </section>
+    <div class="products_wrapper" id="woman_parfum">
+      <h2>Женские</h2>
+      <div class="products_item_wrapper">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">CHRISTIAN dior</div>
+                <div class="product_item_model">Sauvage 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume1.png">
+                  <div class="product_remained">
+                     5<span>осталось</span></div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">1560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">Giorgio Armani</div>
+                <div class="product_item_model">Acqua di Gio pour homme 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume2.png">
+                  <div class="product_auto_sale">84%</div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">2560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">Giorgio Armani</div>
+                <div class="product_item_model">Acqua di Gio pour homme 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume2.png">
+                  <div class="product_auto_sale">84%</div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">2560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">Giorgio Armani</div>
+                <div class="product_item_model">Acqua di Gio pour homme 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume2.png">
+                  <div class="product_auto_sale">84%</div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">2560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">CHRISTIAN dior</div>
+                <div class="product_item_model">Sauvage 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume1.png"></div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">1560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">Giorgio Armani</div>
+                <div class="product_item_model">Acqua di Gio pour homme 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume2.png">
+                  <div class="product_auto_sale">28%</div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">1560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">Giorgio Armani</div>
+                <div class="product_item_model">Acqua di Gio pour homme 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume2.png">
+                  <div class="product_auto_sale">56%</div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">1560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">Giorgio Armani</div>
+                <div class="product_item_model">Acqua di Gio pour homme 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume2.png">
+                  <div class="product_auto_sale">84%</div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">1560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+        </div><a class="custom_btn show_more" href="javascript:void(0);">Показать еще</a>
+      </div>
+    </div>
+    <div class="products_wrapper" id="man_parfum">
+      <h2>Мужские</h2>
+      <div class="products_item_wrapper">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">CHRISTIAN dior</div>
+                <div class="product_item_model">Sauvage 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume1.png">
+                  <div class="product_remained">
+                     5<span>осталось</span></div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">1560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">Giorgio Armani</div>
+                <div class="product_item_model">Acqua di Gio pour homme 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume2.png">
+                  <div class="product_auto_sale">84%</div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">2560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">Giorgio Armani</div>
+                <div class="product_item_model">Acqua di Gio pour homme 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume2.png">
+                  <div class="product_auto_sale">84%</div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">2560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">Giorgio Armani</div>
+                <div class="product_item_model">Acqua di Gio pour homme 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume2.png">
+                  <div class="product_auto_sale">84%</div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">2560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">CHRISTIAN dior</div>
+                <div class="product_item_model">Sauvage 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume1.png"></div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">1560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">Giorgio Armani</div>
+                <div class="product_item_model">Acqua di Gio pour homme 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume2.png">
+                  <div class="product_auto_sale">28%</div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">1560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">Giorgio Armani</div>
+                <div class="product_item_model">Acqua di Gio pour homme 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume2.png">
+                  <div class="product_auto_sale">56%</div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">1560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="product_item">
+              <div class="product_item_content">
+                <div class="product_item_title">Giorgio Armani</div>
+                <div class="product_item_model">Acqua di Gio pour homme 100 ml</div>
+                <div class="product_item_img"><img src="images/perfume2.png">
+                  <div class="product_auto_sale">84%</div>
+                </div>
+                <div class="product_in_stock">В наличии</div>
+                <div class="product_sale_wrap"><span class="product_sale">5000 руб</span><span class="product_price">1560 руб</span></div>
+                <div class="product_check_inform"><a href="#">Посмотреть описание</a></div>
+                <div class="product_inform">
+                  <div class="product_inform_content">
+                    <p>Скоро мы добавим описание для этого парфюма</p>
+                  </div><a class="close_product_inform" href="javascript:void(0);">Закрыть</a>
+                </div>
+              </div><a class="custom_btn" href="javascript:void(0);">Заказать</a>
+            </div>
+          </div>
+        </div><a class="custom_btn show_more" href="javascript:void(0);">Показать еще</a>
+      </div>
+    </div>
+    <section class="feedback_search_wrapper">
+      <div class="feedback_search">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="feedback_search_inform_wrapper">
+              <div class="feedback_search_title"> 
+                Не Нашли 
+                Любимые духи?
+              </div>
+              <div class="feedback_search_inform">
+                <p>Заполните форму и мы вышлем вам полный список парфюма в наличии </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <form>
+              <div class="form_custom_group">
+                <input class="form-control" type="text" name="name" id="name">
+                <label for="name">Введите ваше имя</label>
+              </div>
+              <div class="form_custom_group">
+                <input class="form-control" type="text" name="phone" id="phone">
+                <label for="phone">Введите ваш телефон</label>
+              </div>
+              <input class="custom_btn" type="submit" value="Найти духи">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantage_wrapper">
+      <h2>ДОСТОИНСТВА НАШЕГО МАГАЗИНА</h2>
+      <div class="advantage_item_wrapper">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="advantage_item">
+              <p>Оригинальная продукция из Европы</p>
+            </div>
+            <div class="advantage_item">
+              <p>Звание лучшего магазина духов 2016</p>
+            </div>
+            <div class="advantage_item">
+              <p>60 000 положительных отзывов о работе и сервисе</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="advantage_img"><img src="images/advantage.png"></div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="advantage_item">
+              <p>45% клиентов возвращается к нам снова и снова</p>
+            </div>
+            <div class="advantage_item">
+              <p>Стойкость парфюма 8 и больше часов</p>
+            </div>
+            <div class="advantage_item">
+              <p>Доставка по всей Украине в течение 2 дней</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="score_wrapper">
+      <div class="score_inform_wrapper">
+        <div class="score_title"> <span>НАШИ КЛИЕНТЫ </span>ВСЕГДА ОСТАЮТСЯ ДОВОЛЬНЫ</div>
+        <div class="score_img"><img src="images/score_full.png"><img src="images/score_full.png"><img src="images/score_full.png"><img src="images/score_full.png"><img src="images/score.png"></div>
+        <div class="score_inform"> <span>95,6% </span>покупателей оценило <br>духи в 5 из 5</div>
+      </div>
+    </section>
+    <section class="feedback_wrapper">
+      <h2>Отзывы</h2>
+      <div class="feedback_slider_wrapper">
+        <div class="feedback_slider_item">
+          <div class="feedback_slider_container">
+            <div class="slider_img"><img src="images/feedback_img.jpg"></div>
+            <div class="slider_inform_wrapper">
+              <div class="slider_inform_title">Инна Лукина</div>
+              <div class="slider_inform"> 
+                <p>Для тех, кто жаждет покорения женских сердец, создан новый парфюм Antonio Banderas The Golden Secret . Это таинственный аромат является холодным оружием для своего владельца. Он создан для заядлых ловеласов. Парфюм привносит в их образ больше магии и загадочности .Дразнящие, дерзкие и сексуальные ноты не оставят равнодушной ни одну женщину. Все попадут под действие этого запаха.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback_slider_item">
+          <div class="feedback_slider_container">
+            <div class="slider_img"><img src="images/feedback_img.jpg"></div>
+            <div class="slider_inform_wrapper">
+              <div class="slider_inform_title">Инна Лукина</div>
+              <div class="slider_inform"> 
+                <p>Для тех, кто жаждет покорения женских сердец, создан новый парфюм Antonio Banderas The Golden Secret . Это таинственный аромат является холодным оружием для своего владельца. Он создан для заядлых ловеласов. Парфюм привносит в их образ больше магии и загадочности .Дразнящие, дерзкие и сексуальные ноты не оставят равнодушной ни одну женщину. Все попадут под действие этого запаха.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback_slider_item">
+          <div class="feedback_slider_container">
+            <div class="slider_img"><img src="images/feedback_img.jpg"></div>
+            <div class="slider_inform_wrapper">
+              <div class="slider_inform_title">Инна Лукина</div>
+              <div class="slider_inform"> 
+                <p>Для тех, кто жаждет покорения женских сердец, создан новый парфюм Antonio Banderas The Golden Secret . Это таинственный аромат является холодным оружием для своего владельца. Он создан для заядлых ловеласов. Парфюм привносит в их образ больше магии и загадочности .Дразнящие, дерзкие и сексуальные ноты не оставят равнодушной ни одну женщину. Все попадут под действие этого запаха.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback_slider_item">
+          <div class="feedback_slider_container">
+            <div class="slider_img"><img src="images/feedback_img.jpg"></div>
+            <div class="slider_inform_wrapper">
+              <div class="slider_inform_title">Инна Лукина</div>
+              <div class="slider_inform"> 
+                <p>Для тех, кто жаждет покорения женских сердец, создан новый парфюм Antonio Banderas The Golden Secret . Это таинственный аромат является холодным оружием для своего владельца. Он создан для заядлых ловеласов. Парфюм привносит в их образ больше магии и загадочности .Дразнящие, дерзкие и сексуальные ноты не оставят равнодушной ни одну женщину. Все попадут под действие этого запаха.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts_wrapper">
+      <h2>Наши координаты</h2>
+      <div class="contacts_maps">
+        <div class="contacts_info_wrapper">
+          <div class="contacts_info_title">ГЛАВНЫЙ ОФИС НАХОДИТСЯ</div>
+          <div class="contacts_info">
+            <div class="contacts_info_icon contacts_info_place">Россия, Санкт-Петербург, проспект Ветеранов, 147</div>
+            <div class="contacts_info_icon contacts_info_company">Вы можете совершить покупку в интернет-магазине, находясь в любой точке России</div>
+            <div class="contacts_info_icon contacts_info_pay">ОПЛАЧИВАЙТЕ ЗАКАЗ ПРИ ПОЛУЧЕНИИ! МЫ ГАРАНТИРУЕМ ВЫСОКОЕ КАЧЕСТВО И СООТВЕТСТВИЕ ТРЕБОВАНИЯМ</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_border_container">
+        <div class="footer_border">
+          <div class="footer_border_info_wrapper">
+            <div class="footer_border_title">Поспешите купить аромат мирового бренда</div>
+            <div class="footer_border_subtitle">По самой низкой цене!</div>
+          </div>
+        </div>
+        <div class="section_links_to"><a class="custom_btn" href="#woman_parfum">Женские духи</a><a class="custom_btn" href="#man_parfum">Мужские духи</a></div>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jcf.js"></script>
+    <script src="js/jcf.number.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

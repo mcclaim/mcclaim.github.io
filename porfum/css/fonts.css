@@ -15,6 +15,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Arnopro';
+  src: url('../fonts/arnopro-italiccaption.otf') format('otf');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
   font-family: 'OpenSans-Semibold';
   src: url('../fonts/OpenSans-Semibold.woff2') format('woff2'),
        url('../fonts/OpenSans-Semibold.woff') format('woff'),
