@@ -1,4 +1,17 @@
 $(document).ready(function() {
+	// Cart Change
+	var id = animateDivs("product_id1");
+	function animateDivs(id) {
+    var divId = (id == "product_id1") ? "product_id2" :
+                (id == "product_id2") ? "product_id3" :
+                (id == "product_id3") ? "product_id4" :
+                "product_id1";
+    $("#" + id).delay(5000)
+        .toggle("slide", {direction: "right"}, 650).delay(5000)
+        .toggle("slide", {direction: "right"}, 650, function() {
+            animateDivs(divId)
+         });
+}
 	$('.feedback_slider_wrapper').slick({
 		slidesToShow: 2,
 	    slidesToScroll: 2,
@@ -48,7 +61,7 @@ $(document).ready(function() {
 	});
 
 	// Countdown
-	$(".count-down").countdown("2017/10/03 09:34:56", function(event) {
+	$(".count-down").countdown("2017/10/06 09:34:56", function(event) {
 		$('.timer .month').text(
 			event.strftime('%-m')
 		);
