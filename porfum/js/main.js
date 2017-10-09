@@ -11,7 +11,7 @@ $(document).ready(function() {
         .toggle("slide", {direction: "right"}, 650, function() {
             animateDivs(divId)
          });
-}
+	}
 	$('.feedback_slider_wrapper').slick({
 		slidesToShow: 2,
 	    slidesToScroll: 2,

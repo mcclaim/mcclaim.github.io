@@ -87,12 +87,12 @@ header {
     padding: 0;
     position: relative;
     .add_new_product_wrapper {
-    	position: absolute;
+    	position: fixed;
 		top: 0;
 		right: 0;
     	margin: 127px 0 0 0;
     	max-width: 340px;
-    	z-index: 2;
+    	z-index: 9999;
     	.add_new_product {
 			display: none;
     		padding: 31px 16px 31px 84px;
@@ -769,6 +769,7 @@ section.feedback_search_wrapper {
 			position: relative;
 			background-color: #fff;
 			label {
+				font-weight: normal;
 			    position: absolute;
 			    margin: -55px 0 0 0;
 			    width: 100%;

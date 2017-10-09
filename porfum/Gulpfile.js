@@ -2,10 +2,12 @@
  
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
  
 gulp.task('sass', function () {
   gulp.src('./app/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer(['last 15 versions']))
     .pipe(gulp.dest('./css'));
 });
  
