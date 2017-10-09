@@ -86,7 +86,20 @@
     </header>
     <div class="top_border">
       <div class="search_wrapper">
-        <div class="search_block"></div>
+        <div class="search_block_wrapper">
+          <div class="search_block">
+            <form><a class="search_change search_change_main" href="javascript:void(0)" onClick="TAShow()" id="TAShow"><span></span><span></span><span></span></a>
+              <div class="inline_input_form">
+                <div class="input_group">
+                  <input type="text" placeholder="Номер детали" required="required" id="keysearch">
+                  <input type="submit" value="Найти">
+                </div>
+              </div>
+            </form>
+            <p class="INShow_active">Для поиска нескольких номеров, нажмите на иконку<span class="search_change"> <span></span><span></span><span></span></span>в поле поиска.</p>
+            <p class="TAShow_active">Для поиска одиночных номеров, нажмите на иконку<span class="search_change"> <span></span><span></span></span>в поле поиска.</p>
+          </div>
+        </div>
         <div class="search_inform">
           <p>При заказе по прайсам USA цена за деталь указана без учета доставки из США до России (Москва). Физический вес рассчитывается при поступлении детали, по факту из расчета кг=13 у.е. (рассчитывается по курсу ЦБ на момент выдачи.) Рассчитываемый вес товара- БРУТТО. Учитывайте дополнительно вес коробок, обрешеток, пластиковых и деревянных поддонов, паллетов и других упаковочных средств при перевозке деталей. <a href="javascript:void(0);">Подробнее</a></p>
         </div>
@@ -97,60 +110,64 @@
         <div class="responsive_table_wrapper search_result_wrapper">
           <h2>Результаты поиска</h2>
           <table class="rwd-table table">
-            <tr>
-              <th>Марка</th>
-              <th>Код</th>
-              <th>Описание</th>
-              <th>Наличие</th>
-              <th>Срок</th>
-              <th>Поставщик</th>
-              <th>Доставка (1 кг)</th>
-              <th>Цена</th>
-              <th>Кол-во</th>
-              <th> </th>
-            </tr>
-            <tr>
-              <td data-th="Марка">Chrysler</td>
-              <td data-th="Код">A3461289 заменён на A3461289</td>
-              <td data-th="Описание">BEZEL REMOTE CONTROL Панель управления</td>
-              <td data-th="Наличие">10</td>
-              <td data-th="Срок">10 / 20</td>
-              <td data-th="Поставщик">USA
-                <div>Доплата за вес!</div>
-              </td>
-              <td data-th="Доставка (1 кг)">Цена с учётом доставки</td>
-              <td data-th="Цена">$1250</td>
-              <td data-th="Кол-во"> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td data-th="Марка">Chrysler</td>
-              <td data-th="Код">A3461289 заменён на A3461289</td>
-              <td data-th="Описание">BEZEL REMOTE CONTROL Панель управления</td>
-              <td data-th="Наличие">10</td>
-              <td data-th="Срок">10 / 20</td>
-              <td data-th="Поставщик">USA
-                <div>Доплата за вес!</div>
-              </td>
-              <td data-th="Доставка (1 кг)">Цена с учётом доставки</td>
-              <td data-th="Цена">$1250</td>
-              <td data-th="Кол-во"> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td data-th="Марка">Chrysler</td>
-              <td data-th="Код">A3461289 заменён на A3461289</td>
-              <td data-th="Описание">BEZEL REMOTE CONTROL Панель управления</td>
-              <td data-th="Наличие">10</td>
-              <td data-th="Срок">10 / 20</td>
-              <td data-th="Поставщик">USA
-                <div>Доплата за вес!</div>
-              </td>
-              <td data-th="Доставка (1 кг)">Цена с учётом доставки</td>
-              <td data-th="Цена">$1250</td>
-              <td data-th="Кол-во"> </td>
-              <td> </td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Марка</th>
+                <th>Код</th>
+                <th>Описание</th>
+                <th>Наличие</th>
+                <th>Срок</th>
+                <th>Поставщик</th>
+                <th>Доставка (1 кг)</th>
+                <th>Цена</th>
+                <th>Кол-во</th>
+                <th> </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-th="Марка">Chrysler</td>
+                <td data-th="Код">A3461289 заменён на A3461289</td>
+                <td data-th="Описание">BEZEL REMOTE CONTROL Панель управления</td>
+                <td data-th="Наличие">10</td>
+                <td data-th="Срок">10 / 20</td>
+                <td data-th="Поставщик">USA
+                  <div>Доплата за вес!</div>
+                </td>
+                <td data-th="Доставка (1 кг)">Цена с учётом доставки</td>
+                <td data-th="Цена">$1250</td>
+                <td data-th="Кол-во"> </td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td data-th="Марка">Chrysler</td>
+                <td data-th="Код">A3461289 заменён на A3461289</td>
+                <td data-th="Описание">BEZEL REMOTE CONTROL Панель управления</td>
+                <td data-th="Наличие">10</td>
+                <td data-th="Срок">10 / 20</td>
+                <td data-th="Поставщик">USA
+                  <div>Доплата за вес!</div>
+                </td>
+                <td data-th="Доставка (1 кг)">Цена с учётом доставки</td>
+                <td data-th="Цена">$1250</td>
+                <td data-th="Кол-во"> </td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td data-th="Марка">Chrysler</td>
+                <td data-th="Код">A3461289 заменён на A3461289</td>
+                <td data-th="Описание">BEZEL REMOTE CONTROL Панель управления</td>
+                <td data-th="Наличие">10</td>
+                <td data-th="Срок">10 / 20</td>
+                <td data-th="Поставщик">USA
+                  <div>Доплата за вес!</div>
+                </td>
+                <td data-th="Доставка (1 кг)">Цена с учётом доставки</td>
+                <td data-th="Цена">$1250</td>
+                <td data-th="Кол-во"> </td>
+                <td> </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
