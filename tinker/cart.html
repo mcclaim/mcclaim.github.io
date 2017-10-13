@@ -9,7 +9,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.min.css"><!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
-    <title>Результаты поиска</title>
+    <title>Корзина</title>
   </head>
   <body>
     <div id="startup">
@@ -85,102 +85,110 @@
       </div>
     </header>
     <div class="top_border">
-      <div class="search_wrapper">
-        <div class="search_block_wrapper">
-          <div class="search_block">
-            <form><a class="search_change search_change_main" href="javascript:void(0)" onClick="TAShow()" id="TAShow"><span></span><span></span><span></span></a>
-              <div class="inline_input_form">
-                <div class="input_group">
-                  <input type="text" placeholder="Номер детали" required="required" id="keysearch">
-                  <input type="submit" value="Найти">
+      <div class="cart_page_wrapper search_wrapper">
+        <div class="responsive_table_wrapper">
+          <h2>Корзина</h2>
+          <form role="form" id="cartField" action="/" method="post" enctype="multipart/form-data">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Марка</th>
+                  <th>Код</th>
+                  <th>Описание</th>
+                  <th>Наличие</th>
+                  <th>Срок</th>
+                  <th>Поставщик</th>
+                  <th>Доставка (1 кг)</th>
+                  <th>Цена</th>
+                  <th>Кол-во</th>
+                  <th>Сумма</th>
+                  <th>Комментарий</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-th="Марка">Chrysler</td>
+                  <td class="product_code" data-th="Код"> <span>A3461289 </span>заменён на <span>A3461289</span></td>
+                  <td class="product_inform" data-th="Описание">BEZEL REMOTE CONTROL Панель управления<i data-toggle="modal" data-target="#cartModal"></i></td>
+                  <td data-th="Наличие">10</td>
+                  <td data-th="Срок">10 / 20</td>
+                  <td class="product_supplier" data-th="Поставщик">USA
+                    <div>Доплата за вес!</div>
+                  </td>
+                  <td class="product_delivery" data-th="Доставка (1 кг)">Цена с учётом доставки</td>
+                  <td class="product_price" data-th="Цена">$1250</td>
+                  <td class="product_count" data-th="Кол-во">
+                    <input class="input_number" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+                  </td>
+                  <td class="product_count_total" data-th="Сумма">$2450</td>
+                  <td class="product_comment" data-th="Комментарий"> 
+                    <div class="writed_comment"><a href="javascript:void(0)">Супер покемон<i class="edit_icon"></i></a></div>
+                    <input class="last_comment" type="hidden" name="last_comment">
+                  </td>
+                </tr>
+                <tr>
+                  <td data-th="Марка">Chrysler</td>
+                  <td class="product_code" data-th="Код"> <span>A3461289 </span>заменён на <span>A3461289</span></td>
+                  <td class="product_inform" data-th="Описание">BEZEL REMOTE CONTROL Панель управления<i data-toggle="modal" data-target="#cartModal"></i></td>
+                  <td data-th="Наличие">10</td>
+                  <td data-th="Срок">10 / 20</td>
+                  <td class="product_supplier" data-th="Поставщик">USA
+                    <div>Доплата за вес!</div>
+                  </td>
+                  <td class="product_delivery" data-th="Доставка (1 кг)">Цена с учётом доставки</td>
+                  <td class="product_price" data-th="Цена">$1250</td>
+                  <td class="product_count" data-th="Кол-во">
+                    <input class="input_number" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+                  </td>
+                  <td class="product_count_total" data-th="Сумма">$2450</td>
+                  <td class="product_comment" data-th="Комментарий"> 
+                    <div class="writed_comment"><a href="javascript:void(0)">Супер покемон<i class="edit_icon"></i></a></div>
+                    <input class="last_comment" type="hidden" name="last_comment">
+                  </td>
+                </tr>
+                <tr>
+                  <td data-th="Марка">Chrysler</td>
+                  <td class="product_code" data-th="Код"> <span>A3461289 </span>заменён на <span>A3461289</span></td>
+                  <td class="product_inform" data-th="Описание">BEZEL REMOTE CONTROL Панель управления<i data-toggle="modal" data-target="#cartModal"></i></td>
+                  <td data-th="Наличие">10</td>
+                  <td data-th="Срок">10 / 20</td>
+                  <td class="product_supplier" data-th="Поставщик">USA
+                    <div>Доплата за вес!</div>
+                  </td>
+                  <td class="product_delivery" data-th="Доставка (1 кг)">Цена с учётом доставки</td>
+                  <td class="product_price" data-th="Цена">$1250</td>
+                  <td class="product_count" data-th="Кол-во">
+                    <input class="input_number" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+                  </td>
+                  <td class="product_count_total" data-th="Сумма">$2450</td>
+                  <td class="product_comment" data-th="Комментарий"> 
+                    <div class="writed_comment"><a href="javascript:void(0)">Обновленный супер<i class="edit_icon"></i></a></div>
+                    <input class="last_comment" type="hidden" name="last_comment">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="checkout_wrapper">
+              <div class="checkout_products">Товаров: <span class="checkout_products_item">4 </span>Всего (p): <span class="checkout_products_price">256000 руб.</span></div>
+              <input type="button" name="btn" value="Оформить заказ" id="confirmBtn" data-toggle="modal" data-target="#confirm-submit">
+            </div>
+          </form>
+          <div class="cartModal buyModal modal fade" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>Подтверждение действия
                 </div>
+                <div class="modal-body">
+                  <h4>СОГЛАСИЕ С УСЛОВИЕМ ПОСТАВКИ.</h4>
+                  <p>
+                     Настоящее УСЛОВИЕ ПОСТАВКИ вступает в силу <span>после нажатия кнопки </span>"ПРИНЯТЬ УСЛОВИЯ ПОСТАВКИ" внизу страницы и действует на все время заказа с момента его оформления до момента выдачи. <br>Нажатие кнопки является подтверждением того, что <span>Вы ПРОЧИТАЛИ КАЖДЫЙ ПУНКТ </span>(оформление заказа возможно только при согласии с нашими условиями поставки) и согласны с ним!</p>
+                  <p> <span>При оформлении заказа учитывайте обязательно, что: </span><br>1) При заказе по прайсам <span>USA </span>цена за деталь указана <span>без учета доставки </span>из США до России (Москва).<br> Физический вес рассчитывается при поступлении детали, по факту из расчета <span>1кг=11уе либо 6уе </span>(рассчитывается по курсу ММВБ +2% на момент выдачи.) <span>ПО УМОЛЧАНИЮ </span>МЫ ОТПРАВЛЯЕМ по 11уе - АВИА ПОСТАВКОЙ (1-3 недели с момента оплаты заказа)</p>
+                </div>
+                <div class="modal-footer"><a class="custom_btn_link" href="javascript:void(0);" id="submit">Принять условия поставки</a></div>
               </div>
-            </form>
-            <p class="INShow_active">Для поиска нескольких номеров, нажмите на иконку<span class="search_change"> <span></span><span></span><span></span></span>в поле поиска.</p>
-            <p class="TAShow_active">Для поиска одиночных номеров, нажмите на иконку<span class="search_change"> <span></span><span></span></span>в поле поиска.</p>
+            </div>
           </div>
-        </div>
-        <div class="search_inform">
-          <p>При заказе по прайсам USA цена за деталь указана без учета доставки из США до России (Москва). Физический вес рассчитывается при поступлении детали, по факту из расчета кг=13 у.е. (рассчитывается по курсу ЦБ на момент выдачи.) Рассчитываемый вес товара- БРУТТО. Учитывайте дополнительно вес коробок, обрешеток, пластиковых и деревянных поддонов, паллетов и других упаковочных средств при перевозке деталей. <a href="javascript:void(0);">Подробнее</a></p>
-        </div>
-        <div class="search_result_changed">
-          <p>
-             Искомый номер <span>A3461289 </span>заменён на -> <span>A3461285XG </span>-> <span>A3574285XGG</span></p>
-        </div>
-        <div class="responsive_table_wrapper search_result_wrapper">
-          <h2>Результаты поиска</h2>
-          <table class="rwd-table table">
-            <thead>
-              <tr>
-                <th>Марка</th>
-                <th>Код</th>
-                <th>Описание</th>
-                <th>Наличие</th>
-                <th>Срок</th>
-                <th>Поставщик</th>
-                <th>Доставка (1 кг)</th>
-                <th>Цена</th>
-                <th>Кол-во</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-th="Марка">Chrysler</td>
-                <td class="product_code" data-th="Код"> <span>A3461289 </span>заменён на <span>A3461289</span></td>
-                <td class="product_inform" data-th="Описание">BEZEL REMOTE CONTROL Панель управления<i data-toggle="modal" data-target="#cartModal"></i></td>
-                <td data-th="Наличие">10</td>
-                <td data-th="Срок">10 / 20</td>
-                <td class="product_supplier" data-th="Поставщик">USA
-                  <div>Доплата за вес!</div>
-                </td>
-                <td class="product_delivery" data-th="Доставка (1 кг)">Цена с учётом доставки</td>
-                <td class="product_price" data-th="Цена">$1250</td>
-                <td class="product_count" data-th="Кол-во">
-                  <input class="input_number" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
-                </td>
-                <td class="product_add_to_cart"> 
-                  <input class="add_to_cart" type="submit" value="">
-                </td>
-              </tr>
-              <tr>
-                <td data-th="Марка">Chrysler</td>
-                <td class="product_code" data-th="Код"> <span>A3461289 </span>заменён на <span>A3461289</span></td>
-                <td class="product_inform" data-th="Описание">BEZEL REMOTE CONTROL Панель управления<i data-toggle="modal" data-target="#cartModal"></i></td>
-                <td data-th="Наличие">10</td>
-                <td data-th="Срок">10 / 20</td>
-                <td class="product_supplier" data-th="Поставщик">USA
-                  <div>Доплата за вес!</div>
-                </td>
-                <td class="product_delivery" data-th="Доставка (1 кг)">Цена с учётом доставки</td>
-                <td class="product_price" data-th="Цена">$1250</td>
-                <td class="product_count" data-th="Кол-во">
-                  <input class="input_number" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
-                </td>
-                <td class="product_add_to_cart"> 
-                  <input class="add_to_cart" type="submit" value="">
-                </td>
-              </tr>
-              <tr>
-                <td data-th="Марка">Chrysler</td>
-                <td class="product_code" data-th="Код"> <span>A3461289 </span>заменён на <span>A3461289</span></td>
-                <td class="product_inform" data-th="Описание">BEZEL REMOTE CONTROL Панель управления<i data-toggle="modal" data-target="#cartModal"></i></td>
-                <td data-th="Наличие">10</td>
-                <td data-th="Срок">10 / 20</td>
-                <td class="product_supplier" data-th="Поставщик">USA
-                  <div>Доплата за вес!</div>
-                </td>
-                <td class="product_delivery" data-th="Доставка (1 кг)">Цена с учётом доставки</td>
-                <td class="product_price" data-th="Цена">$1250</td>
-                <td class="product_count" data-th="Кол-во">
-                  <input class="input_number" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
-                </td>
-                <td class="product_add_to_cart"> 
-                  <input class="add_to_cart" type="submit" value="">
-                </td>
-              </tr>
-            </tbody>
-          </table>
           <div class="cartModal modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -217,22 +225,6 @@
             </div>
           </div>
         </div>
-        <section class="random_company">
-          <h2>SUBARU</h2>
-          <div class="row">
-            <div class="col-xs-12 col-md-4 col-lg-3">
-              <div class="random_company_img"><img src="images/random_company/1.png"></div>
-            </div>
-            <div class="col-xs-12 col-md-8 col-lg-9">
-              <div class="random_company_inform">
-                <p>Субару» (англ. Subaru) — автомобильный бренд компании Fuji Heavy Industries (FHI). Объём производства в 2011 году составил 528 234 легковых и 52 027 коммерческих автомобиля.</p>
-                <p>Основатель и первый президент компании Fuji Heavy Industries Ltd., Кэндзи Кита, был настоящим энтузиастом автомобилестроения и принимал личное участие в создании первого прототипа пассажирского автомобиля Р-1 в 1954 году.</p>
-                <p>Конкурс на название марки автомобиля результатов не принёс, и Кита сделал выбор самостоятельно.</p>
-                <p>Первые автомобили Субару были сделаны на основе автомобиля Renault (Франция). Кэндзи Кита приобрел ряд чертежей и патентов на производство автомобилей у французской автомобильной корпорации Renault, именно эти автомобили вдохновили его.</p>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
     <footer>
