@@ -1,0 +1,1411 @@
+@charset "UTF-8";
+@import url(fonts.css);
+a {
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    font-family: "AvenirNextW1G-Regular";
+    font-size: 18px;
+    color: #000;
+    overflow-x: hidden;
+}
+h2 {
+    font-family: "AvenirNextW1G-Bold";
+    font-size: 30px;
+    color: #262f31;
+    text-transform: uppercase;
+}
+.inform_video_wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.inform_video_wrapper img {
+    width: 100%;
+    height: auto;
+}
+.inform_video_wrapper iframe,
+.inform_video_wrapper video {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+section {
+    /***** Первый блок ****/
+    /******* Второй блок *******/
+}
+section.main {
+    padding: 36px 0 0 0;
+    background: url("../images/bg/background_1.png") no-repeat;
+    background-size: contain;
+}
+section.main a.logo {
+    text-decoration: none;
+    font-family: "AvenirNextW1G-Medium";
+    font-size: 16px;
+    color: #262f31;
+    display: inline-block;
+    position: relative;
+    width: 452px;
+}
+section.main a.logo span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0 0 0 80px;
+}
+section.main .main_section_wrapper .main_inform_wrapper {
+    position: relative;
+    padding-right: 41.66666667%;
+}
+section.main .main_section_wrapper .main_inform_wrapper:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 138px;
+    height: 138px;
+    background: url("../images/mark2.png") no-repeat;
+    margin: 145px 415px 0 0;
+}
+section.main .main_section_wrapper .main_inform_wrapper:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 759px;
+    height: 842px;
+    background: url("../images/main_img.png") no-repeat;
+    margin: 0 -158px -90px 0;
+}
+section.main .main_section_wrapper .main_inform_wrapper .main_inform {
+    position: relative;
+    padding: 0 0 90px 0;
+}
+section.main .main_section_wrapper .main_inform_wrapper .main_inform h1 {
+    font-family: "AvenirNextW1G-Bold";
+    font-size: 52px;
+    padding: 0;
+    margin: 72px 0 23px 0;
+    text-transform: uppercase;
+}
+section.main .main_section_wrapper .main_inform_wrapper .main_inform p {
+    font-family: "AvenirNextW1G-Medium";
+    font-size: 30px;
+    color: #463f38;
+    margin: 0;
+}
+section.main .main_section_wrapper .main_inform_wrapper .main_inform:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0 0 30px -94px;
+    display: block;
+    width: 140px;
+    height: 15px;
+    background: url("../images/icons/vector_green.png") no-repeat;
+}
+section.main .main_section_wrapper .main_inform_wrapper .inform_video {
+    width: 100%;
+    max-width: 531px;
+    height: 317px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 25px 40px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 25px 40px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.16);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+section.main .main_section_wrapper .main_inform_wrapper .inform_video a {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 98px;
+    height: 98px;
+    background: url("../images/icons/play.png") no-repeat;
+    margin: -30px 0 0 -49px;
+}
+section.main .main_section_wrapper .main_inform_wrapper .inform_video_after:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 161px;
+    height: 241px;
+    background: url("../images/video_after.png") no-repeat;
+    margin: 40px 0 0 -162px;
+}
+section.author {
+    padding: 176px 0 410px 0;
+    position: relative;
+}
+section.author .section_header {
+    font-size: 30px;
+    color: #262f31;
+    text-align: center;
+}
+section.author .section_header h2 {
+    font-family: "AvenirNextW1G-Bold";
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 0 18px 0;
+}
+section.author .section_header p {
+    font-family: "AvenirNextW1G-Medium";
+    margin: 0;
+}
+section.author .section_benefit {
+    padding: 98px 0 0 0;
+}
+section.author .section_benefit .benefit_item {
+    padding: 2px 0 52px 65px;
+    min-height: 81px;
+    background: url("../images/icons/experience.png") no-repeat top left;
+}
+section.author .section_benefit .benefit_item p {
+    font-family: "AvenirNextW1G-Regular";
+    font-size: 18px;
+    margin: 0;
+}
+section.author .section_author_img {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin: 0 0 -44px -498px;
+    width: 997px;
+    height: 790px;
+    max-width: 100%;
+    z-index: -1;
+}
+section.author .section_author_img img {
+    width: 100%;
+}
+section.why_us {
+    position: relative;
+    margin-top: -275px;
+}
+section.why_us .why_us_bg1 {
+    width: 100%;
+    overflow: hidden;
+    height: 223px;
+    background-image: url("../images/bg/why_us_bg1.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+section.why_us .why_us_bg2 {
+    width: 100%;
+    background-image: url("../images/bg/why_us_bg2.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding-bottom: 78px;
+}
+section.why_us .why_us_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.why_us .why_us_header_description {
+    background: url(../images/bloquote.png) no-repeat;
+    margin: -148px 0 0 -120px;
+    background-size: contain;
+    padding: 195px 188px 155px 205px;
+}
+section.why_us .why_us_header_description p {
+    font-family: "AvenirNextW1G-Medium";
+    font-size: 23px;
+    width: 410px;
+    /* height: 190px; */
+}
+section.why_us .why_us_header h2 {
+    display: block;
+    font-family: "AvenirNextW1G-Bold";
+    font-size: 30px;
+    color: #262f31;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 0 45px 0;
+    margin: -80px 0 0 45px;
+}
+section.why_us .why_us_header h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 48px;
+    margin: 0;
+    display: block;
+    width: 140px;
+    height: 15px;
+    background: url("../images/icons/vector_white.png") no-repeat;
+    z-index: 1;
+}
+section.why_us .why_us_inform_wrapper {
+    padding-right: 33.33333333%;
+    position: relative;
+    margin-top: -8px;
+}
+section.why_us .why_us_inform_wrapper .why_us_inform_header {
+    display: flex;
+}
+section.why_us .why_us_inform_wrapper .why_us_inform_header span {
+    display: block;
+}
+section.why_us .why_us_inform_wrapper .why_us_inform_header span.number {
+    width: 231px;
+    height: 172px;
+    background: url("../images/15.png") no-repeat;
+    background-size: contain;
+}
+section.why_us .why_us_inform_wrapper .why_us_inform_header span.number_inform {
+    font-family: "AvenirNextW1G-Bold";
+    font-size: 23px;
+    color: #262f31;
+    margin-bottom: 21px;
+}
+section.why_us .why_us_inform_wrapper .why_us_inform_header .why_us_inform_title {
+    font-family: "AvenirNextW1G-Bold";
+    font-size: 30px;
+    color: #262f31;
+    text-transform: uppercase;
+}
+section.why_us .why_us_inform_wrapper .why_us_inform_header .why_us_right {
+    margin: 20px 0 0 20px;
+}
+section.why_us .why_us_inform_wrapper .why_us_inform p {
+    font-family: "AvenirNextW1G-Regular";
+    font-size: 18px;
+    margin: 34px 0 0 0;
+}
+section.why_us .why_us_inform_wrapper .why_us_inform p.p1 {
+    margin-top: 18px;
+}
+section.why_us .why_us_inform_wrapper .why_us_inform p.large_text {
+    font-family: "AvenirNextW1G-Medium";
+    font-size: 23px;
+    width: 85%;
+}
+section.why_us .why_us_inform_wrapper .why_us_inform p.p2 {
+    width: 80%;
+}
+section.why_us .why_us_inform_wrapper .why_us_inform p.p3 {
+    width: 90%;
+}
+section.why_us .why_us_inform_wrapper .why_us_img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 40px 0 0 0;
+}
+section.unique {
+    padding: 85px 0 0 0;
+    background: url("../images/bg/background_2.png") no-repeat bottom center;
+    background-size: contain;
+}
+section.unique h2 {
+    text-align: center;
+    padding: 0 0 84px 0;
+    margin: 0;
+}
+section.unique .unique_item {
+    font-size: 18px;
+    padding: 0 105px 92px 0;
+}
+section.unique .unique_item .unique_title {
+    font-family: "AvenirNextW1G-Bold";
+    text-transform: uppercase;
+    padding: 20px 0 32px 0;
+}
+section.unique .unique_item .unique_inform {
+    font-family: "AvenirNextW1G-Regular";
+}
+section.unique .unique_item .unique_inform p {
+    margin: 0;
+}
+section.unique .unique_item_2 {
+    margin-top: -20px;
+}
+section.course {
+    background-color: #eff3e5;
+    padding: 100px 0 95px 0;
+}
+section.course h2 {
+    margin: 0;
+    padding: 0 0 42px 0;
+}
+section.course .course_inform {
+    font-family: "AvenirNextW1G-Regular";
+    font-size: 18px;
+    padding-right: 70px;
+    position: relative;
+    z-index: 2;
+}
+section.course .course_inform p {
+    padding: 0px 0 4px 40px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    margin: 0 0 38px 0;
+}
+section.course .course_inform1 p {
+    background-image: url("../images/icons/true.png");
+}
+section.course .course_inform2 p {
+    background-image: url("../images/icons/false.png");
+}
+section.course .course_inform span.large_text {
+    padding: 0 0 0 40px;
+    font-size: 23px;
+    display: block;
+}
+section.guarantee {
+    background: url("../images/bg/guarantee_bg.png") repeat;
+    position: relative;
+}
+section.guarantee .stampe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 373px;
+    height: 471px;
+    background: url("../images/stamp.png") no-repeat;
+    margin: -230px 0 0 0;
+    z-index: 1;
+}
+section.guarantee .paper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1114px;
+    height: 578px;
+    background: url("../images/paper.png") no-repeat;
+}
+section.guarantee .guarantee_mark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 95px 0 0 320px;
+    width: 209px;
+    height: 209px;
+    background: url(../images/mark.png) no-repeat;
+}
+section.guarantee .guarantee_relative {
+    position: relative;
+}
+section.guarantee .paper_wrapper {
+    position: relative;
+    margin: 0 0 0 -390px;
+}
+section.guarantee .guarantee_header {
+    padding: 120px 0 0 150px;
+    position: relative;
+    display: flex;
+}
+section.guarantee .guarantee_header span.number {
+    display: block;
+    width: 100%;
+    max-width: 460px;
+    height: 176px;
+    background: url("../images/100.png") no-repeat;
+}
+section.guarantee .guarantee_header h2 {
+    display: block;
+    margin: 115px 0 0 -90px;
+}
+section.guarantee .guarantee_inform {
+    font-family: "AvenirNextW1G-Medium";
+    font-size: 23px;
+    padding: 0 130px 72px 520px;
+    margin-top: 40px;
+    position: relative;
+}
+section.guarantee .guarantee_inform p {
+    margin: 0;
+}
+section.guarantee .guarantee_inform p.strong {
+    font-family: "AvenirNextW1G-Bold";
+    margin: 42px 0 0 0;
+}
+section.price,
+section.purchase {
+    background-color: #ffbc71;
+}
+section.price h2,
+section.purchase h2 {
+    padding: 110px 0 104px 0;
+    margin: 0;
+    text-align: center;
+}
+section.price .price_wrapper,
+section.purchase .price_wrapper {
+    display: flex;
+    justify-content: center;
+}
+section.price .price_item,
+section.purchase .price_item {
+    border: 2px solid #ff9b70;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 0 84px 0;
+    position: relative;
+}
+section.price .price_item:after,
+section.purchase .price_item:after {
+    content: '';
+    display: block;
+    position: absolute;
+}
+section.price .price_item1:after,
+section.purchase .price_item1:after {
+    left: 0;
+    bottom: 0;
+    width: 214px;
+    height: 241px;
+    margin: 0 0 -22px -145px;
+    background: url("../images/price_after.png") no-repeat;
+}
+section.price .price_item2:after,
+section.purchase .price_item2:after {
+    top: 0;
+    right: 0;
+    width: 299px;
+    height: 289px;
+    margin: -104px -157px 0 0;
+    background: url("../images/price_before.png") no-repeat;
+}
+section.price .price_item .price_header,
+section.purchase .price_item .price_header {
+    font-family: "AvenirNextW1G-Bold";
+    font-size: 30px;
+    padding: 22px 5px 16px 5px;
+    text-align: center;
+    border-bottom: 2px solid #ff9b70;
+    color: #ff9b70;
+}
+section.price .price_item .price_inform_wrapper,
+section.purchase .price_item .price_inform_wrapper {
+    padding: 42px 42px 32px 46px;
+}
+section.price .price_item .price_inform_wrapper .price_inform,
+section.purchase .price_item .price_inform_wrapper .price_inform {
+    padding: 0 6px;
+}
+section.price .price_item .price_inform_wrapper .price_inform p,
+section.purchase .price_item .price_inform_wrapper .price_inform p {
+    margin: 0 0 30px 0;
+}
+section.price .price_item .price_inform_wrapper .price_inform strong,
+section.purchase .price_item .price_inform_wrapper .price_inform strong {
+    font-family: "AvenirNextW1G-Bold";
+    font-weight: normal;
+}
+section.price .price_item .price_inform_wrapper .cost_wrapper,
+section.purchase .price_item .price_inform_wrapper .cost_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 0 0 0;
+}
+section.price .price_item .price_inform_wrapper .cost_wrapper .cost,
+section.purchase .price_item .price_inform_wrapper .cost_wrapper .cost {
+    font-family: "AvenirNextW1G-Bold";
+    font-size: 55px;
+}
+section.price .price_item .price_inform_wrapper .cost_wrapper .cost_date,
+section.purchase .price_item .price_inform_wrapper .cost_wrapper .cost_date {
+    padding: 9px;
+    background-color: #ffbc71;
+    margin-left: 22px;
+    border-radius: 4px;
+}
+section.price .price_item .price_inform_wrapper .price_button,
+section.purchase .price_item .price_inform_wrapper .price_button {
+    display: block;
+    font-family: "AvenirNextW1G-Bold";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    height: 81px;
+    line-height: 81px;
+    background: url("../images/icons/price_button.png") no-repeat;
+    background-size: 100% 100%;
+    margin: 35px 0 0 0;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+section.price .price_item .price_inform_wrapper .price_button:hover,
+section.purchase .price_item .price_inform_wrapper .price_button:hover {
+    background-image: url("../images/icons/price_button_hover.png");
+}
+section.price .price_item .price_inform_wrapper .discount,
+section.purchase .price_item .price_inform_wrapper .discount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 28px 0 0 0;
+}
+section.price .price_item .price_inform_wrapper .discount span,
+section.purchase .price_item .price_inform_wrapper .discount span {
+    display: block;
+}
+section.price .price_item .price_inform_wrapper .discount span strong,
+section.purchase .price_item .price_inform_wrapper .discount span strong {
+    font-weight: normal;
+}
+section.price .price_item2,
+section.purchase .price_item2 {
+    border-color: #8bc568;
+    margin-left: 30px;
+}
+section.price .price_item2 .price_header,
+section.purchase .price_item2 .price_header {
+    border-color: #8bc568;
+    background-color: #8bc568;
+    color: #fff;
+}
+section.price .price_item2 .price_inform_wrapper,
+section.purchase .price_item2 .price_inform_wrapper {
+    padding: 42px 42px 32px 30px;
+}
+section.price .price_item2 .price_inform_wrapper .price_inform,
+section.purchase .price_item2 .price_inform_wrapper .price_inform {
+    padding-left: 0;
+}
+section.price .price_item2 .price_inform_wrapper .price_button:after,
+section.purchase .price_item2 .price_inform_wrapper .price_button:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 102px;
+    width: 36px;
+    height: 36px;
+    background: url("../images/icons/player.png");
+}
+section.warning {
+    background-color: #eff3e5;
+    padding: 36px 0 52px 0;
+}
+section.warning .warning_wrapper {
+    padding: 0 0 0 155px;
+    font-size: 23px;
+}
+section.warning .warning_title {
+    font-family: "AvenirNextW1G-Bold";
+    margin-bottom: 34px;
+}
+section.warning p {
+    margin: 0;
+}
+section.discount {
+    padding: 77px 0 104px 0;
+}
+section.discount .discount_inform_wrapper h2 {
+    margin: 0;
+    padding: 47px 0 0 0;
+    position: relative;
+}
+section.discount .discount_inform_wrapper h2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 15px;
+    background: url("../images/icons/vector_green.png") no-repeat;
+    margin-left: -92px;
+}
+section.discount .discount_inform_wrapper .discount_inform {
+    font-size: 30px;
+}
+section.discount .discount_inform_wrapper .discount_inform p {
+    font-family: "AvenirNextW1G-Medium";
+    margin-bottom: 0;
+}
+section.discount .discount_inform_wrapper .discount_inform p.strong {
+    font-family: "AvenirNextW1G-Bold";
+}
+section.discount .discount_inform_wrapper .discount_inform p.info {
+    margin: 25px 60px 38px 0;
+}
+section.discount .discount_inform_wrapper .table_wrapper {
+    max-width: 477px;
+    margin: 45px 0 0 0;
+}
+section.discount .discount_inform_wrapper .table_wrapper table {
+    display: inline-block;
+    position: relative;
+    width: 437px;
+    padding-top: 11px;
+    padding-left: 38px;
+}
+section.discount .discount_inform_wrapper .table_wrapper table:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: -45px 0 0 -112px;
+    z-index: -1;
+    width: 246px;
+    height: 289px;
+    background: url(../images/table_before.png) no-repeat;
+}
+section.discount .discount_inform_wrapper .table_wrapper table:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 477px;
+    height: 340px;
+    background: url(../images/bg/table_bg.png) no-repeat;
+    z-index: -1;
+}
+section.discount .discount_inform_wrapper .table_wrapper table thead {
+    display: block;
+    background-color: #c7da96;
+    padding: 15px 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+section.discount .discount_inform_wrapper .table_wrapper table th,
+section.discount .discount_inform_wrapper .table_wrapper table td {
+    text-align: center;
+}
+section.discount .discount_inform_wrapper .table_wrapper table td,
+section.discount .discount_inform_wrapper .table_wrapper table th {
+    width: 50%;
+}
+section.discount .discount_inform_wrapper .table_wrapper table tbody {
+    display: table;
+    width: 100%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+}
+section.discount .discount_inform_wrapper .table_wrapper table tbody tr {
+    display: table-row;
+}
+section.discount .discount_inform_wrapper .table_wrapper table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+section.discount .discount_inform_wrapper .table_wrapper table tbody td {
+    display: table-cell;
+    padding: 17px 0;
+}
+section.content {
+    padding: 90px 0 64px 0;
+    background-color: #eff3e5;
+}
+section.content h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0 0 58px 0;
+}
+section.content ul.content_list {
+    margin: 0;
+    list-style: none;
+    padding: 0 0 0 60px;
+}
+section.content ul.content_list li {
+    padding: 0 0 30px 32px;
+    background: url(../images/icons/arrow.png) no-repeat;
+    background-position: 0 1px;
+}
+section.content ul.content_list li.large_text {
+    font-family: "AvenirNextW1G-Medium";
+    font-size: 23px;
+    background-position: 0 6px;
+}
+section.purchase {
+    padding: 126px 0 15px 0;
+    background-color: transparent;
+    background: url("../images/bg/background_3.png") no-repeat;
+}
+section.purchase .price_item {
+    border-color: #f6e0bd;
+}
+section.purchase .price_item .price_header {
+    border-color: #f6e0bd;
+}
+section.purchase .price_item1:after {
+    background-image: url("../images/price_footer_before.png");
+    width: 383px;
+    height: 289px;
+    bottom: auto;
+    top: 0;
+    margin: -104px 0 0 -218px;
+    z-index: -1;
+}
+section.purchase .price_item2 {
+    border-color: #8bc568;
+    -webkit-box-shadow: 0 16px 21px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 16px 21px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 16px 21px rgba(0, 0, 0, 0.12);
+}
+section.purchase .price_item2:after {
+    background-image: url("../images/price_footer_after.png");
+    width: 239px;
+    height: 288px;
+    top: auto;
+    bottom: 0;
+    margin: 0 -120px -76px 0;
+}
+footer {
+    background-color: #cad3b8;
+    padding: 21px 0 36px 0;
+    position: relative;
+    min-height: 276px;
+}
+footer a.logo {
+    display: inline-block;
+    margin: 0 0 14px 0;
+}
+footer .footer_links {
+    margin-bottom: 32px;
+}
+footer .footer_links a {
+    color: #000;
+    padding: 0 8px 0 0;
+    position: relative;
+    margin-left: 7px;
+    text-decoration: none;
+    border-right: 1px solid #000;
+}
+footer .footer_links a:hover {
+    color: #d77200;
+}
+footer .footer_links a:first-child {
+    margin-left: 0;
+}
+footer .footer_links a:last-child {
+    border-right: 0;
+}
+footer .footer_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 -100px 0 0;
+}
+/******************************************** @media *********************************************************/
+
+@media (max-width: 991px) {
+    section.main .main_section_wrapper .main_inform_wrapper:before {
+        display: none;
+    }
+    section.author {
+        padding: 156px 0 0 0;
+    }
+    section.author .section_author_img {
+        position: inherit;
+        height: auto;
+        width: 590px;
+        margin: 0 auto;
+    }
+    section.why_us .why_us_header {
+        flex-direction: column;
+    }
+    section.why_us .why_us_header_description {
+        order: 1;
+        margin: 0 0 30px 0;
+        padding: 50px 30px;
+        width: 100%;
+        background-image: none;
+        background: #fff;
+        border: 14px solid #ffc385;
+    }
+    section.why_us .why_us_header_description p {
+        width: auto;
+        height: auto;
+    }
+    section.why_us .why_us_header h2 {
+        margin: 0;
+        padding: 20px 0 25px 0;
+    }
+    section.why_us .why_us_header h2:after {
+        display: none;
+    }
+    section.why_us .why_us_inform_wrapper {
+        padding-right: 0;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_inform_header .why_us_right {
+        margin-top: 5px;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_img {
+        width: 250px;
+        height: auto;
+        margin-top: 270px;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_img img {
+        width: 100%;
+        height: auto;
+    }
+    section.why_us .why_us_inform {
+        width: 78%;
+    }
+    section.unique .unique_item {
+        padding: 0 0 52px 0;
+    }
+    section.unique .unique_item_2 {
+        margin-top: 0;
+    }
+    section.course .course_inform span.large_text {
+        padding: 0px 0 50px 40px;
+    }
+    section.guarantee .paper_wrapper {
+        display: none;
+    }
+    section.guarantee .guarantee_header {
+        padding: 70px 0 0 0;
+    }
+    section.guarantee .guarantee_inform {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    section.price .price_wrapper,
+    section.purchase .price_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    section.price .price_item2,
+    section.purchase .price_item2 {
+        margin-left: 0;
+    }
+    section.warning .warning_wrapper {
+        padding: 0 0 0 35px;
+    }
+    section.discount .discount_inform_wrapper h2 {
+        padding: 0;
+    }
+    section.discount .discount_inform_wrapper h2:after {
+        display: none;
+    }
+    section.discount .discount_inform_wrapper .discount_inform {
+        text-align: center;
+        font-size: 25px;
+    }
+    section.discount .discount_inform_wrapper .discount_inform p.info {
+        margin-right: 0;
+    }
+    section.discount .discount_inform_wrapper .table_wrapper {
+        margin: 50px auto 0 auto;
+    }
+    section.content ul.content_list {
+        padding: 0;
+    }
+    footer .footer_img {
+        display: none;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    section.main .main_section_wrapper .main_inform_wrapper {
+        padding-right: 33.33333333%;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper:after {
+        margin: 0 -358px -64px 0;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper:before {
+        margin: 145px 190px 0 0;
+    }
+    section.why_us .why_us_header_description {
+        padding: 160px 120px 155px 165px;
+        margin: -95px 0 0 -120px;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_inform_header {
+        margin-top: 0;
+    }
+    section.guarantee .guarantee_inform {
+        padding-right: 0;
+        margin-top: 0;
+        padding-bottom: 48px;
+    }
+    footer .footer_img {
+        margin: 0 -200px 0 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    section.main .main_section_wrapper .main_inform_wrapper {
+        padding-right: 16.66666667%;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper:after {
+        margin: 0 -75% -64px 0;
+    }
+}
+@media (max-width: 767px) {
+    h2 {
+        font-size: 20px;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper {
+        padding-right: 0;
+        text-align: center;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper:after {
+        display: none;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper .main_inform {
+        padding: 0 0 40px 0;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper .main_inform h1 {
+        font-size: 32px;
+        margin: 37px 0 20px 0;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper .main_inform p {
+        font-size: 20px;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper .inform_video {
+        margin: 0 auto;
+    }
+    section.author {
+        padding-top: 52px;
+    }
+    section.author .section_header {
+        font-size: 20px;
+    }
+    section.author .section_header h2 {
+        font-size: 20px;
+    }
+    section.author .section_benefit {
+        padding-top: 50px;
+    }
+    section.author .section_benefit .benefit_item {
+        padding-bottom: 20px;
+    }
+    section.author .section_author_img {
+        display: none;
+    }
+    section.why_us {
+        margin-top: -120px;
+    }
+    section.why_us .why_us_header_description {
+        padding: 20px 24px;
+    }
+    section.why_us .why_us_header_description p {
+        font-size: 18px;
+    }
+    section.why_us .why_us_header h2 {
+        padding-top: 10px;
+        font-size: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    section.guarantee .guarantee_header {
+        flex-direction: column;
+        padding: 50px 0 0 0;
+        text-align: center;
+        justify-content: center;
+    }
+    section.guarantee .guarantee_header h2 {
+        margin: 0 0 20px 0;
+    }
+    section.guarantee .guarantee_header span.number {
+        max-width: 70%;
+        background-size: contain;
+        margin: 0 auto;
+        order: 1;
+        background-position: 50% 50%;
+    }
+    section.guarantee .guarantee_inform {
+        margin-top: 0;
+    }
+    section.price h2 {
+        padding: 50px 0 40px 0;
+    }
+}
+@media (max-width: 480px) {
+    section.main {
+        background: none;
+    }
+    section.main a.logo {
+        font-size: 9.8px;
+        max-width: 100%;
+        height: 40px;
+        background: url("../images/logo_small.png") no-repeat;
+    }
+    section.main a.logo span {
+        margin: 0 0 0 50px;
+    }
+    section.main a.logo img {
+        display: none;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper .main_inform {
+        padding: 0 0 30px 0;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper .main_inform h1 {
+        font-size: 23px;
+        margin: 27px 0 10px 0;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper .main_inform p {
+        font-size: 18px;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper .main_inform:after {
+        display: none;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper .inform_video {
+        height: 185px;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper .inform_video a {
+        width: 48px;
+        height: 48px;
+        background-size: cover;
+        margin: -10px 0 0 -24px;
+    }
+    section.main .main_section_wrapper .main_inform_wrapper .inform_video_after:after {
+        width: 89px;
+        height: 65px;
+        right: 0;
+        left: auto;
+        bottom: 0;
+        background: url(../images/video_small.png) no-repeat;
+        margin: 0 -35px 155px 0;
+        z-index: -1;
+    }
+    section.author .section_header {
+        font-size: 20px;
+    }
+    section.author .section_header p {
+        font-size: 18px;
+    }
+    section.author .section_benefit {
+        padding-top: 28px;
+    }
+    section.author .section_benefit .benefit_item {
+        padding: 0 0 20px 40px;
+        background-size: 28px 28px;
+    }
+    section.author .section_benefit .benefit_item p {
+        font-size: 16px;
+    }
+    section.why_us .why_us_inform {
+        width: auto;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_inform p {
+        font-size: 16px !important;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_inform p.p1,
+    section.why_us .why_us_inform_wrapper .why_us_inform p.p2,
+    section.why_us .why_us_inform_wrapper .why_us_inform p.p3 {
+        width: auto;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_inform_header span.number {
+        width: 140px;
+        height: 100px;
+        background-size: contain;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_inform_header .why_us_right {
+        margin: 12px 0 0 0;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_inform_header span.number_inform {
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_inform_header .why_us_inform_title {
+        font-size: 18px;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_img {
+        width: 110px;
+        height: auto;
+        margin-top: 208px;
+    }
+    section.unique {
+        padding: 45px 0 0 0;
+        background: none;
+    }
+    section.unique h2 {
+        padding-bottom: 50px;
+    }
+    section.course {
+        padding: 34px 0 28px 0;
+    }
+    section.course .course_inform {
+        padding: 0;
+    }
+    section.course .course_inform span.large_text {
+        font-size: 16px;
+        padding: 0px 0 50px 40px;
+    }
+    section.course .course_inform p {
+        margin-bottom: 34px;
+        font-size: 16px;
+    }
+    section.guarantee .guarantee_header {
+        padding-top: 34px;
+    }
+    section.guarantee .guarantee_header span.number {
+        height: 100px;
+    }
+    section.guarantee .guarantee_inform {
+        font-size: 18px;
+        padding-bottom: 43px;
+    }
+    section.guarantee .guarantee_inform p.strong {
+        margin-top: 28px;
+    }
+    section.warning .warning_wrapper {
+        font-size: 18px;
+    }
+    section.discount {
+        padding: 31px 0 20px 0;
+    }
+    section.discount .discount_inform_wrapper .table_wrapper {
+        margin: 7px auto 0 auto;
+    }
+    section.discount .discount_inform_wrapper .table_wrapper table {
+        display: inline-block;
+        position: relative;
+        width: 290px;
+        padding-top: 14px;
+        padding-left: 0;
+        left: 50%;
+        margin-left: -145px;
+        font-size: 16px;
+        z-index: 1;
+    }
+    section.discount .discount_inform_wrapper .table_wrapper table:before {
+        display: none;
+    }
+    section.discount .discount_inform_wrapper .table_wrapper table:after {
+        margin-left: -29px;
+        width: 348px;
+        height: 324px;
+        background-size: 100% 100%;
+    }
+    section.content {
+        padding: 30px 0 10px 0;
+    }
+    section.content ul.content_list {
+        font-size: 16px;
+    }
+    section.content ul.content_list li {
+        padding-bottom: 16px;
+        padding: 0 0 30px 24px;
+    }
+    section.content ul.content_list li.large_text {
+        font-family: "AvenirNextW1G-Regular";
+        font-size: 16px;
+        background-position: 0 1px;
+    }
+    section.content h2 {
+        padding-bottom: 32px;
+    }
+    section.purchase {
+        padding: 28px 0 0 0;
+        background: none;
+    }
+    section.purchase .price_item {
+        margin: 0 0 22px 0;
+    }
+    section.purchase .price_item:after {
+        display: none;
+    }
+    section.purchase .price_item2 {
+        box-shadow: none;
+    }
+    footer {
+        font-size: 15px;
+    }
+}
+@media (max-width: 320px) {
+    section.why_us {
+        margin-top: 15px;
+        position: relative;
+    }
+    section.why_us:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 48px;
+        height: 138px;
+        top: 0;
+        left: 0;
+        background: url("../images/why_us_after.png") no-repeat;
+        margin-top: -95px;
+    }
+    section.why_us .why_us_bg1 {
+        background-image: url("../images/bg/why_us_bg1_small.png");
+        height: 47px;
+    }
+    section.why_us .why_us_inform {
+        width: auto;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_img {
+        width: 120px;
+        height: auto;
+        margin-top: 250px;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_inform p.large_text {
+        width: 70%;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_inform_header .why_us_right {
+        margin: 0;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_inform_header span.number {
+        width: 144px;
+        height: 80px;
+        background-size: 100% 100%;
+    }
+    section.why_us .why_us_inform_wrapper .why_us_inform_header span.number_inform {
+        margin-bottom: 5px;
+    }
+    section.why_us .why_us_bg2 {
+        padding-bottom: 42px;
+        position: relative;
+    }
+    section.why_us .why_us_bg2:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0 0 -60px 0;
+        width: 76px;
+        height: 190px;
+        background: url("../images/why_us_before.png") no-repeat;
+    }
+    section.unique {
+        padding: 38px 0 0 0;
+    }
+    section.unique h2 {
+        padding: 0 0 38px 0;
+    }
+    section.unique .unique_item {
+        padding: 0 0 46px 50px;
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+    section.unique .unique_item .unique_img {
+        display: none;
+    }
+    section.unique .unique_item_1 {
+        background-image: url("../images/icons/flower.png");
+        padding-bottom: 32px !important;
+    }
+    section.unique .unique_item_2 {
+        background-image: url("../images/icons/like.png");
+        background-position: 0 0 !important;
+    }
+    section.unique .unique_item_2 .unique_title {
+        padding-top: 18px !important;
+    }
+    section.unique .unique_item_3 {
+        background-image: url("../images/icons/survey.png");
+    }
+    section.unique .unique_item_4 {
+        background-image: url("../images/icons/butterfly.png");
+    }
+    section.unique .unique_item .unique_title {
+        padding-top: 0;
+    }
+    section.guarantee .guarantee_inform {
+        font-size: 16px;
+    }
+    section.price h2,
+    section.purchase h2 {
+        display: none;
+    }
+    section.price .price_wrapper,
+    section.purchase .price_wrapper {
+        margin: 40px 0 0 0;
+    }
+    section.price .price_item,
+    section.purchase .price_item {
+        margin-bottom: 26px;
+    }
+    section.price .price_item2,
+    section.purchase .price_item2 {
+        margin-bottom: 44px;
+    }
+    section.price .price_item:after,
+    section.purchase .price_item:after {
+        display: none;
+    }
+    section.price .price_item .price_header,
+    section.purchase .price_item .price_header {
+        font-size: 20px;
+    }
+    section.price .price_item .price_inform_wrapper,
+    section.purchase .price_item .price_inform_wrapper {
+        padding: 22px 18px 28px 16px !important;
+    }
+    section.price .price_item .price_inform_wrapper .price_inform,
+    section.purchase .price_item .price_inform_wrapper .price_inform {
+        padding: 0;
+        font-size: 15px;
+    }
+    section.price .price_item .price_inform_wrapper .price_inform p,
+    section.purchase .price_item .price_inform_wrapper .price_inform p {
+        margin-bottom: 23px;
+    }
+    section.price .price_item .price_inform_wrapper .cost_wrapper .cost,
+    section.purchase .price_item .price_inform_wrapper .cost_wrapper .cost {
+        font-size: 41px;
+    }
+    section.price .price_item .price_inform_wrapper .cost_wrapper .cost_date,
+    section.purchase .price_item .price_inform_wrapper .cost_wrapper .cost_date {
+        font-size: 16px;
+    }
+    section.price .price_item .price_inform_wrapper .price_button,
+    section.purchase .price_item .price_inform_wrapper .price_button {
+        font-size: 16px;
+        height: 58px;
+        line-height: 58px;
+    }
+    section.price .price_item .price_inform_wrapper .discount span strong,
+    section.purchase .price_item .price_inform_wrapper .discount span strong {
+        font-family: "AvenirNextW1G-Bold";
+        display: block;
+    }
+    section.price .price_item2,
+    section.purchase .price_item2 {
+        margin-left: 0;
+    }
+    section.price .price_item2 .price_inform_wrapper .price_button,
+    section.purchase .price_item2 .price_inform_wrapper .price_button {
+        padding-right: 30px;
+    }
+    section.price .price_item2 .price_inform_wrapper .price_button:after,
+    section.purchase .price_item2 .price_inform_wrapper .price_button:after {
+        margin: -18px 0 0 60px;
+    }
+    section.warning {
+        padding: 28px 0 44px 0e;
+    }
+    section.warning .warning_wrapper {
+        font-size: 16px;
+        padding: 0;
+        text-align: center;
+    }
+    section.warning .warning_title {
+        margin-bottom: 28px;
+    }
+    section.discount .discount_inform_wrapper .discount_inform {
+        font-size: 16px;
+    }
+}
