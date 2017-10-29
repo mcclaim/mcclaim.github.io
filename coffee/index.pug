@@ -1,0 +1,208 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="utf-8")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1')
+		meta(name='MobileOptimized', content='width')
+		meta(name='HandheldFriendly', content='true')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='msapplication-tap-highlight', content='no')
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Кофейная машина
+		link(href="css/bootstrap.min.css" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+		| <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+		| <!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
+	body
+		header
+			.container
+				.header_inform_wrapper
+					.header_inform Аренда кофемашины Unicum Nero в Москве
+					.header_tel_wrapper
+						.header_tel 8-800-550-41-20
+						a(href="javascipt:void(0);").btn_link Заказать звонок
+		section.main_header_wrapper
+			.container
+				.main_header
+					.main_header_title_wrap
+						.header_coffe_machine_img
+							img(src="images/header_machine.png")
+						.main_header_title
+							h2 Ароматные напитки для Ваших клиентов каждый день
+					.header_coffe_cup
+						img(src="images/cup.png")
+			.form_container
+				.container
+					.form_field_wrapper
+						form(action="send.php")
+							.form_field
+								.form_field_title АКЦИЯ!
+								.form_field_text
+									p 
+										| Оставьте заявку на аренду кофемашины 
+										strong Unicum Nero  
+										| и мы проведем для Вас расчёт прибыли 
+							.form_inputs
+								input(type="text" placeholder="Ваше имя" name="name" required="required")
+								input(type="text" placeholder="Номер телефона" name="phone" required="required")
+								input(type="submit" value="Получить предложение!")
+		section.workpiece_wrapper
+			.container
+				.workpiece_item.item1
+					.workpiece_item_text
+						.workpiece_item_title Предоставляем кофемашину, а обслуживание берём на себя!
+						p Специалисты нашей компании привезут кофемашину, установят и подключат её в указанном месте, проинструктируют ваших сотрудников о том, как пользоваться кофемашиной. Мы выполняем доставку всех необходимых ингредиентов абсолютно бесплатно, и предоставляем сервисное обслуживание. Вы платите только за необходимые компоненты, которые периодически будете заказывать у нас.
+
+					.workpiece_item_img
+						img(src="images/coffe_beance.png")
+
+				.workpiece_item.item2
+					.workpiece_item_img
+						img(src="images/coffe.png")
+					.workpiece_item_text
+						.workpiece_item_title Кофе готовится легко и быстро
+						p Unicum Nero предельно проста в использовании, всего лишь двойное нажатие на клавишу и через 20 секунд напиток готов. Ваши сотрудники легко обучатся и смогут самостоятельно готовить напитки. Ароматный напиток варится быстро, что необходимо в условиях постоянной загруженности – в пекарнях, на АЗС, в продуктовых магазинах и других заведениях. Кофемашина не займет много места даже в небольшом помещении. Кофемашина станет отличным дополнением для вашего бизнеса.
+
+		section.main_header_wrapper.free
+			.container
+				.main_header
+					.main_header_title_wrap
+						.header_coffe_machine_img.hand_img
+							img(src="images/hand.png")
+						.main_header_title
+							h2 Бесплатная дегустация кофе в нашем офисе
+							.main_header_text
+								p Чтобы убедиться в том, что кофе приготовленный автоматом Unicum Nero, качественный и вкусный, мы предлагаем Вам воспользоваться бесплатной дегустацией в нашем офисе. Вы можете приехать в назначенное время, чтобы  оценить качество эспрессо, американо, капучино, мокачино ванили. Мы гарантируем, что Вам понравится вкус наших напитков, так как мы используем ингредиенты высокого качества из Италии и Германии.
+			.form_container
+				.container
+					.form_field_wrapper
+						form
+							.form_inputs
+								input(type="text" placeholder="Ваше имя" name="name" required="required")
+								input(type="text" placeholder="Номер телефона" name="phone" required="required")
+								input(type="submit" value="Хочу на дегустацию!")
+		section.advantage_wrapper
+			.container
+				h3 Возможности профессиональной кофемашины:
+				h4 Модель «Unicum Nero Espresso»
+				.advantage_container
+					.advantage_item_container
+						.advantage_item.item1
+							.advantage_item_title Статистика потребления напитков на Вашем телефоне
+							.advantage_item_text 
+								p С помощью установленного модема вы можете контролировать продажи напитков дистанционно.
+						.advantage_item.item2
+							.advantage_item_title Автомат создан по технологии ICT
+							.advantage_item_text 
+								p Технология идеальной чашки кофе, отвечающая за отличное качество напитков.
+						.advantage_item.item3
+							.advantage_item_title Мощность и скорость
+							.advantage_item_text 
+								p 
+									| Время приготовления напитка: 
+									br
+									| 18 - 19 сек. Легко приготовить 150 чашек в час любого из 10 напитков
+					.advantage_item_container.container_img
+						.advantage_img
+							img(src="images/advantage/machine_section.png")
+					.advantage_item_container
+						.advantage_item.item4
+							.advantage_item_title Размеры автомата
+							.advantage_item_text 
+								p 
+									|Высота: 830 мм
+									br
+									|Ширина: 380 мм
+									br
+									|Глубина: 476 мм
+						.advantage_item.item5
+							.advantage_item_title Ваша персональная кофемашина
+							.advantage_item_text 
+								p Nero специально разработан для индустрии общественного питания - кафе, ресторанов, отелей (HoReCa)
+				a(href="javascript:void(0);").link Узнать подробнее
+
+		section.video_block_wrapper
+			.container
+				.video_block_title 
+					span Посмотрите видео 
+					| о кофемашинах «Unicum Nero Espresso»
+				.inform_video
+					#video_wrap
+						img(title="Кофемашина" alt="Кофемашина" src="images/youtube_img.png")
+					a(href="javascript:void(0);" onClick="setVideo()").play
+
+		section.clients_wrapper
+			.container
+				h3 Наши клиенты
+				.client_item_wrapper
+					.client_item
+						.client_img
+							img(src="images/our_clients/client1.png")
+							.client_thumb
+								img(src="images/our_clients/client1_icon.png")
+
+					.client_item
+						.client_img
+							img(src="images/our_clients/client2.png")
+							.client_thumb
+								img(src="images/our_clients/client2_icon.png")
+
+					.client_item
+						.client_img
+							img(src="images/our_clients/client3.png")
+							.client_thumb
+								img(src="images/our_clients/client3_icon.png")
+
+					.client_item
+						.client_img
+							img(src="images/our_clients/client4.png")
+							.client_thumb
+								img(src="images/our_clients/client4_icon.png")
+
+					.client_item
+						.client_img
+							.client_thumb
+								img(src="images/our_clients/client5_icon.png")
+
+					.client_item
+						.client_img
+							.client_thumb
+								img(src="images/our_clients/client6_icon.png")
+
+		section.footer
+			.container
+				.footer_service_container
+					.footer_service_inform
+						h3 Кофейный сервис для Вашего бизнеса ПОД КЛЮЧ
+						ul
+							li Бесплатная аренда кофе-автомата
+							li Вы сами определяете расход ингредиентов
+							li Средняя себестоимость напитка — 28 рублей
+					.footer_service_form
+						form(action="send.php")
+							.form_inform
+								span Оставьте заявку
+								p и наш менеджер предложит вам лучшие условия сотрудничества.
+							.form_inputs
+								input(type="text" class="name" name="name" placeholder="Ваше имя" required="required")
+								input(type="text" class="phone" name="phone" placeholder="Номер телефона" required="required")
+							input(type="submit" value="Получить расчёт")
+		.container
+			footer
+				.footer_inform
+					p 
+						|ООО "Инспиред-сэйл". Россия, 109052, Москва, ул. Смирновская, д. 25, стр. 8
+						br
+						strong 8-800-550-41-20
+				.footer_social
+					.footer_social_inform Мы в соцсетях —
+					.footer_social_links
+						a(href="javascript:void(0)").vk
+						a(href="javascript:void(0)").yb
+						a(href="javascript:void(0)").in
+
+
+
+		script(src="js/jquery.min.js")
+		script(src="js/main.js")
