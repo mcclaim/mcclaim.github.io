@@ -36,6 +36,8 @@ $(document).ready(function() {
 	    $("input[name='phone']").keydown(function(event) {
 	        // Разрешаем нажатие клавиш backspace, Del, Tab и Esc
 	        if ( event.keyCode == 46 || event.keyCode == 107 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 ||
+	             // Разрешаем Shift + 
+	            (event.shiftKey === true && event.keyCode == 187) ||
 	             // Разрешаем выделение: Ctrl+A
 	            (event.keyCode == 65 && event.ctrlKey === true) ||
 	             // Разрешаем клавиши навигации: Home, End, Left, Right
