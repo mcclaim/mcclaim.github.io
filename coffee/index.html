@@ -18,7 +18,7 @@
         <div class="header_inform_wrapper">
           <div class="header_inform">Аренда кофемашины Unicum Nero в Москве</div>
           <div class="header_tel_wrapper">
-            <div class="header_tel">8-800-550-41-20</div><a class="btn_link" href="javascipt:void(0);">Заказать звонок</a>
+            <div class="header_tel">8-800-550-41-20</div><a class="btn_link" href="#feedback" id="feedback_btn">Заказать звонок</a>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@
               </div>
               <div class="form_inputs">
                 <input type="text" placeholder="Ваше имя" name="name" required="required">
-                <input type="text" placeholder="Номер телефона" name="phone" required="required">
+                <input type="text" placeholder="Номер телефона" name="phone" title="Например: +7 495 974-19-26" pattern=".{12}" required="required">
                 <input type="submit" value="Получить предложение!">
               </div>
             </form>
@@ -94,7 +94,7 @@
             <form>
               <div class="form_inputs">
                 <input type="text" placeholder="Ваше имя" name="name" required="required">
-                <input type="text" placeholder="Номер телефона" name="phone" required="required">
+                <input type="text" placeholder="Номер телефона" name="phone" title="Например: +7 495 974-19-26" pattern=".{12}" required="required">
                 <input type="submit" value="Хочу на дегустацию!">
               </div>
             </form>
@@ -205,14 +205,14 @@
               <li>Средняя себестоимость напитка — 28 рублей</li>
             </ul>
           </div>
-          <div class="footer_service_form">
+          <div class="footer_service_form" id="feedback">
             <form>
               <div class="form_inform"><span>Оставьте заявку</span>
                 <p>и наш менеджер предложит вам лучшие условия сотрудничества.</p>
               </div>
               <div class="form_inputs">
                 <input class="name" type="text" name="name" placeholder="Ваше имя" required="required">
-                <input class="phone" type="text" name="phone" placeholder="Номер телефона" required="required">
+                <input class="phone" type="text" name="phone" title="Например: +7 495 974-19-26" pattern=".{12}" placeholder="Номер телефона" required="required">
               </div>
               <input type="submit" value="Получить расчёт">
             </form>

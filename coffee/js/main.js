@@ -52,6 +52,14 @@ $(document).ready(function() {
 	        }
 	    });
 
+    // Спуск до якоря
+    $(document).on("click","a#feedback_btn", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+      top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1100);
+    });
+
 });
 function setVideo() {
 	$('.inform_video a.play').remove();

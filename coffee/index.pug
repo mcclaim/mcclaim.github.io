@@ -21,7 +21,7 @@ html(lang="ru-Ru")
 					.header_inform Аренда кофемашины Unicum Nero в Москве
 					.header_tel_wrapper
 						.header_tel 8-800-550-41-20
-						a(href="javascipt:void(0);").btn_link Заказать звонок
+						a(href="#feedback")#feedback_btn.btn_link Заказать звонок
 		section.main_header_wrapper
 			.container
 				.main_header
@@ -45,7 +45,7 @@ html(lang="ru-Ru")
 										| и мы проведем для Вас расчёт прибыли 
 							.form_inputs
 								input(type="text" placeholder="Ваше имя" name="name" required="required")
-								input(type="text" placeholder="Номер телефона" name="phone" required="required")
+								input(type="text" placeholder="Номер телефона" name="phone" title="Например: +7 495 974-19-26" pattern=".{12}" required="required")
 								input(type="submit" value="Получить предложение!")
 		section.workpiece_wrapper
 			.container
@@ -80,7 +80,7 @@ html(lang="ru-Ru")
 						form
 							.form_inputs
 								input(type="text" placeholder="Ваше имя" name="name" required="required")
-								input(type="text" placeholder="Номер телефона" name="phone" required="required")
+								input(type="text" placeholder="Номер телефона" name="phone" title="Например: +7 495 974-19-26" pattern=".{12}" required="required")
 								input(type="submit" value="Хочу на дегустацию!")
 		section.advantage_wrapper
 			.container
@@ -179,14 +179,14 @@ html(lang="ru-Ru")
 							li Бесплатная аренда кофе-автомата
 							li Вы сами определяете расход ингредиентов
 							li Средняя себестоимость напитка — 28 рублей
-					.footer_service_form
+					.footer_service_form#feedback
 						form
 							.form_inform
 								span Оставьте заявку
 								p и наш менеджер предложит вам лучшие условия сотрудничества.
 							.form_inputs
 								input(type="text" class="name" name="name" placeholder="Ваше имя" required="required")
-								input(type="text" class="phone" name="phone" placeholder="Номер телефона" required="required")
+								input(type="text" class="phone" name="phone"  title="Например: +7 495 974-19-26" pattern=".{12}" placeholder="Номер телефона" required="required")
 							input(type="submit" value="Получить расчёт")
 		.container
 			footer
