@@ -45,7 +45,7 @@ html(lang="ru-Ru")
 										| и мы проведем для Вас расчёт прибыли 
 							.form_inputs
 								input(type="text" placeholder="Ваше имя" name="name" required="required")
-								input(type="text" placeholder="Номер телефона" name="phone" title="Например: +7 495 974-19-26" pattern=".{12}" required="required")
+								input(type="text" placeholder="Номер телефона" name="phone" title="Например: +7 495 974-19-26" pattern=".{12}" maxlength="12" required="required")
 								input(type="submit" value="Получить предложение!")
 		section.workpiece_wrapper
 			.container
@@ -80,7 +80,7 @@ html(lang="ru-Ru")
 						form
 							.form_inputs
 								input(type="text" placeholder="Ваше имя" name="name" required="required")
-								input(type="text" placeholder="Номер телефона" name="phone" title="Например: +7 495 974-19-26" pattern=".{12}" required="required")
+								input(type="text" placeholder="Номер телефона" name="phone" title="Например: +7 495 974-19-26" pattern=".{12}" maxlength="12" required="required")
 								input(type="submit" value="Хочу на дегустацию!")
 		section.advantage_wrapper
 			.container
@@ -186,7 +186,7 @@ html(lang="ru-Ru")
 								p и наш менеджер предложит вам лучшие условия сотрудничества.
 							.form_inputs
 								input(type="text" class="name" name="name" placeholder="Ваше имя" required="required")
-								input(type="text" class="phone" name="phone"  title="Например: +7 495 974-19-26" pattern=".{12}" placeholder="Номер телефона" required="required")
+								input(type="text" class="phone" name="phone"  title="Например: +7 495 974-19-26" pattern=".{12}" maxlength="12" placeholder="Номер телефона" required="required")
 							input(type="submit" value="Получить расчёт")
 		.container
 			footer
