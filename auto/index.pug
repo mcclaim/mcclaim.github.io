@@ -1,0 +1,571 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="utf-8")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1')
+		meta(name='MobileOptimized', content='width')
+		meta(name='HandheldFriendly', content='true')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='msapplication-tap-highlight', content='no')
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Ремонт авто
+		link(href="css/bootstrap.min.css" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+		| <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+		| <!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
+	body
+		.fixed_number
+			a(href="tel: +78432393590") +7 (843) 239 35 90
+		header
+			.slider_absolute
+				.slider__wrapper
+					.slider_item
+						.slider_img(style="background-image: url(images/slider/1.png);")
+							
+					.slider_item
+						.slider_img(style="background-image: url(images/slider/2.png);")
+							
+					.slider_item
+						.slider_img(style="background-image: url(images/slider/3.png);")
+
+					.slider_item
+						.slider_img(style="background-image: url(images/slider/4.png);")
+
+					.slider_item
+						.slider_img(style="background-image: url(images/slider/5.png);")
+
+					.slider_item
+						.slider_img(style="background-image: url(images/slider/6.png);")
+
+					.slider_item
+						.slider_img(style="background-image: url(images/slider/7.png);")
+			
+			.container
+				.header_top_container
+					.header_top_wrapper
+						.header_logo
+							a(href="javascript:void(0);")
+								img(src="images/logo.png")
+						.header_text
+							p Технический центр обслуживания авто с официальной дилерской поддержкой General Motors
+						.header_feedback
+							span.phone +7 (843) 239 35 90
+							a(href="tel: +78432393590").btn_link ОБРАТНЫЙ ЗВОНОК
+
+					h1 РЕМОНТ И ОБСЛУЖИВАНИЕ АВТО НЕМЕЦКИХ МАРОК И GM
+					h4 Полная диагностика автомобиля за 30 минут
+					.header_link
+						a(href="javascript:void(0);").btn_link Честная оценка
+					.promo_text_wrap
+						.promo_title 
+							span Видеозапись 
+							| с найденными недостатками и рекомендациями мастера
+						.promo_text В подарок!
+		
+		.container
+			section.feedback
+				.feedback_title Что-то беспокоит в работе вашего автомобиля?
+				.feedback_text 
+					p Оставьте свой номер телефона и мы перезвоним вам в течение 15 минут, чтобы сориентировать вас по стоимости ремонта:
+				form(action="send.php")
+					input(type="text" class="tell" title="+7 (999) 999-99-99" name="phone" placeholder="+7 (___) ___-__-__" required="required")
+					input(type="hidden" name="Что-то беспокоит в работе вашего автомобиля?" value="Что-то беспокоит в работе вашего автомобиля?")
+					input(type="submit" value="Отправить")
+				.feedback_privacy
+					p 
+						| Нажимая на кнопку, вы даете согласие на 
+						a(href="policy.pdf") обработку 
+						|своих персональных данных.
+
+		section.trust_wrapper
+			.container
+				h3 АВТОВЛАДЕЛЬЦЫ ДОВЕРЯЮТ НАШИМ МАСТЕРАМ
+				.trust_because_wrapper
+					.trust_because_title Потому что:
+					.row
+						.col-xs-12.col-sm-6.col-md-3
+							.trust_item
+								.trust_item_title 25 лет
+								.trust_item_text
+									p Четверть века работаем в ремонтном сервисе с автомобилями GM
+
+						.col-xs-12.col-sm-6.col-md-3
+							.trust_item
+								.trust_item_title Более 50 000
+								.trust_item_text
+									p Автомобилей отремонтировано за все время
+
+						.col-xs-12.col-sm-6.col-md-3
+							.trust_item
+								.trust_item_title 7 лет
+								.trust_item_text
+									p Стедний стаж мастеров. Каждые полгода все проходят переаттестацию
+
+						.col-xs-12.col-sm-6.col-md-3
+							.trust_item
+								.trust_item_title 55
+								.trust_item_text
+									p Человек работает в автоцентре - у нас нет текучки кадров
+
+		section.services_wrapper
+			.container
+				h3 
+					| УСЛУГИ
+					br
+					| АВТОСЕРВИСА
+
+				.services_item_wrapper
+					.row
+						.col-xs-12.col-sm-6.col-md-4
+							.services_item
+								.services_inform
+									.services_item_title Ремонтные работы
+									.services_item_text 
+										p Ходовой части, узлов, рулевых реек, генератора, двигателя, системы охлаждения, топливной системы, АКП, электрооборудования
+								.services_item_img
+									img(src="images/services/services_item1.jpg")
+								.services_item_link
+									a(href="javascript:void(0);") Подробнее...
+
+						.col-xs-12.col-sm-6.col-md-4
+							.services_item
+								.services_inform
+									.services_item_title Кузовные работы
+									.services_item_text 
+										p Ремонт любой сложности Восстановление геометрии кузова Экспресс-ремонт Устранение вмятин
+								.services_item_img
+									img(src="images/services/services_item2.jpg")
+								.services_item_link
+									a(href="javascript:void(0);") Подробнее...
+
+						.col-xs-12.col-sm-6.col-md-4
+							.services_item
+								.services_inform
+									.services_item_title Косметические работы
+									.services_item_text 
+										p 
+											| Локальная или полная покраска кузова/деталей 
+											br 
+											| Восстановление защитного покрытия
+								.services_item_img
+									img(src="images/services/services_item3.jpg")
+								.services_item_link
+									a(href="javascript:void(0);") Подробнее...
+
+						.col-xs-12.col-sm-6.col-md-4
+							.services_item
+								.services_inform
+									.services_item_title Техобслуживание
+									.services_item_text 
+										p Регулярное техническое обслуживание легковых автомобилей, замена масла, жидкостей, тормозных колодок
+								.services_item_img
+									img(src="images/services/services_item4.jpg")
+								.services_item_link
+									a(href="javascript:void(0);") Подробнее...
+
+						.col-xs-12.col-sm-6.col-md-4
+							.services_item
+								.services_inform
+									.services_item_title Компьютерная диагностика
+									.services_item_text 
+										p 
+											| Ходовой части
+											br 
+											| Систем охлаждения
+											br 
+											| Топливной системы
+											br 
+											| Электрооборудования
+
+								.services_item_img
+									img(src="images/services/services_item5.jpg")
+								.services_item_link
+									a(href="javascript:void(0);") Подробнее...
+
+						.col-xs-12.col-sm-6.col-md-4
+							.services_item
+								.services_inform
+									.services_item_title Регулировка сход/развал
+									.services_item_text 
+										p Выполнение регулировки развала-схождения, которые допустимы для конкретной марки авто
+								.services_item_img
+									img(src="images/services/services_item6.jpg")
+								.services_item_link
+									a(href="javascript:void(0);") Подробнее...
+
+		section.and_more_wrapper
+			.container
+				h3 А ТАКЖЕ
+				.and_more_item.item1
+					.and_more_title Шиномонтаж
+					.and_more_text 
+						p 
+							| Замена колес различного диаметра, в том числе из низкопрофильной резины.
+							br
+							| Ремонт камер и шин.
+							br
+							| Сварка литых дисков при мелких трещинах или отсутствии фрагментов.
+					.and_more_img
+						img(src="images/and_more/and_item1.jpg")
+
+				.and_more_item.item2
+					.and_more_title 
+						| Мойка, химчистка, 
+						br 
+						| полировка
+					.and_more_text 
+						p 
+							| Мойка кузова воддотталкивающим шампунем, полировка, устранение битумных пятен.
+							br
+							| Мойка двигателя с защитным веществом.
+							br
+							| Сухая и основная чистка салона, выведение пятен, приведение в порядок   поверхностей из кожи и пластика.
+							br
+							| Полировка кузова и фар, обновление лакокрасочного покрытия, улучшение внешнего вида автомобиля.
+					.and_more_img
+						img(src="images/and_more/and_item2.jpg")
+
+		.container
+			section.feedback
+				.feedback_title Что-то беспокоит в работе вашего автомобиля?
+				.feedback_text 
+					p Оставьте свой номер телефона и мы перезвоним вам в течение 15 минут, чтобы сориентировать вас по стоимости ремонта:
+				form(action="send.php")
+					input(type="text" class="tell" title="+7 (999) 999-99-99" name="phone" placeholder="+7 (___) ___-__-__" required="required")
+					input(type="hidden" name="Что-то беспокоит в работе вашего автомобиля?" value="Что-то беспокоит в работе вашего автомобиля?")
+					input(type="submit" value="Отправить")
+				.feedback_privacy
+					p 
+						| Нажимая на кнопку, вы даете согласие на 
+						a(href="policy.pdf") обработку 
+						|своих персональных данных.
+
+		section.client_wrapper
+			.container
+				.client_title
+					h3 БОЛЕЕ 2/3 НАШИХ КЛИЕНТОВ РЕКОМЕНДУЮТ НАС СВОИМ РОДНЫМ И ДРУЗЬЯМ
+					.client_subtitle
+						| И это неспроста. 
+						br
+						| Оцените свои преимущества:
+
+				.client_item_wrapper
+					.row
+						.col-xs-12.col-sm-6.col-md-4
+							.client_item
+								.client_item_img
+									img(src="images/client/client_item1.jpg")
+								.client_item_inform
+									.client_item_title 26 постов
+									.client_item_text
+										p Благодаря большой площади техцентра мы можем вас принять в любое время без записи и очереди - приезжайте и сразу ставьте авто на ремонт или обслуживание
+
+						.col-xs-12.col-sm-6.col-md-4
+							.client_item
+								.client_item_img
+									img(src="images/client/client_item2.jpg")
+								.client_item_inform
+									.client_item_title 95%
+									.client_item_text
+										p Всех ремонтов заканчиваем в тот же день. Пока автомобиль в ремонте, отдохните в уютном кафе, воспользуйтесь Wi-Fi или посмотрите TV, либо займитесь своими делами.
+
+						.col-xs-12.col-sm-6.col-md-4
+							.client_item
+								.client_item_img
+									img(src="images/client/client_item3.jpg")
+								.client_item_inform
+									.client_item_title Точный срок
+									.client_item_text
+										p После проведения диагностики вы получаете точный срок по ремонту авто - рассчитывайте свое время с максимальной эффективностью. По окончанию ремонта мы перезвоним вам.
+
+						.col-xs-12.col-sm-6.col-md-4
+							.client_item
+								.client_item_img
+									img(src="images/client/client_item4.jpg")
+								.client_item_inform
+									.client_item_title Удобное расположение
+									.client_item_text
+										p В центре Москвы, на Садовом кольце, в Замоскворечье. В центре - не значит дороже. Оказываем дилерские услуги по ценам ниже официальных и не нужно ехать на окраину.
+
+						.col-xs-12.col-sm-6.col-md-4
+							.client_item
+								.client_item_img
+									img(src="images/client/client_item5.jpg")
+								.client_item_inform
+									.client_item_title Запчасти в наличии
+									.client_item_text
+										p На собственном складе   запчасти  всегда в наличии, в том числе редкие. Мы быстро подберем необходимые компалектующие для вашего авто - не теряйте время на поиск нужной детали.
+
+						.col-xs-12.col-sm-6.col-md-4
+							.client_item
+								.client_item_img
+									img(src="images/client/client_item6.jpg")
+								.client_item_inform
+									.client_item_title Надёжные гарантии
+									.client_item_text
+										p 
+											| На слесарный ремонт - 2 года
+											br
+											| На кузовной ремонт - бессрочно
+											br
+											| На запасные части - 2 месяца.
+											br
+											| Если у вас возникли претензии к нашей работе - устраняем ошибки за свой счет.
+
+		.container
+			section.maximal_diag_wrapper
+				.maximal_img
+					img(src="images/maximal.jpg")
+
+				.maximal_title Максимальная точность диагностики
+				.maximal_text
+					p Всего 30 минут нам надо для того, чтобы поставить точный диагноз вашему авто. Использование новейшего компьютерного оборудования сводит на нет % ошибок.
+
+				.maximal_title.title_warning ВНИМАНИЕ НОВИНКА!
+				.maximal_text
+					p После проведения диагностики вы получаете видеоролик с найденными недостатками и рекомендациями мастера по их устранению. Вы сможете посмотреть его сразу на своем телефоне или планшете, либо дома на компьютере. Теперь вы четко понимаете, чего вам еще ожидать от своего стального друга.
+
+		.container
+			section.feedback
+				.feedback_title Хотите получить полную разверную диагностику своего автомобиля и видеозапись с найденными недостатками и рекомендациями мастера 
+					span БЕСПЛАТНО?
+				.feedback_text 
+					p 
+						| Просто оставьте свой номер телефона и мы перезвоним вам, 
+						br
+						| чтобы пригласить в наш техцентр.
+				form(action="send.php")
+					input(type="text" class="tell" title="+7 (999) 999-99-99" name="phone" placeholder="+7 (___) ___-__-__" required="required")
+					input(type="hidden" name="Хотите получить полную разверную диагностику своего автомобиля и видеозапись с найденными недостатками и рекомендациями мастера БЕСПЛАТНО?" value="Хотите получить полную разверную диагностику своего автомобиля и видеозапись с найденными недостатками и рекомендациями мастера БЕСПЛАТНО?")
+					input(type="submit" value="Отправить")
+				.feedback_privacy
+					p 
+						| Нажимая на кнопку, вы даете согласие на 
+						a(href="policy.pdf") обработку 
+						|своих персональных данных.
+
+		section.look_wrapper
+			.container
+				.look_container
+					h3 ПОСМОТРИТЕ КАК МЫ СПРАВЛЯЕМСЯ СО СЛОЖНЫМ РЕМОНТОМ
+					.row
+						.col-xs-12.col-sm-6.col-md-3.col-lg-4
+							.look_img
+								.look_img_title До
+								img(src="images/look_before.jpg")
+
+						.col-xs-12.col-sm-6.col-md-3.col-lg-4
+							.look_img
+								.look_img_title После
+								img(src="images/look_after.jpg")
+
+						.col-xs-12.col-sm-12.col-md-5.col-lg-4
+							.look_item
+								.look_item_title Кузовной ремонт
+								.look_item_title_inform
+									p
+										span Срок выполнения: 
+										| 3 дня
+										br
+										span Стоимость: 
+										| 14 500 руб.
+
+								.look_item_subtitle Выполненные работы:
+								ul
+									li - Устранение вмятин и деформаций
+									li - Ремонт заднего бампера
+									li - Окраска заднего бампера
+									li - Полировка бампера, фар
+
+								a(href="javascript:void(0);").btn_link Сколько стоит мой ремонт
+
+		section.speak_with_wrapper
+			.container
+				.speak_with_container
+					h3 ГОВОРИМ С ВАМИ НА ОДНОМ ЯЗЫКЕ
+					.speak_with_subtitle
+						| Особенно актуально
+						br
+						| для девушек и новичков
+					.speak_with_img
+						img(src="images/speak.png")
+
+					.speak_with_text
+						p Вас никто не будет грузить непонятными техническими терминами - все покажем и расскажем простым языком, понятным даже тем, кто совсем не разбирается в деталях автомобиля.
+						p Вы не услышите ни одного неприличного слова из уст автомехаников - с этим у нас очень строго.
+						p И, конечно же, вас встретит приветливый и опрятный персонал.
+
+		section.mechanics_wrapper
+			.container
+				h3 
+					| О ВАШЕМ АВТОМОБИЛЕ
+					br
+					| С ЛЮБОВЬЮ ПОЗАБОТЯТСЯ
+
+				.mechanics_item_wrapper
+					.row
+						.col-xs-12.col-sm-6
+							.mechanics_item
+								.mechanics_item_img
+									img(src="images/mechanics/mechanics_item1.jpg")
+								.mechanics_inform
+									.mechanic_name 
+										span.last_name Васильев 
+										| Роман Викторович
+									.mechanic_position_wrap
+										.mechanic_position 
+											span Должность:
+											|  автомеханик
+										.mechanic_experience
+											span Стаж работы: 
+											|  18 лет
+
+						.col-xs-12.col-sm-6
+							.mechanics_item
+								.mechanics_item_img
+									img(src="images/mechanics/mechanics_item2.jpg")
+								.mechanics_inform
+									.mechanic_name 
+										span Куль 
+										| Дмитрий
+									.mechanic_position_wrap
+										.mechanic_position 
+											span Должность:
+											|  моторист
+										.mechanic_experience
+											span Стаж работы: 
+											|  12 лет
+
+						.col-xs-12.col-sm-6
+							.mechanics_item
+								.mechanics_item_img
+									img(src="images/mechanics/mechanics_item3.jpg")
+								.mechanics_inform
+									.mechanic_name 
+										span Степанов 
+										| Виктор
+									.mechanic_position_wrap
+										.mechanic_position 
+											span Должность:
+											|  автомеханик
+										.mechanic_experience
+											span Стаж работы: 
+											|  10 лет
+
+						.col-xs-12.col-sm-6
+							.mechanics_item
+								.mechanics_item_img
+									img(src="images/mechanics/mechanics_item4.jpg")
+								.mechanics_inform
+									.mechanic_name 
+										span Ефимов 
+										| Дмитрий
+									.mechanic_position_wrap
+										.mechanic_position 
+											span Должность:
+											|  Автомаляр
+										.mechanic_experience
+											span Стаж работы: 
+											|  14 лет
+
+		.container
+			section.feedback.feedback_3
+				.feedback_title Ваш автомобиль требует ремонта или обслуживания?
+				.feedback_text 
+					p 
+						| Оставьте свой номер телефона и мы перезвоним вам в течение 15 минут, 
+						br
+						| чтобы сориентировать вас по стоимости услуг:
+				form(action="send.php")
+					input(type="text" class="tell" title="+7 (999) 999-99-99" name="phone" placeholder="+7 (___) ___-__-__" required="required")
+					input(type="hidden" name="Ваш автомобиль требует ремонта или обслуживания?" value="Ваш автомобиль требует ремонта или обслуживания?")
+					input(type="submit" value="Отправить")
+				.feedback_privacy
+					p 
+						| Нажимая на кнопку, вы даете согласие на 
+						a(href="policy.pdf") обработку 
+						|своих персональных данных.
+
+		section.contact_wrapper
+			.container
+				h3 
+					| ИЛИ 
+					br
+					| ПРИЕЗЖАЙТЕ СРАЗУ
+				.map_container
+					.map_iframe_container.map1
+						.map_info
+							.info_contact
+								span Техцентр AUTOHOFF 
+								| г. Москва, м. Павелецкая 
+								br
+								| Шлюзовая наб., д.2/1, стр. 1 
+
+							.info_mode
+								span Режим работы:
+								| с 8.00 до 21.00
+
+							.info_orientation 
+								.info_orientation_text Садовое кольцо между Павелецкой и Таганской  - Зацепский вал д. 5
+
+						
+						.map
+							//- #map1
+							iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.58298458264!2d37.63420031598225!3d55.73099900114077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b1e93f4fadf%3A0xab3f8a363e6d3f7c!2z0J_QsNCy0LXQu9C10YbQutCw0Y8!5e0!3m2!1sru!2s!4v1509953870424" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen)
+
+					.map_iframe_container.map2
+						.map_info
+							.info_contact
+								span ТНЕЙДИНВЕСТ
+								| г. Москва, Павелецкая, 
+								br
+								| ул.Зацепский Вал 1/2 стр.6
+
+							.info_mode
+								span Режим работы:
+								| с 8.00 до 21.00
+
+							.info_orientation
+								.info_orientation_text Лефортово, Волочаевская 12
+
+						.map
+							//- #map1
+							iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.58298458264!2d37.63420031598225!3d55.73099900114077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b1e93f4fadf%3A0xab3f8a363e6d3f7c!2z0J_QsNCy0LXQu9C10YbQutCw0Y8!5e0!3m2!1sru!2s!4v1509953870424" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen)
+		
+		.container
+			section.feedback.not_to_score
+				.feedback_title И не забудьте сказать нашему менеджеру, что хотите получить полную компьютерную дагностику автомобиля 
+					span БЕСПЛАТНО!
+		
+		section.footer
+			.container
+				.footer_container
+					.footer_item1
+						a(href="javascript:void(0);")
+							img(src="images/logo.png")
+						.job_time
+							span.time_title Режим работы:
+							br
+							| ежедневно с 
+							span 9:00 
+							| до 
+							span 21:00
+
+					.footer_item2
+						span.phone +7 (843) 239 35 90
+						a(href="tel: +78432393590").btn_link ОБРАТНЫЙ ЗВОНОК
+
+		footer
+			.container
+				.footer_policify_wrapper
+					.copyright
+						span © 2011-2017 OOO «General Motors». Все права защищены.
+					.policify
+						a(href="/policy.pdf") Политика обработки персональных данных
+
+		script(src="js/jquery.min.js")
+		script(src="js/slick.min.js")
+		script(src="js/jquery.maskedinput.min.js")
+		//- script(src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY")
+		script(src="js/main.js")

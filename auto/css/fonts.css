@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Akrobat-SemiBold';
+  src: url('../fonts/Akrobat-SemiBold.woff') format('woff'),
+       url('../fonts/Akrobat-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akrobat-ExtraBold';
+  src: url('../fonts/Akrobat-ExtraBold.woff') format('woff'),
+       url('../fonts/Akrobat-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akrobat-Black';
+  src: url('../fonts/Akrobat-Black.woff') format('woff'),
+       url('../fonts/Akrobat-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akrobat-Regular';
+  src: url('../fonts/Akrobat-Regular.woff') format('woff'),
+       url('../fonts/Akrobat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
