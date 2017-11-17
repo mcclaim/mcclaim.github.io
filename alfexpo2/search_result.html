@@ -64,9 +64,8 @@
                 <ul>
                   <li class="active"><a href="/">Главная</a></li>
                   <li><a href="cooperation.html">Сотрудничество</a></li>
-                  <li><a href="#">Условия</a></li>
-                  <li><a href="#">О компании</a></li>
-                  <li><a href="products_from.html">Товары из США</a></li>
+                  <li><a href="conditions.html">Условия</a></li>
+                  <li><a href="about_company.html">О компании</a></li>
                   <li><a href="delivery.html">Доставка</a></li>
                   <li><a href="contacts.html">Контакты</a></li>
                 </ul>
@@ -94,135 +93,141 @@
         </div>
       </div>
     </header>
-    <div class="top_border">
-      <div class="search_wrapper">
-        <div class="search_block_wrapper">
-          <div class="search_block">
-            <form><a class="search_change search_change_main" href="javascript:void(0)" onClick="TAShow()" id="TAShow"><span></span><span></span><span></span></a>
-              <div class="inline_input_form">
-                <div class="input_group">
-                  <input type="text" placeholder="Номер детали" required="required" id="keysearch">
-                  <input type="submit" value="Найти">
-                </div>
+    <div class="search_result_page search_wrapper">
+      <div class="search_top_block">
+        <div class="row">
+          <div class="col-xs-12 col-md-5 col-lg-5">
+            <div class="search_block_wrapper">
+              <div class="search_block">
+                <form><a class="search_change search_change_main" href="javascript:void(0)" onClick="TAShow()" id="TAShow"><span></span><span></span><span></span></a>
+                  <div class="inline_input_form">
+                    <div class="input_group">
+                      <input type="text" placeholder="Введите номер детали" required="required" id="keysearch">
+                      <input type="submit" value=" ">
+                    </div>
+                  </div>
+                </form>
+                <p class="INShow_active">Для поиска нескольких номеров, нажмите на иконку<span class="search_change"> <span></span><span></span><span></span></span>в поле поиска.</p>
+                <p class="TAShow_active">Для поиска одиночных номеров, нажмите на иконку<span class="search_change"> <span></span><span></span></span>в поле поиска.</p>
               </div>
-            </form>
-            <p class="INShow_active">Для поиска нескольких номеров, нажмите на иконку<span class="search_change"> <span></span><span></span><span></span></span>в поле поиска.</p>
-            <p class="TAShow_active">Для поиска одиночных номеров, нажмите на иконку<span class="search_change"> <span></span><span></span></span>в поле поиска.</p>
+            </div>
           </div>
-        </div>
-        <div class="search_inform">
-          <p>При заказе по прайсам USA цена за деталь указана без учета доставки из США до России (Москва). Физический вес рассчитывается при поступлении детали, по факту из расчета кг=13 у.е. (рассчитывается по курсу ЦБ на момент выдачи.) Рассчитываемый вес товара- БРУТТО. Учитывайте дополнительно вес коробок, обрешеток, пластиковых и деревянных поддонов, паллетов и других упаковочных средств при перевозке деталей. <a href="javascript:void(0);">Подробнее</a></p>
+          <div class="col-xs-12 col-md-7 col-lg-7">
+            <div class="search_inform">
+              <p>При заказе по прайсам USA цена за деталь указана без учета доставки из США до России (Москва). Физический вес рассчитывается при поступлении детали, по факту из расчета кг=13 у.е. (рассчитывается по курсу ЦБ на момент выдачи.) Рассчитываемый вес товара- БРУТТО. Учитывайте дополнительно вес коробок, обрешеток, пластиковых и деревянных поддонов, паллетов и других упаковочных средств при перевозке деталей. <a href="javascript:void(0);">Подробнее</a></p>
+            </div>
+          </div>
         </div>
         <div class="search_result_changed">
           <p>
              Искомый номер <span>A3461289 </span>заменён на -> <span>A3461285XG </span>-> <span>A3574285XGG</span></p>
         </div>
-        <div class="responsive_table_wrapper search_result_wrapper">
-          <h2>Результаты поиска</h2>
-          <table class="rwd-table table">
-            <thead>
-              <tr>
-                <th>Марка</th>
-                <th>Описание</th>
-                <th>Наличие</th>
-                <th>Срок</th>
-                <th>Поставщик</th>
-                <th>Доставка (1 кг)</th>
-                <th>Цена</th>
-                <th>Кол-во</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-th="Марка"><span class="product_code_inline">A3461289</span> Chrystler</td>
-                <td class="product_code" data-th="Код"> <span>A3461289 </span></td>
-                <td class="product_inform" data-th="Описание"> 
-                  <div class="product_inform_container"><i data-toggle="modal" data-target="#cartModal"></i>BEZEL REMOTE CONTROL Панель управления</div>
-                </td>
-                <td data-th="Наличие">10</td>
-                <td data-th="Срок">10 / 20</td>
-                <td class="product_supplier" data-th="Поставщик">USA
-                  <div>Доплата за вес!</div>
-                </td>
-                <td class="product_delivery" data-th="Доставка (1 кг)">Цена с учётом доставки</td>
-                <td class="product_price" data-th="Цена">$1250</td>
-                <td class="product_count" data-th="Кол-во">
-                  <input class="input_number" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
-                </td>
-                <td class="product_add_to_cart"> 
-                  <input class="add_to_cart" type="submit" value="">
-                </td>
-              </tr>
-              <tr>
-                <td data-th="Марка"><span class="product_code_inline">A3461289</span> Chrystler</td>
-                <td class="product_code" data-th="Код"> <span>A3461289 </span></td>
-                <td class="product_inform" data-th="Описание"> 
-                  <div class="product_inform_container"><i data-toggle="modal" data-target="#cartModal"></i>BEZEL REMOTE CONTROL Панель управления</div>
-                </td>
-                <td data-th="Наличие">10</td>
-                <td data-th="Срок">10 / 20</td>
-                <td class="product_supplier" data-th="Поставщик">USA
-                  <div>Доплата за вес!</div>
-                </td>
-                <td class="product_delivery" data-th="Доставка (1 кг)">Цена с учётом доставки</td>
-                <td class="product_price" data-th="Цена">$1250</td>
-                <td class="product_count" data-th="Кол-во">
-                  <input class="input_number" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
-                </td>
-                <td class="product_add_to_cart"> 
-                  <input class="add_to_cart" type="submit" value="">
-                </td>
-              </tr>
-              <tr>
-                <td data-th="Марка"><span class="product_code_inline">A3461289</span> Chrystler</td>
-                <td class="product_code" data-th="Код"> <span>A3461289 </span></td>
-                <td class="product_inform" data-th="Описание"> 
-                  <div class="product_inform_container"><i data-toggle="modal" data-target="#cartModal"></i>BEZEL REMOTE CONTROL Панель управления</div>
-                </td>
-                <td data-th="Наличие">10</td>
-                <td data-th="Срок">10 / 20</td>
-                <td class="product_supplier" data-th="Поставщик">USA
-                  <div>Доплата за вес!</div>
-                </td>
-                <td class="product_delivery" data-th="Доставка (1 кг)">Цена с учётом доставки</td>
-                <td class="product_price" data-th="Цена">$1250</td>
-                <td class="product_count" data-th="Кол-во">
-                  <input class="input_number" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
-                </td>
-                <td class="product_add_to_cart"> 
-                  <input class="add_to_cart" type="submit" value="">
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="cartModal modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-                  <h4 class="modal-title" id="cartModalLabel">Chrysler <span class="product_code">#A3574285XGG</span></h4>
-                </div>
-                <div class="modal-body">
-                  <div class="product_inform_modal_wrapper">
-                    <div class="row">
-                      <div class="col-xs-12 col-md-6 col-lg-5">
-                        <div class="product_inform_modal_img"><img src="images/products/1.png"></div>
-                      </div>
-                      <div class="col-xs-12 col-md-6 col-lg-7">
-                        <div class="product_inform_modal">
-                          <h5>Описание												</h5>
-                          <div class="product_inform_text"> 
-                            <p>BEREZ REMOTE CONTROL<br>Панель управления</p>
-                          </div>
-                          <h5>Вес											</h5>
-                          <div class="product_inform_text"> 
-                            <p>1, 95 кг</p>
-                          </div>
-                          <h5>Объём											</h5>
-                          <div class="product_inform_text"> 
-                            <p>1, 95 кг</p>
-                          </div>
+      </div>
+      <div class="responsive_table_wrapper search_result_wrapper">
+        <h2>Результаты поиска</h2>
+        <table class="rwd-table table">
+          <thead>
+            <tr>
+              <th>Марка</th>
+              <th>Описание</th>
+              <th>Наличие</th>
+              <th>Срок</th>
+              <th>Поставщик</th>
+              <th>Доставка (1 кг)</th>
+              <th>Цена</th>
+              <th>Кол-во</th>
+              <th> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-th="Марка"><span class="product_code_inline">A3461289</span> Chrystler</td>
+              <td class="product_code" data-th="Код"> <span>A3461289 </span></td>
+              <td class="product_inform" data-th="Описание"> 
+                <div class="product_inform_container"><i data-toggle="modal" data-target="#cartModal"></i>BEZEL REMOTE CONTROL Панель управления</div>
+              </td>
+              <td data-th="Наличие">10</td>
+              <td data-th="Срок">10 / 20</td>
+              <td class="product_supplier" data-th="Поставщик">USA
+                <div>Доплата за вес!</div>
+              </td>
+              <td class="product_delivery" data-th="Доставка (1 кг)">Цена с учётом доставки</td>
+              <td class="product_price" data-th="Цена">$1250</td>
+              <td class="product_count" data-th="Кол-во">
+                <input class="input_number" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+              </td>
+              <td class="product_add_to_cart"> 
+                <input class="add_to_cart" type="submit" value="">
+              </td>
+            </tr>
+            <tr>
+              <td data-th="Марка"><span class="product_code_inline">A3461289</span> Chrystler</td>
+              <td class="product_code" data-th="Код"> <span>A3461289 </span></td>
+              <td class="product_inform" data-th="Описание"> 
+                <div class="product_inform_container"><i data-toggle="modal" data-target="#cartModal"></i>BEZEL REMOTE CONTROL Панель управления</div>
+              </td>
+              <td data-th="Наличие">10</td>
+              <td data-th="Срок">10 / 20</td>
+              <td class="product_supplier" data-th="Поставщик">USA
+                <div>Доплата за вес!</div>
+              </td>
+              <td class="product_delivery" data-th="Доставка (1 кг)">Цена с учётом доставки</td>
+              <td class="product_price" data-th="Цена">$1250</td>
+              <td class="product_count" data-th="Кол-во">
+                <input class="input_number" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+              </td>
+              <td class="product_add_to_cart"> 
+                <input class="add_to_cart" type="submit" value="">
+              </td>
+            </tr>
+            <tr>
+              <td data-th="Марка"><span class="product_code_inline">A3461289</span> Chrystler</td>
+              <td class="product_code" data-th="Код"> <span>A3461289 </span></td>
+              <td class="product_inform" data-th="Описание"> 
+                <div class="product_inform_container"><i data-toggle="modal" data-target="#cartModal"></i>BEZEL REMOTE CONTROL Панель управления</div>
+              </td>
+              <td data-th="Наличие">10</td>
+              <td data-th="Срок">10 / 20</td>
+              <td class="product_supplier" data-th="Поставщик">USA
+                <div>Доплата за вес!</div>
+              </td>
+              <td class="product_delivery" data-th="Доставка (1 кг)">Цена с учётом доставки</td>
+              <td class="product_price" data-th="Цена">$1250</td>
+              <td class="product_count" data-th="Кол-во">
+                <input class="input_number" type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric">
+              </td>
+              <td class="product_add_to_cart"> 
+                <input class="add_to_cart" type="submit" value="">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="cartModal modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+                <h4 class="modal-title" id="cartModalLabel">Chrysler <span class="product_code">#A3574285XGG</span></h4>
+              </div>
+              <div class="modal-body">
+                <div class="product_inform_modal_wrapper">
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-5">
+                      <div class="product_inform_modal_img"><img src="images/products/1.png"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-7">
+                      <div class="product_inform_modal">
+                        <h5>Описание												</h5>
+                        <div class="product_inform_text"> 
+                          <p>BEREZ REMOTE CONTROL<br>Панель управления</p>
+                        </div>
+                        <h5>Вес											</h5>
+                        <div class="product_inform_text"> 
+                          <p>1, 95 кг</p>
+                        </div>
+                        <h5>Объём											</h5>
+                        <div class="product_inform_text"> 
+                          <p>1, 95 кг</p>
                         </div>
                       </div>
                     </div>
@@ -232,23 +237,23 @@
             </div>
           </div>
         </div>
-        <section class="random_company">
-          <h2>SUBARU</h2>
-          <div class="row">
-            <div class="col-xs-12 col-md-4 col-lg-3">
-              <div class="random_company_img"><img src="images/random_company/1.png"></div>
-            </div>
-            <div class="col-xs-12 col-md-8 col-lg-9">
-              <div class="random_company_inform">
-                <p>Субару» (англ. Subaru) — автомобильный бренд компании Fuji Heavy Industries (FHI). Объём производства в 2011 году составил 528 234 легковых и 52 027 коммерческих автомобиля.</p>
-                <p>Основатель и первый президент компании Fuji Heavy Industries Ltd., Кэндзи Кита, был настоящим энтузиастом автомобилестроения и принимал личное участие в создании первого прототипа пассажирского автомобиля Р-1 в 1954 году.</p>
-                <p>Конкурс на название марки автомобиля результатов не принёс, и Кита сделал выбор самостоятельно.</p>
-                <p>Первые автомобили Субару были сделаны на основе автомобиля Renault (Франция). Кэндзи Кита приобрел ряд чертежей и патентов на производство автомобилей у французской автомобильной корпорации Renault, именно эти автомобили вдохновили его.</p>
-              </div>
+      </div>
+      <section class="random_company">
+        <h2>SUBARU</h2>
+        <div class="row">
+          <div class="col-xs-12 col-md-4 col-lg-3">
+            <div class="random_company_img"><img src="images/random_company/1.png"></div>
+          </div>
+          <div class="col-xs-12 col-md-8 col-lg-9">
+            <div class="random_company_inform">
+              <p>Субару» (англ. Subaru) — автомобильный бренд компании Fuji Heavy Industries (FHI). Объём производства в 2011 году составил 528 234 легковых и 52 027 коммерческих автомобиля.</p>
+              <p>Основатель и первый президент компании Fuji Heavy Industries Ltd., Кэндзи Кита, был настоящим энтузиастом автомобилестроения и принимал личное участие в создании первого прототипа пассажирского автомобиля Р-1 в 1954 году.</p>
+              <p>Конкурс на название марки автомобиля результатов не принёс, и Кита сделал выбор самостоятельно.</p>
+              <p>Первые автомобили Субару были сделаны на основе автомобиля Renault (Франция). Кэндзи Кита приобрел ряд чертежей и патентов на производство автомобилей у французской автомобильной корпорации Renault, именно эти автомобили вдохновили его.</p>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
     <footer>
       <div class="footer_column1_wrapper">
