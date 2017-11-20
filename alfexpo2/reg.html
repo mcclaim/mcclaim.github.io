@@ -9,7 +9,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.min.css"><!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
-    <title>Забыли пароль</title>
+    <title>Регистрация</title>
   </head>
   <body>
     <div id="startup">
@@ -66,6 +66,7 @@
                   <li><a href="cooperation.html">Сотрудничество</a></li>
                   <li><a href="conditions.html">Условия</a></li>
                   <li><a href="about_company.html">О компании</a></li>
+                  <li><a href="products_from.html">Товары из США</a></li>
                   <li><a href="delivery.html">Доставка</a></li>
                   <li><a href="contacts.html">Контакты</a></li>
                 </ul>
@@ -93,13 +94,45 @@
         </div>
       </div>
     </header>
-    <div class="auth_content_wrapper recovery_page">
-      <h2>Восстановление пароля</h2>
-      <div class="auth_content">
-        <form method="/">
-          <input class="form-control" type="text" placeholder="Укажите ваш e-mail" required>
-          <input class="custom_btn_link" type="submit" value="Отправить подтверждение">
-        </form>
+    <div class="little_silver_bg">
+      <div class="auth_content_wrapper reg_content_wrapper">
+        <h2>Регистрация аккаунта</h2>
+        <div class="auth_content">
+          <div class="reg_content">
+            <form method="post" action="" id="reg-ru">
+              <input class="form-control" type="text" name="first_name" id="first_name" placeholder="Имя" required>
+              <input class="form-control" type="text" name="second_name" id="second_name" placeholder="Фамилия" required>
+              <input class="form-control" type="text" name="last_name" id="last_name" placeholder="Отчество" required>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <select class="form-control required" name="country"><span class="caret"></span>
+                    <option value="hide">Страна</option>
+                    <option value="Россия">Россия</option>
+                    <option value="США">США</option>
+                    <option value="Португалия">Португалия</option>
+                    <option value="Китай">Китай</option>
+                    <option value="Италия">Италия</option>
+                  </select>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <select class="form-control required" name="city"><span class="caret"></span>
+                    <option value="hide">Город</option>
+                    <option value="Москва">Москва</option>
+                  </select>
+                </div>
+              </div>
+              <input class="form-control" type="email" name="email" id="email" placeholder="E-mail" required>
+              <input class="form-control" type="text" name="phone" id="phone" placeholder="Номер телефона" required>
+              <input class="form-control" type="password" name="password" id="password" placeholder="Пароль" required>
+              <input class="form-control" type="password" name="password_again" id="password_again" placeholder="Повторите пароль" required>
+              <input class="custom_btn_link" type="submit" value="Зарегистрироваться">
+              <div class="custom_checkbox">
+                <input type="checkbox" name="give_consent" id="give_consent">
+                <label for="give_consent"> <span></span>Даю согласие на  обработку, хранение и распространение персональных данных</label>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <footer>
@@ -167,5 +200,6 @@
     <script src="js/ticker/carouselTicker.min.js"></script>
     <script src="js/slick-slider/slick.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/validate/jquery.validate.min.js"></script>
   </body>
 </html>
