@@ -95,240 +95,206 @@
       </div>
     </header>
     <div class="pc_wrapper search_wrapper">
-      <section class="in_procession_wrapper">
-        <div class="row">
-          <div class="col-xs-12 col-lg-3">
-            <div class="in_procession_account_wrap">
-              <div class="in_procession_account_img"><a href="javascript:void(0);"><img src="images/pc_avatar.jpg"></a></div>
-              <div class="in_procession_account"><a class="edit_account" href="javascript:void(0);"> <i class="edit_account_icon"></i>Редактировать</a></div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-lg-9">
-            <div class="pc_left_container">
-              <div class="manager_name_wrap">
-                 Ваш менеджер: <span class="manager_name">Игорь Петрунин </span></div>
-              <div class="in_procession row">
-                <div class="inprocession_item">
-                  <div class="in_procession_inform">Баланс в RUB</div>
-                  <div class="in_procession_money balance_active">
-                     483957,00<span class="balance_in_rubl">
-                       &#8381;</span></div>
-                </div>
-                <div class="inprocession_item">
-                  <div class="in_procession_inform">Баланс в USD</div>
-                  <div class="in_procession_money balance_active">
-                     483957,00<span class="balance_in_dollars">
-                       $</span></div>
-                </div>
-                <div class="inprocession_item">
-                  <div class="in_procession_inform">Заказы в пути</div>
-                  <div class="in_procession_money">132755,90<span class="balance_in_rubl">
-                       &#8381;</span></div>
-                </div>
-                <div class="inprocession_item">
-                  <div class="in_procession_inform">Заказы в пути</div>
-                  <div class="in_procession_money">132755,90<span class="balance_in_rubl">
-                       &#8381;</span></div>
-                </div>
-                <div class="inprocession_item">
-                  <div class="in_procession_inform">Заказы в пути</div>
-                  <div class="in_procession_money">132755,90<span class="balance_in_rubl">
-                       &#8381;</span></div>
-                </div>
-                <div class="inprocession_item">
-                  <div class="in_procession_inform">Заказы в пути</div>
-                  <div class="in_procession_money">132755,90<span class="balance_in_rubl">
-                       &#8381;</span></div>
-                </div>
-                <div class="inprocession_item">
-                  <div class="in_procession_inform">Заказы в пути</div>
-                  <div class="in_procession_money">132755,90<span class="balance_in_rubl">
-                       &#8381;</span></div>
+      <section class="in_procession_wrapper login_in_site">
+        <form enctype="multipart/form-data" method="post" action="/" id="all_information-ru">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-lg-3">
+              <div class="in_procession_account_wrap">
+                <div class="in_procession_account_img"><img src="images/pc_avatar.jpg"></div>
+                <div class="in_procession_account"><a class="edit_account" href="javascript:void(0);"> <i class="edit_account_icon"></i>Редактировать</a>
+                  <input class="save_account" type="submit" value="Сохранить">
                 </div>
               </div>
-              <div class="pc_main_tabs_content">
-                <table class="table pc_custom_table">
-                  <tbody>
-                    <tr>
-                      <td>Электронная почта</td>
-                      <td>vlad@flatonica.com</td>
-                    </tr>
-                    <tr>
-                      <td>Мобильный номер</td>
-                      <td>+7 (901) 101-01-01</td>
-                    </tr>
-                    <tr>
-                      <td>Фамилия</td>
-                      <td>Гончаров</td>
-                    </tr>
-                    <tr>
-                      <td>Имя</td>
-                      <td>Владислав</td>
-                    </tr>
-                    <tr>
-                      <td>Отчество</td>
-                      <td>Михайлович</td>
-                    </tr>
-                    <tr>
-                      <td>Местоположение</td>
-                      <td>Волгоград, Россия</td>
-                    </tr>
-                    <tr>
-                      <td>Время регистрации</td>
-                      <td>05.05.2017 13:33</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="hyper_button_wrap"><a class="custom_btn" href="javascript:void(0);">Редактировать информацию</a></div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <div class="pc_inform_wrapper">
-        <div class="pc_main_tabs tabs_wrapper">
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="active tab_all_information" role="presentation"><a href="#all_information" aria-controls="all_information" role="tab" data-toggle="tab"><i class="index_icon"> </i>Общая информация</a></li>
-            <li class="tab_orders" role="presentation"><a href="#orders" aria-controls="orders" role="tab" data-toggle="tab"> <i class="orders_icon"> </i>Заказы</a></li>
-            <li class="tab_adres" role="presentation"><a href="#addres" aria-controls="addres" role="tab" data-toggle="tab"> <i class="addres_icon"> </i>Адрес</a></li>
-            <li class="tab_details" role="presentation"><a href="#details" aria-controls="details" role="tab" data-toggle="tab"> <i class="details_icon"> </i>Реквизиты</a></li>
-            <li class="tab_balance" role="presentation"><a href="#balance" aria-controls="balance" role="tab" data-toggle="tab"> <i class="balance_icon"> </i>Баланс</a></li>
-          </ul>
-        </div>
-        <div class="pc_main_tabs_content tab-content"> 
-          <div class="tab-pane fade in active" id="all_information" role="tabpanel">
-            <section class="note_wrapper">
-              <div class="row">
-                <div class="col-xs-12 col-md-4">
-                  <form action="">
-                    <label for="note">Оставить сообщение</label>
-                    <textarea class="form-control" id="note" placeholder="Введите текст сообщения"></textarea>
-                    <div class="note_button_wrap">
-                      <input class="custom_btn" type="submit" value="Отправить">
-                    </div>
-                  </form>
+            <div class="col-xs-12 col-sm-8 col-lg-9">
+              <div class="pc_left_container">
+                <div class="manager_name_wrap">
+                   Ваш менеджер: <span class="manager_name">Игорь Петрунин </span></div>
+                <div class="in_procession row">
+                  <div class="inprocession_item">
+                    <div class="in_procession_inform">Баланс в RUB</div>
+                    <div class="in_procession_money balance_active">
+                       483957,00<span class="balance_in_rubl">
+                         &#8381;</span></div>
+                  </div>
+                  <div class="inprocession_item">
+                    <div class="in_procession_inform">Баланс в USD</div>
+                    <div class="in_procession_money balance_active">
+                       483957,00<span class="balance_in_dollars">
+                         $</span></div>
+                  </div>
+                  <div class="inprocession_item">
+                    <div class="in_procession_inform">Заказы в пути</div>
+                    <div class="in_procession_money">132755,90<span class="balance_in_rubl">
+                         &#8381;</span></div>
+                  </div>
+                  <div class="inprocession_item">
+                    <div class="in_procession_inform">Заказы в пути</div>
+                    <div class="in_procession_money">132755,90<span class="balance_in_rubl">
+                         &#8381;</span></div>
+                  </div>
+                  <div class="inprocession_item">
+                    <div class="in_procession_inform">Заказы в пути</div>
+                    <div class="in_procession_money">132755,90<span class="balance_in_rubl">
+                         &#8381;</span></div>
+                  </div>
+                  <div class="inprocession_item">
+                    <div class="in_procession_inform">Заказы в пути</div>
+                    <div class="in_procession_money">132755,90<span class="balance_in_rubl">
+                         &#8381;</span></div>
+                  </div>
+                  <div class="inprocession_item">
+                    <div class="in_procession_inform">Заказы в пути</div>
+                    <div class="in_procession_money">132755,90<span class="balance_in_rubl">
+                         &#8381;</span></div>
+                  </div>
                 </div>
-                <div class="col-xs-12 col-md-8">
-                  <div class="note_all">
-                    <h5>Сообщение</h5>
-                    <div class="note_item">
-                      <div class="note_date">17.07.2017 11:45</div>
-                      <div class="note_inform">
-                        <p>В таких странах, как Мексика и Венесуэла, христианско-демократический национализм предсказуем. Референдум формирует марксизм. Харизматическое лидерство традиционно определяет функциональный коллапс Советского Союза.</p>
-                      </div>
-                    </div>
-                    <div class="note_item manager">
-                      <div class="note_author">Алексей Волков, менеджер</div>
-                      <div class="note_date">17.07.2017 11:45</div>
-                      <div class="note_inform">
-                        <p>Коллективное бессознательное, конечно, изящно отталкивает психоз, следовательно тенденция к конформизму связана с менее низким интеллектом. Онтогенез речи, иcходя из того, что теоретически возможен.</p>
-                      </div>
-                    </div>
-                    <div class="note_item">
-                      <div class="note_date">17.07.2017 11:45</div>
-                      <div class="note_inform">
-                        <p>Коллективное бессознательное, конечно, изящно отталкивает психоз, следовательно тенденция к конформизму связана с менее низким интеллектом. Онтогенез речи, иcходя из того, что теоретически возможен.</p>
-                      </div>
+                <div class="pc_inform_wrapper">
+                  <div class="pc_main_tabs_content">
+                    <table class="table pc_custom_table pc_top_inform">
+                      <tbody>
+                        <tr>
+                          <td>Электронная почта</td>
+                          <td>vlad@flatonica.com</td>
+                        </tr>
+                        <tr>
+                          <td>Мобильный номер</td>
+                          <td>+7 (901) 101-01-01</td>
+                        </tr>
+                        <tr>
+                          <td>Фамилия</td>
+                          <td>Гончаров</td>
+                        </tr>
+                        <tr>
+                          <td>Имя</td>
+                          <td>Владислав</td>
+                        </tr>
+                        <tr>
+                          <td>Отчество</td>
+                          <td>Михайлович</td>
+                        </tr>
+                        <tr>
+                          <td>Местоположение</td>
+                          <td>Волгоград, Россия</td>
+                        </tr>
+                        <tr>
+                          <td>Время регистрации</td>
+                          <td>05.05.2017 13:33</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="edit">
+                      <table class="table pc_custom_table">
+                        <tbody>
+                          <tr>
+                            <td>Электронная почта</td>
+                            <td> 
+                              <input class="form-control" type="email" value="vlad@flatonica.com" name="email" id="email" placeholder="admin@alfexpo.com" required="required">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Мобильный номер</td>
+                            <td> 
+                              <input class="form-control" type="text" value="+7 (901) 101-01-01" name="phone" id="phone" placeholder="+7" required="required">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Фамилия</td>
+                            <td> 
+                              <input class="form-control" type="text" value="Гончаров" name="second_name" id="second_name" placeholder="Фамилия" required="required">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Имя</td>
+                            <td>
+                              <input class="form-control" type="text" value="Владислав" name="first_name" id="first_name" placeholder="Имя" required="required">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Отчество</td>
+                            <td> 
+                              <input class="form-control" type="text" value="Михайлович" name="last_name" id="last_name" placeholder="Отчество">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Местоположение</td>
+                            <td class="reg_content"> 
+                              <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                  <select class="form-control required" name="country"><span class="caret"></span>
+                                    <option value="hide">Россия</option>
+                                    <option value="США">США</option>
+                                    <option value="Португалия">Португалия</option>
+                                    <option value="Китай">Китай</option>
+                                    <option value="Италия">Италия</option>
+                                  </select>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                  <select class="form-control required" name="city"><span class="caret"></span>
+                                    <option value="hide">Волгоград</option>
+                                    <option value="Москва">Москва</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Старый пароль</td>
+                            <td> 
+                              <input class="form-control" type="password" value="12345" name="old_password" id="old-password" placeholder="Старый пароль" required="required">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Новый пароль</td>
+                            <td> 
+                              <input class="form-control" type="password" value="12345" name="password" id="password" placeholder="Новый пароль">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Повторите новый пароль</td>
+                            <td> 
+                              <input class="form-control" type="password" value="12345" name="password_again" id="password_again" placeholder="Повторите новый пароль">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Фотография</td>
+                            <td> 
+                              <div class="avatar_block">
+                                <div class="avatar_wrapper">
+                                  <label class="avatar" for="push_img"></label>
+                                  <input type="file" id="push_img">
+                                </div>
+                                <div class="avatar_inform">Загрузите изображение в формате JPG, GIF или PNG.</div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
               </div>
-            </section>
-            <div class="edit">
-              <form enctype="multipart/form-data" method="post" action="/" id="all_information-ru">
-                <table class="table pc_custom_table">
-                  <tbody>
-                    <tr>
-                      <td>Электронная почта</td>
-                      <td> 
-                        <input class="form-control" type="email" value="vlad@flatonica.com" name="email" id="email" placeholder="admin@alfexpo.com" required="required">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Мобильный номер</td>
-                      <td> 
-                        <input class="form-control" type="text" value="+7 (901) 101-01-01" name="phone" id="phone" placeholder="+7" required="required">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Фамилия</td>
-                      <td> 
-                        <input class="form-control" type="text" value="Гончаров" name="second_name" id="second_name" placeholder="Фамилия" required="required">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Имя</td>
-                      <td>
-                        <input class="form-control" type="text" value="Владислав" name="first_name" id="first_name" placeholder="Имя" required="required">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Отчество</td>
-                      <td> 
-                        <input class="form-control" type="text" value="Михайлович" name="last_name" id="last_name" placeholder="Отчество">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Местоположение</td>
-                      <td class="reg_content"> 
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-6">
-                            <select class="form-control required" name="country"><span class="caret"></span>
-                              <option value="hide">Россия</option>
-                              <option value="США">США</option>
-                              <option value="Португалия">Португалия</option>
-                              <option value="Китай">Китай</option>
-                              <option value="Италия">Италия</option>
-                            </select>
-                          </div>
-                          <div class="col-xs-12 col-sm-6">
-                            <select class="form-control required" name="city"><span class="caret"></span>
-                              <option value="hide">Волгоград</option>
-                              <option value="Москва">Москва</option>
-                            </select>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Старый пароль</td>
-                      <td> 
-                        <input class="form-control" type="password" value="12345" name="old_password" id="old-password" placeholder="Старый пароль" required="required">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Новый пароль</td>
-                      <td> 
-                        <input class="form-control" type="password" value="12345" name="password" id="password" placeholder="Новый пароль">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Повторите новый пароль</td>
-                      <td> 
-                        <input class="form-control" type="password" value="12345" name="password_again" id="password_again" placeholder="Повторите новый пароль">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Фотография</td>
-                      <td> 
-                        <div class="avatar_block">
-                          <div class="avatar_wrapper">
-                            <label class="avatar" for="push_img"></label>
-                            <input type="file" id="push_img">
-                          </div>
-                          <div class="avatar_inform">Загрузите изображение в формате JPG, GIF или PNG.</div>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="hyper_button_wrap">
-                  <input class="custom_btn" type="submit" value="Сохранить">
-                </div>
-              </form>
             </div>
           </div>
-          <div class="tab-pane fade" id="orders" role="tabpanel">
+        </form>
+      </section>
+      <div class="pc_inform_wrapper">
+        <div class="pc_main_tabs tabs_wrapper">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active tab_orders" role="presentation"><a href="#orders" aria-controls="orders" role="tab" data-toggle="tab">
+                 Заказы</a></li>
+            <li class="tab_balance" role="presentation"><a href="#balance" aria-controls="balance" role="tab" data-toggle="tab">
+                 Баланс</a></li>
+            <li class="tab_adres" role="presentation"><a href="#addres" aria-controls="addres" role="tab" data-toggle="tab">
+                 Адрес</a></li>
+            <li class="tab_details" role="presentation"><a href="#details" aria-controls="details" role="tab" data-toggle="tab">
+                 Реквизиты</a></li>
+            <li class="tab_message" role="presentation"><a href="#message" aria-controls="message" role="tab" data-toggle="tab">
+                 Сообщения</a></li>
+          </ul>
+        </div>
+        <div class="pc_main_tabs_content login_in_site tab-content">			
+          <div class="tab-pane fade in active" id="orders" role="tabpanel">
             <div class="pc_order_tabs">
               <ul class="nav nav-tabs" role="tablist">
                 <li class="active" role="presentation"><a href="#general_orders" aria-controls="general_orders" role="tab" data-toggle="tab">Общие заказы</a></li>
@@ -667,6 +633,44 @@
               </div>
             </div>
           </div>
+          <div class="tab-pane fade" id="balance" role="tabpanel">
+            <div class="responsive_table_wrapper">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Дата</th>
+                    <th>Название операции</th>
+                    <th>Оператор</th>
+                    <th>Сумма</th>
+                    <th>Комментарий</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="transaction_date" data-th="Дата">18.07.2017 21:07</td>
+                    <td class="transaction_name" data-th="Название операции">Внесение баланса клиенту</td>
+                    <td class="transaction_operator" data-th="Оператор">Tommy</td>
+                    <td class="transaction_money" data-th="Сумма">13100 $</td>
+                    <td class="product_comment" data-th="Комментарий"> Деньги на счёт банка</td>
+                  </tr>
+                  <tr>
+                    <td class="transaction_date" data-th="Дата">18.07.2017 21:07</td>
+                    <td class="transaction_name" data-th="Название операции">Внесение баланса клиенту</td>
+                    <td class="transaction_operator" data-th="Оператор">Tommy</td>
+                    <td class="transaction_money" data-th="Сумма">15500 $</td>
+                    <td class="product_comment" data-th="Комментарий"> Деньги на счёт банка</td>
+                  </tr>
+                  <tr>
+                    <td class="transaction_date" data-th="Дата">18.07.2017 21:07</td>
+                    <td class="transaction_name" data-th="Название операции">Внесение баланса клиенту</td>
+                    <td class="transaction_operator" data-th="Оператор">Tommy</td>
+                    <td class="transaction_money" data-th="Сумма">100000 $</td>
+                    <td class="product_comment" data-th="Комментарий"> Деньги на счёт банка</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
           <div class="tab-pane fade" id="addres" role="tabpanel">
             <h5>Ваш адрес</h5>
             <table class="table pc_custom_table">
@@ -854,43 +858,44 @@
               </form>
             </div>
           </div>
-          <div class="tab-pane fade" id="balance" role="tabpanel">
-            <div class="responsive_table_wrapper">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Дата</th>
-                    <th>Название операции</th>
-                    <th>Оператор</th>
-                    <th>Сумма</th>
-                    <th>Комментарий</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="transaction_date" data-th="Дата">18.07.2017 21:07</td>
-                    <td class="transaction_name" data-th="Название операции">Внесение баланса клиенту</td>
-                    <td class="transaction_operator" data-th="Оператор">Tommy</td>
-                    <td class="transaction_money" data-th="Сумма">13100 $</td>
-                    <td class="product_comment" data-th="Комментарий"> Деньги на счёт банка</td>
-                  </tr>
-                  <tr>
-                    <td class="transaction_date" data-th="Дата">18.07.2017 21:07</td>
-                    <td class="transaction_name" data-th="Название операции">Внесение баланса клиенту</td>
-                    <td class="transaction_operator" data-th="Оператор">Tommy</td>
-                    <td class="transaction_money" data-th="Сумма">15500 $</td>
-                    <td class="product_comment" data-th="Комментарий"> Деньги на счёт банка</td>
-                  </tr>
-                  <tr>
-                    <td class="transaction_date" data-th="Дата">18.07.2017 21:07</td>
-                    <td class="transaction_name" data-th="Название операции">Внесение баланса клиенту</td>
-                    <td class="transaction_operator" data-th="Оператор">Tommy</td>
-                    <td class="transaction_money" data-th="Сумма">100000 $</td>
-                    <td class="product_comment" data-th="Комментарий"> Деньги на счёт банка</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <div class="tab-pane fade" id="message" role="tabpanel">
+            <section class="note_wrapper">
+              <div class="row">
+                <div class="col-xs-12 col-md-4">
+                  <form action="">
+                    <label for="note">Оставить сообщение</label>
+                    <textarea class="form-control" id="note" placeholder="Введите текст сообщения"></textarea>
+                    <div class="note_button_wrap">
+                      <input class="custom_btn" type="submit" value="Отправить">
+                    </div>
+                  </form>
+                </div>
+                <div class="col-xs-12 col-md-8">
+                  <div class="note_all">
+                    <h5>Сообщение</h5>
+                    <div class="note_item">
+                      <div class="note_date">17.07.2017 11:45</div>
+                      <div class="note_inform">
+                        <p>В таких странах, как Мексика и Венесуэла, христианско-демократический национализм предсказуем. Референдум формирует марксизм. Харизматическое лидерство традиционно определяет функциональный коллапс Советского Союза.</p>
+                      </div>
+                    </div>
+                    <div class="note_item manager">
+                      <div class="note_author">Алексей Волков, менеджер</div>
+                      <div class="note_date">17.07.2017 11:45</div>
+                      <div class="note_inform">
+                        <p>Коллективное бессознательное, конечно, изящно отталкивает психоз, следовательно тенденция к конформизму связана с менее низким интеллектом. Онтогенез речи, иcходя из того, что теоретически возможен.</p>
+                      </div>
+                    </div>
+                    <div class="note_item">
+                      <div class="note_date">17.07.2017 11:45</div>
+                      <div class="note_inform">
+                        <p>Коллективное бессознательное, конечно, изящно отталкивает психоз, следовательно тенденция к конформизму связана с менее низким интеллектом. Онтогенез речи, иcходя из того, что теоретически возможен.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
