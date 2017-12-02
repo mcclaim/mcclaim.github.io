@@ -1484,6 +1484,18 @@ footer {
 			}
 		}
 	}
+	section {
+		&:after {
+			height: 100% !important;
+			background-size: cover !important;
+		}
+		.container {
+			&:after {
+				height: 100% !important;
+				background-size: cover !important;
+			}
+		}
+	}
 	section.accompany_wrapper {
 		.accompany_item_wrapper .accompany_item .accompany_text {
 			padding: 0 46px 0 25px;
@@ -1503,6 +1515,24 @@ footer {
 				    }
 			 	}
 			}
+		}
+	}
+	section.lessons_type_wrapper {
+		.lesson_type_float_container {
+		    max-width: 58%;
+		}
+		&.type_right {
+			.container:after {
+			    margin-right: -565px;
+			}
+		}
+		&.type_left {
+			.container:after {
+			    margin-left: -565px;
+			}
+		}
+		&#f2 .lesson_type_title {
+			margin-top: 65px;
 		}
 	}
 	section.lessons_type_wrapper {
@@ -1538,36 +1568,7 @@ footer {
 	
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-	section.lessons_type_wrapper#f2 .lesson_type_title {
-	    margin-top: 65px;
-	}
-	section {
-		&:after {
-			height: 100% !important;
-			background-size: cover !important;
-		}
-		.container {
-			&:after {
-				height: 100% !important;
-				background-size: cover !important;
-			}
-		}
-	}
-	section.lessons_type_wrapper {
-		.lesson_type_float_container {
-		    max-width: 58%;
-		}
-		&.type_right {
-			.container:after {
-			    margin-right: -565px;
-			}
-		}
-		&.type_left {
-			.container:after {
-			    margin-left: -565px;
-			}
-		}
-	}
+	
 }
 @media (max-width: 991px) {
 	.font_standart {
