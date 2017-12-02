@@ -1,0 +1,600 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="utf-8")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1')
+		meta(name='MobileOptimized', content='width')
+		meta(name='HandheldFriendly', content='true')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='msapplication-tap-highlight', content='no')
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Школа английского
+		link(href="css/bootstrap.min.css" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+		| <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+		| <!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
+	body
+		.fixed_number
+			a(href="tel: +7xxxxxxxx").btn_link +7 (xxx) xxx xx xx
+		#feedback_modal.feedback_modal.modal.fade(role='dialog')
+			.modal-dialog
+				.modal-content
+					.modal-header
+						button.close(type='button', data-dismiss='modal')
+							svg(viewbox='0 0 24 24')
+								path(d='M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z')
+								path(d='M0 0h24v24h-24z', fill='none')
+						h4.modal-title Обратный звонок
+					.modal-body
+						section.feedback
+							form(action="post.php" method="post")
+								input(type="text" class="tell" title="+7 (999) 999-99-99" name="phone" placeholder="+7 (___) ___-__-__" required="required")
+								input(type="hidden" name="form_modal")
+								input(type="submit" value="Отправить")
+							.feedback_privacy
+								p 
+									| Нажимая на кнопку, вы даете согласие на 
+									a(href="policy.pdf") обработку
+									|  своих персональных данных.
+
+		#individual_modal.feedback_modal.course_feedback.feedback_2.modal.fade(role='dialog')
+			.modal-dialog
+				.modal-content
+					.modal-header
+						button.close(type='button', data-dismiss='modal')
+							svg(viewbox='0 0 24 24')
+								path(d='M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z')
+								path(d='M0 0h24v24h-24z', fill='none')
+						h4.modal-title Журнал достижений
+						h5.modal-subtitle Заполните форму и получите журнал достижений прямо сейчас!
+					.modal-body
+						section.feedback
+							form(action="post.php" method="post")
+								input(type="text" class="tell" title="+7 (999) 999-99-99" name="phone" placeholder="+7 (___) ___-__-__" required="required")
+								input(type="hidden" name="form_modal")
+								input(type="submit" value="Получить журнал достижений")
+							.feedback_privacy
+								p 
+									| Нажимая на кнопку, вы даете согласие на 
+									a(href="policy.pdf") обработку
+									|  своих персональных данных.
+
+		#freeCourse_modal.feedback_modal.course_feedback.feedback_1.modal.fade(role='dialog')
+			.modal-dialog
+				.modal-content
+					.modal-header
+						button.close(type='button', data-dismiss='modal')
+							svg(viewbox='0 0 24 24')
+								path(d='M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z')
+								path(d='M0 0h24v24h-24z', fill='none')
+						h4.modal-title Записаться бесплатно
+						h5.modal-subtitle Запишитесь на пробое занятие и начните изучать английский абсолютно БЕСПЛАТНО!
+					.modal-body
+						section.feedback
+							form(action="post.php" method="post")
+								input(type="text" class="tell" title="+7 (999) 999-99-99" name="phone" placeholder="+7 (___) ___-__-__" required="required")
+								input(type="hidden" name="form_modal")
+								input(type="submit" value="Записаться бесплатно")
+							.feedback_privacy
+								p 
+									| Нажимая на кнопку, вы даете согласие на 
+									a(href="policy.pdf") обработку
+									|  своих персональных данных.
+
+		header
+			.container
+				.header_top_container
+					.header_top_wrapper
+						.header_logo
+							a(href="/")
+								img(src="images/logo.jpg")
+						.header_feedback
+							a(href="tel: +7xxxxxxxxxx").phone +7 (ххх) ххх-хх-хх
+							a(href="#feedback_modal" data-toggle="modal" data-target="#feedback_modal").btn_link ОБРАТНЫЙ ЗВОНОК
+					h1 ШКОЛА АНГЛИЙСКОГО ЯЗЫКА
+					h4 В центре Москвы - в 5 минутах от 4 станций метро
+
+					.header_block_wrap
+						.header_block_item
+							span 
+								| Путешествуйте
+								br
+								| без границ
+						.header_block_item
+							span 
+								|Учитесь в любом
+								br
+								|ВУЗе мира
+						.header_block_item
+							span 
+								| Общайтесь с
+								br
+								| иностранными друзьями 
+						.header_block_item
+							span 
+								| Найдите свою вторую
+								br
+								| половинку в другой стране 
+						.header_block_item
+							span 
+								| Говорите с зарубежными
+								br
+								| коллегами на одном языке
+
+					.sections_promo
+						.promo_title 
+							| Выберите желаемый уровень английского
+							br
+							| и начните путь к своей мечте прямо сейчас!
+						.gallery.clearfix
+							.gallery_item
+								span.number
+									i
+								a.topLink(href='#a1', data-nav='scroll')
+									img.absolute(src='images/header_item/header_item_bg.png', alt='img')
+									img.static(src='images/header_item/header_item1.png', alt='img')
+									div.text_wrapper
+										div.text_content
+											div.text_title Общий английский
+											div.text Если вы вобще  ничего не знаете
+
+							.gallery_item
+								span.number
+									i
+								a.topLink(href='#a2', data-nav='scroll')
+									img.absolute(src='images/header_item/header_item_bg.png', alt='img')
+									img.static(src='images/header_item/header_item2.png', alt='img')
+									div.text_wrapper
+										div.text_content
+											div.text_title Общий английский
+											div.text Если вы немного знакомы с языком
+
+							.gallery_item
+								span.number
+									i
+								a.topLink(href='#b1', data-nav='scroll')
+									img.absolute(src='images/header_item/header_item_bg.png', alt='img')
+									img.static(src='images/header_item/header_item3.png', alt='img')
+									div.text_wrapper
+										div.text_content
+											div.text_title Общий английский
+											div.text Проработка устной речи и грамматики
+
+							.gallery_item
+								span.number
+									i
+								a.topLink(href='#b2', data-nav='scroll')
+									img.absolute(src='images/header_item/header_item_bg.png', alt='img')
+									img.static(src='images/header_item/header_item4.png', alt='img')
+									div.text_wrapper
+										div.text_content
+											div.text_title Общий английский
+											div.text Достаточный для жизни за границей
+
+							.gallery_item
+								span.number
+									i
+								a.topLink(href='#c1', data-nav='scroll')
+									img.absolute(src='images/header_item/header_item_bg.png', alt='img')
+									img.static(src='images/header_item/header_item5.png', alt='img')
+									div.text_wrapper
+										div.text_content
+											div.text_title Общий английский
+											div.text Для свободного общения
+
+							.gallery_item
+								span.number
+									i
+								a.topLink(href='#c2', data-nav='scroll')
+									img.absolute(src='images/header_item/header_item_bg.png', alt='img')
+									img.static(src='images/header_item/header_item6.png', alt='img')
+									div.text_wrapper
+										div.text_content
+											div.text_title Общий английский
+											div.text Высший уровень, когда язык как родной
+
+							.gallery_item
+								span.number
+									i
+								a.topLink(href='#f1', data-nav='scroll')
+									img.absolute(src='images/header_item/header_item_bg.png', alt='img')
+									img.static(src='images/header_item/header_item7.png', alt='img')
+									div.text_wrapper
+										div.text_content
+											div.text_title Деловой английский
+											div.text Для общения в международной бизнес-сфере
+
+							.gallery_item
+								span.number
+									i
+								a.topLink(href='#f2', data-nav='scroll')
+									img.absolute(src='images/header_item/header_item_bg.png', alt='img')
+									img.static(src='images/header_item/header_item8.png', alt='img')
+									div.text_wrapper
+										div.text_content
+											div.text_title Подготовка
+											div.text Международному экзамену – TOEFL, IELTS, FCE, CA
+		.container
+			section.scope_wrapper
+				h3 ОТКРОЕТЕ ДЛЯ СЕБЯ НОВЫЕ ВОЗМОЖНОСТИ, ДАЖЕ ЕСЛИ ВЫ РАНЬШЕ ИЗУЧАЛИ АНГЛИЙСКИЙ
+
+				.scope_item_wrapper.clearfix
+					.scope_promo_video_wrapper
+						#video_wrap
+							img(title="English" alt="English" src="images/youtube_img.jpg")
+						a(href="javascript:void(0);").play
+					.scope_promo_item
+						.scope_item.item1
+							.scope_item_title Преподавателей
+							.scope_item_text
+								p с дипломами об образовании, международными сертификатами, которые подтверждают квалификацию.
+
+						.scope_item.item2
+							.scope_item_title От 5 лет
+							.scope_item_text
+								p 
+									| Минимальный опыт 
+									br
+									| преподавания учителей в школе.
+
+						.scope_item.item3
+							.scope_item_title Методики обучения
+							.scope_item_text
+								p те, что проверены временем, учебники Macmillan и Cambridge, а также адаптированные лексические и грамматические пособия.
+
+						.scope_item.item4
+							.scope_item_title Сертификат
+							.scope_item_text
+								p После окончания школы вы получаете сертификат, подтверждающий ваши знания.
+
+						.scope_item.item5
+							.scope_item_text
+								p Здоровое и нескучное общение на каждом занятии. Комфортная психологическая среда и уютная домашняя обстановка.
+
+		section.accompany_wrapper
+			.container
+				h3 ПОЛНОЕ СОПРОВОЖДЕНИЕ НА КАЖДОМ ЭТАПЕ
+				.accompany_item_wrapper
+					.accompany_item
+						.accompany_title Бесплатное пробное занятие
+						.accompany_img
+							img(src="images/accompany/accompany_item1.png")
+						.accompany_text
+							p Замеряем уровень ваших знаний. Определяем, каких результатов вы хотите достичь и как это лучше сделать.
+
+					.accompany_item
+						.accompany_title Индивидуальный подбор оптимального обучения
+						.accompany_img
+							img(src="images/accompany/accompany_item2.png")
+						.accompany_text
+							p Подбираем удобное время занятий, группу с одинаковым уровнем подготовки и наилучший вариант обучения персонально для вас.
+
+					.accompany_item
+						.accompany_title Интересные и нескучные уроки
+						.accompany_img
+							img(src="images/accompany/accompany_item3.png")
+						.accompany_text
+							p Обучаем вас английскому в интерактивной форме с элементами импровизации для получения нужного вам результата.
+
+				.individual_unit_wrapper
+					.individual_unit_left
+						h3 Индивидуальный журнал достижений
+						h5 покажет ваш прогресс после каждого занятия
+						a(href="#individual_modal" data-toggle="modal" data-target="#individual_modal").btn_link Получить журнал достижений
+
+					.individual_unit_right
+						.individual_unit_img
+							img(src="images/accompany/book.png")
+		
+		
+		section.seven_type.lessons_type_wrapper.type_right.silver_bg
+			.container
+				h3 7 Вариантов Обучения,
+				h5 благодаря которым вы полюбите английский и сможете легко достичь желамых целей
+				.lesson_type_float_container
+					.lesson_type_title 
+						span ОБЩИЙ АНГЛИЙСКИЙ
+					.lesson_type_subtitle General English - это
+					ul.seven_type_list
+						li 50 увлекательных уроков до перехода на следующий уровень
+						li 2 раза/4 часа в неделю прокачки навыков общения
+						li 6 месяцев общения, игр, погружения в языковую среду
+
+		section.lessons_type_wrapper.type_left#a1.silver_bg
+			.container
+				.lesson_type_float_container
+					.lesson_type_title 
+						span Beginner (A1)
+					.lesson_type_text
+						p Система обучения для новичков. Программа состоит из занятий, направленых на изучение предметов, себя и окружающих и элементарных навыков общения.
+
+					.lesson_type_slider_container
+						.lesson_type_slider_title.font_standart РЕЗУЛЬТАТЫ:
+						.lesson_type_slider_wrapper
+							.slider_prev_next
+							.lesson_type_slider_item
+								p Можете представить себя и других, а также запросить и предоставить основную личную информацию: предметы, их принадлежность, адрес, окружение;
+							.lesson_type_slider_item
+								p Участвуете в беседе при медленной и отчетливой речи собеседника;
+							.lesson_type_slider_item
+								p Читаете и понимаете короткие тексты на знакомые темы и получаете информацию из общепринятых знаков и символов;
+							.lesson_type_slider_item
+								p Составляете короткие простые фразы и предложения, формируете простые сообщения.
+
+					.lesson_type_feedback_wrapper
+						.lesson_type_feedback_title.font_standart
+							| Запишитесь на пробное занятие с преподавателем английского абсолютно 
+							span БЕСПЛАТНО!
+						.lesson_type_feedback_button
+							a(href="#freeCourse_modal" data-toggle="modal" data-target="#freeCourse_modal").btn_link ЗАПИСАТЬСЯ БЕСПЛАТНО
+				.clearfix
+
+		section.lessons_type_wrapper.type_right#a2.silver_bg
+			.container
+				.lesson_type_float_container
+					.lesson_type_title 
+						span Elementary (A2)
+					.lesson_type_text
+						p Система обучения, построенная на уже имеющихся базовых знаниях английского. Прокачивает вашу разговорную речь, навыки общения в переписке чтении.
+
+					.lesson_type_slider_container
+						.lesson_type_slider_title.font_standart РЕЗУЛЬТАТЫ:
+						.lesson_type_slider_wrapper
+							.slider_prev_next
+							.lesson_type_slider_item
+								p Понимаете предложения и часто используемые выраженияпо темам: семья, покупки, местная география, работа, образование, воспитание и социальные роли;
+							.lesson_type_slider_item
+								p Вы сможете запрашивать информацию и обмениваться ей, выражать свое отношение и точку зрения по поводу знакомых жизненных ситуаций;
+							.lesson_type_slider_item
+								p Участвуете в разговоре по обмену мнениями на по знакомые темы;
+							.lesson_type_slider_item
+								p Читате и понимаете информацию из коротких документов, знакомых источников, знаков и символов;
+							.lesson_type_slider_item
+								p Ведете переписку, с учетом личности адресата.
+
+					.lesson_type_feedback_wrapper
+						.lesson_type_feedback_title.font_standart
+							| Запишитесь на пробное занятие с преподавателем английского абсолютно 
+							span БЕСПЛАТНО!
+						.lesson_type_feedback_button
+							a(href="#freeCourse_modal" data-toggle="modal" data-target="#freeCourse_modal").btn_link ЗАПИСАТЬСЯ БЕСПЛАТНО
+				.clearfix
+
+		section.lessons_type_wrapper.type_left#b1
+			.container
+				.lesson_type_float_container
+					.lesson_type_title 
+						span 
+							| Lower 
+							br
+							| Intermediate (B1)
+					.lesson_type_text
+						p Система погружения в проработку активной речи, слушания и понимания разговорного английского и грамматики. Владение языком B1 позволяет сдавать экзамены в росийские и зарубежные ВУЗы. 
+
+					.lesson_type_slider_container
+						.lesson_type_slider_title.font_standart РЕЗУЛЬТАТЫ:
+						.lesson_type_slider_wrapper
+							.slider_prev_next
+							.lesson_type_slider_item
+								p Понимаете и легко ориентируетесь во временах английского;
+							.lesson_type_slider_item
+								p Можете сообщать информацию, выражать чувства и мнения по знакомым темам, используя соответствующий стиль;
+							.lesson_type_slider_item
+								p Участвуете в обсуждении знакомой темы, делая важные замечания и отвечая на вопросы, достигая, взаимопонимания с собеседником;
+							.lesson_type_slider_item
+								p Справляетесь с большинством ситуаций, возникающих во время путешествия по англо-говорящим странам;
+							.lesson_type_slider_item
+								p Может описать случаи и события, мечты, надежды и цели, кратко объяснить свою точку зрения и рассказать о своих планах.
+
+					.lesson_type_feedback_wrapper
+						.lesson_type_feedback_title.font_standart
+							| Запишитесь на пробное занятие с преподавателем английского абсолютно 
+							span БЕСПЛАТНО!
+						.lesson_type_feedback_button
+							a(href="#freeCourse_modal" data-toggle="modal" data-target="#freeCourse_modal").btn_link ЗАПИСАТЬСЯ БЕСПЛАТНО
+				.clearfix
+
+		section.lessons_type_wrapper.type_right#b2
+			.container
+				.lesson_type_float_container
+					.lesson_type_title 
+						span 
+							| Upper 
+							br
+							| Intermediate (B2)
+					.lesson_type_text
+						p Система обучения английскому языку, которая дает уровень знаний, достаточный для проживания в стране с  глийским государственым языком.
+
+					.lesson_type_slider_container
+						.lesson_type_slider_title.font_standart РЕЗУЛЬТАТЫ:
+						.lesson_type_slider_wrapper
+							.slider_prev_next
+							.lesson_type_slider_item
+								p Вы разбираетесь во всех аспектах времен английского языка;
+							.lesson_type_slider_item
+								p Вы знаете в каком будущем выразить свои планы, обещания и предсказания;
+							.lesson_type_slider_item
+								p Можете говорить бегло и спонтанно, что позволяет общаться с собеседником без напряжения с той или другой стороны;
+							.lesson_type_slider_item
+								p Участвуете в обсуждении на знакомые и незнакомые темы, делая понятные и важные замечания;
+							.lesson_type_slider_item
+								p Понятно выражаете и делаете подробные замечания по широкому кругу тем и объяснить свою точку зрения.
+
+					.lesson_type_feedback_wrapper
+						.lesson_type_feedback_title.font_standart
+							| Запишитесь на пробное занятие с преподавателем английского абсолютно 
+							span БЕСПЛАТНО!
+						.lesson_type_feedback_button
+							a(href="#freeCourse_modal" data-toggle="modal" data-target="#freeCourse_modal").btn_link ЗАПИСАТЬСЯ БЕСПЛАТНО
+				.clearfix
+
+		section.lessons_type_wrapper.type_left#c1.silver_bg
+			.container
+				.lesson_type_float_container
+					.lesson_type_title 
+						span Advanced (С1)
+					.lesson_type_text
+						p Программа обучения, выводящая вас на уровень свободного владения английским языком. Это предпоследняя ступень знания английского 
+
+					.lesson_type_slider_container
+						.lesson_type_slider_title.font_standart РЕЗУЛЬТАТЫ:
+						.lesson_type_slider_wrapper
+							.slider_prev_next
+							.lesson_type_slider_item
+								p Понимаете широкий спектр сообщений, как письменных, так и устных, распознавая их скрытый, косвенный смысл;
+							.lesson_type_slider_item
+								p Говорите бегло и спонтанно, без затруднений подбирая необходимые слова или выражения;
+							.lesson_type_slider_item
+								p Воспринимаете объемную информацию, понимаете детальные пояснения и сложные инструкции, адаптируя свою речь согласно слушателю, контексту и ситуации;
+							.lesson_type_slider_item
+								p Понимаете тексты различной сложности не только в целях общения, но и для учебных и профессиональных целей тексту;
+							.lesson_type_slider_item
+								p Четко выражаете мысли, выбирая длину высказывания, формат и стиль в соответствии с целью, содержанием и аудиторией.
+
+					.lesson_type_feedback_wrapper
+						.lesson_type_feedback_title.font_standart
+							| Запишитесь на пробное занятие с преподавателем английского абсолютно 
+							span БЕСПЛАТНО!
+						.lesson_type_feedback_button
+							a(href="#freeCourse_modal" data-toggle="modal" data-target="#freeCourse_modal").btn_link ЗАПИСАТЬСЯ БЕСПЛАТНО
+				.clearfix
+
+		section.lessons_type_wrapper.type_right#c2.silver_bg
+			.container
+				.lesson_type_float_container
+					.lesson_type_title 
+						span Proficiency (С2)
+					.lesson_type_text
+						p Занятия С2 дают высший уровень знания английского языка - это ступень близкая к native speaker, то есть человеку, для которого английский язык является родным
+
+					.lesson_type_slider_container
+						.lesson_type_slider_title.font_standart РЕЗУЛЬТАТЫ:
+						.lesson_type_slider_wrapper
+							.slider_prev_next
+							.lesson_type_slider_item
+								p Без труда понимаете любую прочитанную или услышанную информацию;
+							.lesson_type_slider_item
+								p Говорите бегло и спонтанно, без затруднений подбирая необходимые слова или выражения;
+							.lesson_type_slider_item
+								p Анализируете и делаете выводы на основе информации, полученной из любых источников, как письменных, так и устных;
+							.lesson_type_slider_item
+								p Логически излагаете свою точку зрения, приводя необходимые доводы;
+							.lesson_type_slider_item
+								p Говорите спонтанно, очень бегло и точно, различая тонкие нюансы значений слов и выражений в самых сложных ситуациях.
+
+					.lesson_type_feedback_wrapper
+						.lesson_type_feedback_title.font_standart
+							| Запишитесь на пробное занятие с преподавателем английского абсолютно 
+							span БЕСПЛАТНО!
+						.lesson_type_feedback_button
+							a(href="#freeCourse_modal" data-toggle="modal" data-target="#freeCourse_modal").btn_link ЗАПИСАТЬСЯ БЕСПЛАТНО
+				.clearfix
+
+		section.lessons_type_wrapper.type_left#f1
+			.container
+				.lesson_type_float_container
+					.lesson_type_title 
+						span Деловой английский
+					.lesson_type_text
+						p Полноценный курс, на котором вы изучите английскую грамматику пополните свой словарный запас, научитесь говорить и писать на английском языке, понимать документацию и тексты бизнес-тематики, воспринимать речь собеседника на слух.  
+
+					.lesson_type_slider_container
+						.lesson_type_slider_title.font_standart РЕЗУЛЬТАТЫ:
+						.lesson_type_slider_wrapper
+							.slider_prev_next
+							.lesson_type_slider_item
+								p Сможете работать в международной или крупной российской компании;
+							.lesson_type_slider_item
+								p Легко общаетесь с коллегами, партнерами и персоналом на английском языке;
+							.lesson_type_slider_item
+								p Грамотно составляете резюме и успешно проходите собеседование на английском языке;
+							.lesson_type_slider_item
+								p Проводите переговоры и представляете презентацию на английском;
+							.lesson_type_slider_item
+								p Свободно общаетесь на международных конференциях, ведете переписку на английском, налаживаете деловые связи.
+
+					.lesson_type_feedback_wrapper
+						.lesson_type_feedback_title.font_standart
+							| Запишитесь на пробное занятие с преподавателем английского абсолютно 
+							span БЕСПЛАТНО!
+						.lesson_type_feedback_button
+							a(href="#freeCourse_modal" data-toggle="modal" data-target="#freeCourse_modal").btn_link ЗАПИСАТЬСЯ БЕСПЛАТНО
+				.clearfix
+
+		section.lessons_type_wrapper.type_right#f2
+			.container
+				.lesson_type_float_container
+					.lesson_type_title 
+						span Подготовка к международному экзамену
+					.lesson_type_text
+						p Подготовим вас к международным экзаменам TOEFL, IELTS, FCE, CAE, CPE. Одновременно подтянем ваш общий уровень и познакомим вас со структурой и особенностями экзамена.
+
+					.lesson_type_slider_container
+						.lesson_type_slider_title.font_standart РЕЗУЛЬТАТЫ:
+						.lesson_type_slider_wrapper
+							.slider_prev_next
+							.lesson_type_slider_item
+								p Сертификат TOEFL дает возможность поступления в колледжи и университеты США и Канады, а также при устройстве на работу за границей;
+							.lesson_type_slider_item
+								p Наличие сертификата IELTS - это шанс для послупления в ВУЗы в 125 странах мира, почти на всей территории Европы, в Великобритании, Австралии, США, Канаде, Новой Зеландии;
+							.lesson_type_slider_item
+								p Большинство британских университетов и других европейских вузов требуют при поступлении сертификаты FCE, CAE или CPE - вы получите нужный документ и реализуете свою мечту.
+
+					.lesson_type_feedback_wrapper
+						.lesson_type_feedback_title.font_standart
+							| Запишитесь на пробное занятие с преподавателем английского абсолютно 
+							span БЕСПЛАТНО!
+						.lesson_type_feedback_button
+							a(href="#freeCourse_modal" data-toggle="modal" data-target="#freeCourse_modal").btn_link ЗАПИСАТЬСЯ БЕСПЛАТНО
+				.clearfix
+		
+		//- .container
+		//- 	section.feedback
+		//- 		.feedback_title Что-то беспокоит в работе вашего автомобиля?
+		//- 		.feedback_text 
+		//- 			p Оставьте свой номер телефона и мы перезвоним вам в течение 15 минут, чтобы сориентировать вас по стоимости ремонта:
+		//- 		form(action="post.php" method="post")
+		//- 			input(type="text" class="tell" title="+7 (999) 999-99-99" name="phone" placeholder="Телефон" required="required")
+		//- 			input(type="hidden" name="form1")
+		//- 			input(type="submit" value="Отправить")
+		//- 		.feedback_privacy
+		//- 			p 
+		//- 				| Нажимая на кнопку, вы даете согласие на 
+		//- 				a(href="policy.pdf") обработку 
+		//- 				|своих персональных данных.
+
+
+		footer
+			.container
+				.footer_policify_wrapper
+					.section1
+						.logo
+							a(href="#")
+								img(src="images/logo.jpg" name="Global Academic"  title="Global Academic"  alt="Global Academic")
+
+						.policify
+							a(href="/policy.pdf") Политика конфеденциальности
+
+					.section2
+						a(href="tel: +7хххххххххх").tel +7 (ххх) ххх-хх-хх
+						.created
+							p 
+								| Разработка и продвижение 
+								a(href="#") Группа MediaBuyers
+
+					.section3
+						.copyright
+							span © Школа английского языка 
+							span “Global academic”
+							span ОГРН 9999999999999
+							span ИНН 7777777777
+
+			.footer_line
+					
+
+		script(src="js/jquery.min.js")
+		script(src="js/slick.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/jquery.maskedinput.min.js")
+		script(src="js/main.js")
