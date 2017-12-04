@@ -1,0 +1,328 @@
+/************ Позже удалить ************/
+* {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    padding: 0;
+    margin: 0;
+}
+.all_container {
+    float: left;
+    height: 100%;
+    width: 100%;
+    min-width: 1200px;
+}
+#block_left {
+    width: 265px;
+    float: left;
+    margin-left: 20px;
+    height: 100%;
+    background-color: #c1151c;
+}
+#block_right {
+    width: 265px;
+    float: right;
+    margin-right: 20px;
+    height: 100%;
+    background-color: #057fb8;
+}
+#centr_contents {
+    margin: 0 305px;
+}
+#content {
+    float: left;
+    min-width: 100%;
+    background-color: #f5f2eb;
+    margin-top: 20px;
+    min-height: 800px;
+}
+.story_container {
+    height: 100%;
+    width: 100%;
+    float: left;
+}
+.clear {
+    clear: both;
+    height: 10px
+}
+
+/************ КОНЕЦ ************/
+
+/**** New Styles *****/
+#course_container {
+    font-family: Arial, Tahoma, Helvetica, sans-serif;
+}
+.course_tabs_menu {
+    float: left;
+    clear: both;
+    list-style: none;
+    margin: 15px 0 25px 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+    li {
+        font-size: 14px;
+        font-weight: bold;
+        height: 32px;
+        line-height: 32px;
+        float: left;
+        transition: all 0.3s;
+        a {
+            display: block;
+            padding: 0 10px;
+            text-transform: uppercase;
+            color: #1b1b1b;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        &.current {
+            position: relative;
+            background-color: #ffa90f;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+.custom_tab_responsive,
+.custom_table_responsive {
+    overflow-x: auto;
+}
+.course_tab {
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+    .tab_content {
+        width: 100%;
+        display: none;
+        &:first-child {
+            display: block;
+        }
+    }
+    table {
+        font-size: 13px;
+        width: 100%;
+        max-width: 100%;
+        color: #1b1b1b;
+        border-spacing: 0;
+        border-collapse: collapse;
+        background-color: transparent;
+        thead {
+            text-align: left;
+            border-bottom: 1px solid #cac7bf;
+            font-weight: bold;
+            th {
+                padding: 2px 0 5px 10px;
+                &.th_course_sale24h,
+                &.th_course_sale7d {
+                    text-align: center;
+                }
+            }
+        }
+        tbody {
+            tr {
+                transition: all 0.3s;
+                &:nth-child(even) {
+                    background-color: #fff;
+                }
+                &:hover {
+                    background-color: #fff1c2;
+                }
+                td {
+                    padding: 10px 5px 10px 10px;
+                    &.course_name {
+                        min-width: 170px;
+                        .course_img {
+                            height: 25px;
+                            width: 25px;
+                            float: left;
+                            margin-right: 10px;
+                            img {
+                                max-width: 100%;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                        }
+                        .course_name {
+                            color: #1b1b1b;
+                            text-decoration: none;
+                            font-weight: bold;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        .course_name_short {
+                            display: block;
+                            color: #787673;
+                            text-transform: uppercase;
+                        }
+                    }
+                    &.course_price {
+                        font-weight: bold;
+                        color: #009f3c;
+                    }
+                    &.course_sale24h {
+                        color: #ce2d29;
+                    }
+                    &.course_sale7d {
+                        color: #00b034;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/***************************** Converter *****************************/
+#online_calc {
+    max-width: 535px;
+    margin: 0 auto;
+    .calc_inline_block {
+        margin: 0 0 20px 0;
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+    .calc_text_result {
+        font-size: 19px;
+        color: #1b1b1b;
+        margin-top: 32px;
+        .calc_text {
+            width: 230px;
+            max-width: 100%;
+            float: left;
+            &.calc_text_left {
+                text-align: right;
+            }
+        }
+    }
+    input[type="text"],
+    select {
+        font-size: 14px;
+        width: 230px;
+        max-width: 100%;
+        position: relative;
+        color: #1b1b1b;
+        background-color: #fff;
+        border: 1px solid #cecece;
+        border-radius: 4px;
+        height: 36px;
+        padding: 5px 8px;
+        float: left;
+        position: relative;
+    }
+    select {
+        appearance:none;
+        background-repeat: no-repeat;
+        background-position: 210px 50%;
+        background-image: url("../images/arrow_down_icon.png");
+        &::-ms-expand {
+            display: none;
+        }
+    }
+    .center_input {
+        float: left;
+        margin: 0 10px;
+        height: 36px;
+        width: 50px;
+        text-align: center;
+        input[type="submit"],
+        input[type="button"],
+        button {
+            border-radius: 4px;
+            background-image: url(../images/convert_arrow.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #1898d5;
+            border: 1px solid #047db6;
+            width: 100%;
+            height: 36px;
+            transition: all 0.3s;
+            outline: none !important;
+            cursor: pointer;
+            &:hover,
+            &:focus {
+                background-color: #ffac18;
+                border-color: #ec9f16;
+            }
+        }
+    }
+}
+
+/***************************************** MEDIA *****************************************/
+@media (max-width: 1240px) {
+    .th_course_created,
+    .course_created {
+        display: none;
+    }
+}
+@media (max-width: 1305px) {
+    .th_course_sale7d,
+    .course_sale7d {
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .custom_table_responsive,
+    .custom_tab_responsive {
+        width: 100%;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd;
+    }
+    #online_calc {
+        input[type="text"],
+        select {
+            float: none;
+            display: block;
+            margin: 0 auto;
+        }
+        .center_input {
+            float: none;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calc_text_result .calc_text {
+            text-align: center !important;
+            margin: 0 auto;
+        }
+    }
+}
+@media (min-width: 1330px) {
+    .course_tab table tbody tr td {
+        &.course_name {
+            width: 170px;
+        }
+        &.course_price {
+            min-width: 90px;
+        }
+        &.course_capitalization {
+            min-width: 125px;
+        }
+        &.course_amount {
+            min-width: 115px;
+        }
+        &.course_created {
+            min-width: 95px;
+        }
+        &.course_sale24h,
+        &.course_sale7d {
+            min-width: 58px;
+        }
+    }
+}

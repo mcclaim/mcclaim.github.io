@@ -1,0 +1,294 @@
+@charset "UTF-8";
+/************ Позже удалить ************/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  padding: 0;
+  margin: 0; }
+
+.all_container {
+  float: left;
+  height: 100%;
+  width: 100%;
+  min-width: 1200px; }
+
+#block_left {
+  width: 265px;
+  float: left;
+  margin-left: 20px;
+  height: 100%;
+  background-color: #c1151c; }
+
+#block_right {
+  width: 265px;
+  float: right;
+  margin-right: 20px;
+  height: 100%;
+  background-color: #057fb8; }
+
+#centr_contents {
+  margin: 0 305px; }
+
+#content {
+  float: left;
+  min-width: 100%;
+  background-color: #f5f2eb;
+  margin-top: 20px;
+  min-height: 800px; }
+
+.story_container {
+  height: 100%;
+  width: 100%;
+  float: left; }
+
+.clear {
+  clear: both;
+  height: 10px; }
+
+/************ КОНЕЦ ************/
+/**** New Styles *****/
+#course_container {
+  font-family: Arial, Tahoma, Helvetica, sans-serif; }
+
+.course_tabs_menu {
+  float: left;
+  clear: both;
+  list-style: none;
+  margin: 15px 0 25px 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff; }
+  .course_tabs_menu li {
+    font-size: 14px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    float: left;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    .course_tabs_menu li a {
+      display: block;
+      padding: 0 10px;
+      text-transform: uppercase;
+      color: #1b1b1b;
+      text-decoration: none;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .course_tabs_menu li.current {
+      position: relative;
+      background-color: #ffa90f; }
+      .course_tabs_menu li.current a {
+        color: #fff; }
+
+.custom_tab_responsive,
+.custom_table_responsive {
+  overflow-x: auto; }
+
+.course_tab {
+  float: left;
+  margin-bottom: 20px;
+  width: 100%; }
+  .course_tab .tab_content {
+    width: 100%;
+    display: none; }
+    .course_tab .tab_content:first-child {
+      display: block; }
+  .course_tab table {
+    font-size: 13px;
+    width: 100%;
+    max-width: 100%;
+    color: #1b1b1b;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: transparent; }
+    .course_tab table thead {
+      text-align: left;
+      border-bottom: 1px solid #cac7bf;
+      font-weight: bold; }
+      .course_tab table thead th {
+        padding: 2px 0 5px 10px; }
+        .course_tab table thead th.th_course_sale24h, .course_tab table thead th.th_course_sale7d {
+          text-align: center; }
+    .course_tab table tbody tr {
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .course_tab table tbody tr:nth-child(even) {
+        background-color: #fff; }
+      .course_tab table tbody tr:hover {
+        background-color: #fff1c2; }
+      .course_tab table tbody tr td {
+        padding: 10px 5px 10px 10px; }
+        .course_tab table tbody tr td.course_name {
+          min-width: 170px; }
+          .course_tab table tbody tr td.course_name .course_img {
+            height: 25px;
+            width: 25px;
+            float: left;
+            margin-right: 10px; }
+            .course_tab table tbody tr td.course_name .course_img img {
+              max-width: 100%;
+              display: block;
+              margin: 0 auto; }
+          .course_tab table tbody tr td.course_name .course_name {
+            color: #1b1b1b;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+               text-overflow: ellipsis; }
+          .course_tab table tbody tr td.course_name .course_name_short {
+            display: block;
+            color: #787673;
+            text-transform: uppercase; }
+        .course_tab table tbody tr td.course_price {
+          font-weight: bold;
+          color: #009f3c; }
+        .course_tab table tbody tr td.course_sale24h {
+          color: #ce2d29; }
+        .course_tab table tbody tr td.course_sale7d {
+          color: #00b034; }
+
+/***************************** Converter *****************************/
+#online_calc {
+  max-width: 535px;
+  margin: 0 auto; }
+  #online_calc .calc_inline_block {
+    margin: 0 0 20px 0; }
+    #online_calc .calc_inline_block:after {
+      content: "";
+      display: table;
+      clear: both; }
+  #online_calc .calc_text_result {
+    font-size: 19px;
+    color: #1b1b1b;
+    margin-top: 32px; }
+    #online_calc .calc_text_result .calc_text {
+      width: 230px;
+      max-width: 100%;
+      float: left; }
+      #online_calc .calc_text_result .calc_text.calc_text_left {
+        text-align: right; }
+  #online_calc input[type="text"],
+  #online_calc select {
+    font-size: 14px;
+    width: 230px;
+    max-width: 100%;
+    position: relative;
+    color: #1b1b1b;
+    background-color: #fff;
+    border: 1px solid #cecece;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    height: 36px;
+    padding: 5px 8px;
+    float: left;
+    position: relative; }
+  #online_calc select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-repeat: no-repeat;
+    background-position: 210px 50%;
+    background-image: url("../images/arrow_down_icon.png"); }
+    #online_calc select::-ms-expand {
+      display: none; }
+  #online_calc .center_input {
+    float: left;
+    margin: 0 10px;
+    height: 36px;
+    width: 50px;
+    text-align: center; }
+    #online_calc .center_input input[type="submit"],
+    #online_calc .center_input input[type="button"],
+    #online_calc .center_input button {
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      background-image: url(../images/convert_arrow.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: #1898d5;
+      border: 1px solid #047db6;
+      width: 100%;
+      height: 36px;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      outline: none !important;
+      cursor: pointer; }
+      #online_calc .center_input input[type="submit"]:hover, #online_calc .center_input input[type="submit"]:focus,
+      #online_calc .center_input input[type="button"]:hover,
+      #online_calc .center_input input[type="button"]:focus,
+      #online_calc .center_input button:hover,
+      #online_calc .center_input button:focus {
+        background-color: #ffac18;
+        border-color: #ec9f16; }
+
+/***************************************** MEDIA *****************************************/
+@media (max-width: 1240px) {
+  .th_course_created,
+  .course_created {
+    display: none; } }
+
+@media (max-width: 1305px) {
+  .th_course_sale7d,
+  .course_sale7d {
+    display: none; } }
+
+@media screen and (max-width: 1200px) {
+  .custom_table_responsive,
+  .custom_tab_responsive {
+    width: 100%;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd; }
+  #online_calc input[type="text"],
+  #online_calc select {
+    float: none;
+    display: block;
+    margin: 0 auto; }
+  #online_calc .center_input {
+    float: none;
+    margin: 10px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #online_calc .calc_text_result .calc_text {
+    text-align: center !important;
+    margin: 0 auto; } }
+
+@media (min-width: 1330px) {
+  .course_tab table tbody tr td.course_name {
+    width: 170px; }
+  .course_tab table tbody tr td.course_price {
+    min-width: 90px; }
+  .course_tab table tbody tr td.course_capitalization {
+    min-width: 125px; }
+  .course_tab table tbody tr td.course_amount {
+    min-width: 115px; }
+  .course_tab table tbody tr td.course_created {
+    min-width: 95px; }
+  .course_tab table tbody tr td.course_sale24h, .course_tab table tbody tr td.course_sale7d {
+    min-width: 58px; } }
