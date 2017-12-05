@@ -86,6 +86,8 @@ html, body {
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
+      .course_tabs_menu li a:hover {
+        color: #949494; }
     .course_tabs_menu li.current {
       position: relative;
       background-color: #ffa90f; }
@@ -119,8 +121,6 @@ html, body {
       font-weight: bold; }
       .course_tab table thead th {
         padding: 2px 0 5px 10px; }
-        .course_tab table thead th.th_course_sale24h, .course_tab table thead th.th_course_sale7d {
-          text-align: center; }
     .course_tab table tbody tr {
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
@@ -238,47 +238,6 @@ html, body {
         border-color: #ec9f16; }
 
 /***************************************** MEDIA *****************************************/
-@media (max-width: 1240px) {
-  .th_course_created,
-  .course_created {
-    display: none; } }
-
-@media (max-width: 1305px) {
-  .th_course_sale7d,
-  .course_sale7d {
-    display: none; } }
-
-@media screen and (max-width: 1200px) {
-  .custom_table_responsive,
-  .custom_tab_responsive {
-    width: 100%;
-    overflow-y: hidden;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ddd; }
-  #online_calc input[type="text"],
-  #online_calc select {
-    float: none;
-    display: block;
-    margin: 0 auto; }
-  #online_calc .center_input {
-    float: none;
-    margin: 10px auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  #online_calc .calc_text_result .calc_text {
-    text-align: center !important;
-    margin: 0 auto; } }
-
 @media (min-width: 1330px) {
   .course_tab table tbody tr td.course_name {
     width: 170px; }
@@ -292,3 +251,61 @@ html, body {
     min-width: 95px; }
   .course_tab table tbody tr td.course_sale24h, .course_tab table tbody tr td.course_sale7d {
     min-width: 58px; } }
+
+@media (max-width: 1305px) {
+  .th_course_sale7d,
+  .course_sale7d {
+    display: none; } }
+
+@media (max-width: 1240px) {
+  .th_course_created,
+  .course_created {
+    display: none; } }
+
+@media screen and (max-width: 1200px) {
+  .custom_table_responsive,
+  .custom_tab_responsive {
+    width: 100%;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
+  #online_calc input[type="text"],
+  #online_calc select {
+    float: none;
+    display: block;
+    margin: 0 auto; }
+  #online_calc .center_input.input_submit_wrap {
+    float: none;
+    margin: 10px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
+@media screen and (max-width: 950px) {
+  #online_calc .calc_text_result .calc_text {
+    text-align: center !important;
+    float: none;
+    margin: 0 auto; }
+  #online_calc .center_input.calc_result_equally {
+    float: none;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; } }
