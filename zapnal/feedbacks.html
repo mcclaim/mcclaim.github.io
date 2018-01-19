@@ -51,7 +51,7 @@
               </div>
               <div class="col-xs-2">
                 <div class="feedback_header_product_date">
-                  <div class="feedback_header_product_date_title"> <span class="date_title">Дата</span><span class="set_date">
+                  <div class="date_searchbox_wrapper"> <span class="date_title">Дата</span><span class="set_date">
                       <form class="date_searchbox" action="" method="get">
                         <input class="date_searchbox_input" type="search" placeholder="Выберите дату" name="search" onkeyup="buttonUp();" required="">
                         <button class="date_searchbox_submit" type="submit"></button><span class="date_searchbox_icon"></span>
@@ -62,14 +62,14 @@
           </div>
           <div class="main_block_container column_2">
             <div class="main_block_container_left">
-              <div class="main_block_container_aside silver_aside">
+              <div class="main_block_container_aside select_year_in_bottom silver_aside">
                 <div class="feedback_tab_wrapper">
                   <ul class="nav" role="tablist">
                     <li class="active" role="presentation"><a href="#myFeedback" aria-controls="myFeedback" role="tab" data-toggle="tab">Мои отзывы</a></li>
                     <li role="presentation"><a href="#feedbackAboutMe" aria-controls="feedbackAboutMe" role="tab" data-toggle="tab">Отзывы обо мне</a></li>
                   </ul>
                 </div>
-                <div class="feedback_select_year">
+                <div class="bottom_select_year">
                   <form action="" method="post">
                     <select id="select_year" name="select_year">
                       <option value="2016">2016</option>
@@ -201,6 +201,7 @@
     <div class="scrollToTop"><a href="#"></a></div>
     <script src="js/jquery/jquery.min.js"></script>
     <script src="js/custom-select.js"></script>
+    <script src="js/scrollbar/simplebar.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/textarea/textarea.autosize.min.js"></script>
     <script src="js/easescroll/jquery.easeScroll.js"></script>
