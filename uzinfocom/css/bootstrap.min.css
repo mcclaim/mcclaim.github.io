@@ -32,7 +32,7 @@
   }
 }
 
-@media (min-width:767px){
+@media (min-width:768px){
 
   /* Column clear fix */
   .col-lg-1:nth-child(12n+1),
