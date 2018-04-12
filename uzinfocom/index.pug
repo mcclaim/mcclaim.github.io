@@ -1,0 +1,581 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="utf-8")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1')
+		meta(name='MobileOptimized', content='width')
+		meta(name='HandheldFriendly', content='true')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='msapplication-tap-highlight', content='no')
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Uzinfocom
+		link(href="css/bootstrap.min.css" rel="stylesheet")
+		link(href="css/slick.css" rel="stylesheet")
+		link(href="css/font-awesome.css" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+		| <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+		| <!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
+	body
+
+		// Modal for Enter
+		#enter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='enter_to')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+						h4#enter_to.modal-title Вход
+					.modal-body
+						form(action="")
+							.enter_group
+								input(type="text" required).form-control
+								label Логин
+							.enter_group
+								input(type="password" required).form-control
+								label Пароль
+							input(type="submit" value="Войти").form-control
+							.lost_pass
+								a(href="javascript:void(0);") Забили пароль?
+
+		// Modal for Registery
+		#registration.modal.fade(tabindex='-1', role='dialog', aria-labelledby='reg')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+						h4#reg.modal-title Регистрация
+					.modal-body
+						form(action="")
+							.enter_group
+								input(type="text" required).form-control
+								label Логин
+							.enter_group
+								input(type="password" required).form-control
+								label Пароль
+							.enter_group
+								input(type="password" required).form-control
+								label Повторите пароль
+							.rules
+								label(for="rules")
+									input#rules(type='checkbox', value='')
+									.checkbox_icon
+										svg.icon(width='24', height='24')
+											svg#icon-check-small(viewbox='0 0 24 24', width='100%', height='100%')
+												path(d='M10 13.59l-2.29-2.3-1.42 1.42 3.71 3.7 7.71-7.7-1.42-1.42-6.29 6.3z')
+
+									.rules_inform
+										.inputs-option__label.t-text.js-label
+											| С 
+											a.agreement-link(tabindex='-1', href='javascript:void(0);', target='_blank') соглашением
+											|  об использовании сервиса flamp.ru ознакомился и согласен. Даю ООО «ДубльГИС» согласие на обработку персональных данных на условиях и в целях, определенных 
+											a.agreement-link(tabindex='-1', href='javascript:void(0);', target='_blank')
+												| Политикой конфиденциальности
+
+							input(type="submit" value="Зарегистрироваться").form-control
+						
+
+		header
+			.header_fixed_top
+				.header_top
+					a(href="#").header_top__logo
+						img(src="images/logo.png")
+					.header_top__userspace
+						.user_space
+							a(href="javascript:void(0);" data-toggle='modal', data-target='#registration') Регистрация
+							a(href="javascript:void(0);" data-toggle='modal', data-target='#enter') Вход
+		
+		.container
+			section.slider
+				.slider_container
+					.slider_item(style="background-image: url('images/advakat.jpg');")
+						.slider_color_overlay
+							.slider_content
+								.slider_header
+									h4 Отзывы о Палатах адвокатов
+								p.slider_desc
+									| Узнайте что говорят о Палата адвокатов Республики Узбекистан
+								a.slider_btn(href='#') Подробнее
+
+					.slider_item(style="background-image: url('images/mvd.jpg');")
+						.slider_color_overlay
+							.slider_content
+								.slider_header
+									h4 Отзывы о Министерстве Внутренных дел
+								p.slider_desc
+									| Узнайте что говорят о Министерстве Внутренных дел Республики Узбекистан
+								a.slider_btn(href='#') Подробнее
+
+					.slider_item(style="background-image: url('images/avto.jpg');")
+						.slider_color_overlay
+							.slider_content
+								.slider_header
+									h4 Отзывы о Министерстве автомобильного транспорта
+								p.slider_desc
+									| Узнайте что говорят о Министерстве автомобильного транспорта
+								a.slider_btn(href='#') Подробнее
+
+			section.search
+				form(action="" method="post")
+					.input_group
+						input(type="text" placeholder="Поиск учреждений" required).form-control
+						input(type="submit" value="Поиск")
+
+			section.catalog_wrap
+				h3 Каталог оценавщихся учреждений
+				
+				.catalog_item_wrap
+					.row
+						.col-xs-6.col-sm-4.col-md-3.col-lg-2
+							.catalog_item
+								a(href="javascript:void(0);")
+									.catalog_item__img-wrapper
+										img(src='images/catalog/006-scale.png')
+									.catalog_item__description
+										.catalog_item__title Юстиция
+										.catalog_item__rating 30 Оцененных
+
+						.col-xs-6.col-sm-4.col-md-3.col-lg-2
+							.catalog_item
+								a(href="javascript:void(0);")
+									.catalog_item__img-wrapper
+										img(src='images/catalog/001-internet.png')
+									.catalog_item__description
+										.catalog_item__title CRM
+										.catalog_item__rating 37 Оцененных
+
+						.col-xs-6.col-sm-4.col-md-3.col-lg-2
+							.catalog_item
+								a(href="javascript:void(0);")
+									.catalog_item__img-wrapper
+										img(src='images/catalog/007-trucking.png')
+									.catalog_item__description
+										.catalog_item__title Транспорт
+										.catalog_item__rating 19 Оцененных
+
+						.col-xs-6.col-sm-4.col-md-3.col-lg-2
+							.catalog_item
+								a(href="javascript:void(0);")
+									.catalog_item__img-wrapper
+										img(src='images/catalog/015-bank.png')
+									.catalog_item__description
+										.catalog_item__title Банк
+										.catalog_item__rating 47 Оцененных
+
+						.col-xs-6.col-sm-4.col-md-3.col-lg-2
+							.catalog_item
+								a(href="javascript:void(0);")
+									.catalog_item__img-wrapper
+										img(src='images/catalog/005-travel.png')
+									.catalog_item__description
+										.catalog_item__title Туризм
+										.catalog_item__rating 58 Оцененных
+
+						.col-xs-6.col-sm-4.col-md-3.col-lg-2
+							.catalog_item
+								a(href="javascript:void(0);")
+									.catalog_item__img-wrapper
+										img(src='images/catalog/cardiogram.png')
+									.catalog_item__description
+										.catalog_item__title Медицина
+										.catalog_item__rating 107 Оцененных
+
+						.col-xs-6.col-sm-4.col-md-3.col-lg-2
+							.catalog_item
+								a(href="javascript:void(0);")
+									.catalog_item__img-wrapper
+										img(src='images/catalog/012-line-graph.png')
+									.catalog_item__description
+										.catalog_item__title Экономика
+										.catalog_item__rating 56 Оцененных
+
+						.col-xs-6.col-sm-4.col-md-3.col-lg-2
+							.catalog_item
+								a(href="javascript:void(0);")
+									.catalog_item__img-wrapper
+										img(src='images/catalog/011-customer-service.png')
+									.catalog_item__description
+										.catalog_item__title Связь
+										.catalog_item__rating 69 Оцененных
+
+						.col-xs-6.col-sm-4.col-md-3.col-lg-2
+							.catalog_item
+								a(href="javascript:void(0);")
+									.catalog_item__img-wrapper
+										img(src='images/catalog/004-commerce.png')
+									.catalog_item__description
+										.catalog_item__title Малый бизнес
+										.catalog_item__rating 25 Оцененных
+
+						.col-xs-6.col-sm-4.col-md-3.col-lg-2
+							.catalog_item
+								a(href="javascript:void(0);")
+									.catalog_item__img-wrapper
+										img(src='images/catalog/002-interface.png')
+									.catalog_item__description
+										.catalog_item__title Лицензирования
+										.catalog_item__rating 73 Оцененных
+
+						.col-xs-6.col-sm-4.col-md-3.col-lg-2
+							.catalog_item
+								a(href="javascript:void(0);")
+									.catalog_item__img-wrapper
+										img(src='images/catalog/009-flats.png')
+									.catalog_item__description
+										.catalog_item__title Строительство
+										.catalog_item__rating 22 Оцененных
+
+						.col-xs-6.col-sm-4.col-md-3.col-lg-2
+							.catalog_item
+								a(href="javascript:void(0);")
+									.catalog_item__img-wrapper
+										img(src='images/catalog/television.png')
+									.catalog_item__description
+										.catalog_item__title Телесвязь
+										.catalog_item__rating 93 Оцененных
+			
+			section.last_reviews
+				h3 Последние отзывы
+				.row
+					.col-xs-12.col-sm-4
+						.last_review_item
+							a(href="javascript:void(0);").author_profile
+								.author_img
+									img(src="images/review/author-1.jpg")
+								.author_inform
+									.author_name Жавлон Тохтабоев
+									.author_publish 140 отзывов
+
+							a(href="javascript:void(0);").company
+								.company_img
+									img(src="images/review/1.png")
+								.company_inform
+									.company_name(title="Министерство внутренных дел") Министерство внутренных дел
+									.comany_publishes 76 публикаций
+									.company_rating 
+										| Итоговый рейтинг: 
+										b.cool 7.8
+
+							a(href="javascript:void(0);").review_filial
+								.review_title(title="Новая постоновления 84 - закон") Новая постоновления 84 - закона
+								.review_text
+									p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nam asperiores, laboriosam suscipit iure eum sapiente perspiciatis ea eius dolorem facilis eligendi deserunt, tempore, dolorum mollitia dolore repudiandae nesciunt illo explicabo. Et voluptate sunt, repellendus incidunt nesciunt dolorem a quo, mollitia provident magnam. Minus ex, culpa accusantium libero ipsa id quia, sint odio inventore modi quas aut, nulla quaerat repellat quis suscipit eum cum esse natus cumque cupiditate nobis quisquam dignissimos reiciendis. Quae eum doloribus deserunt, unde error architecto. Explicabo?
+
+					.col-xs-12.col-sm-4
+						.last_review_item
+							a(href="javascript:void(0);").author_profile
+								.author_img
+									img(src="images/review/author-2.gif")
+								.author_inform
+									.author_name Хотамжон Давронов
+									.author_publish 19 отзывов
+
+							a(href="javascript:void(0);").company
+								.company_img
+									img(src="images/review/3.png")
+								.company_inform
+									.company_name(title="UzbekEnergo") UzbekEnergo
+									.comany_publishes 23 публикаций
+									.company_rating 
+										| Итоговый рейтинг: 
+										b.normal 6.8
+
+							a(href="javascript:void(0);").review_filial
+								.review_title(title="Энергосбережение - благосостояние страны") Энергосбережение - благосостояние страны
+								.review_text
+									p   В нашей стране с каждым годом расширяются масштабы работ по эффективному развитию экономики и повышению благосостояния народа. В этом направлении уделяется большое значение в рациональном и бережном использовании природных ресурсов. Сегодня благосостояние страны невозможно представить без электрической энергии. Электрическая энергия, приводящая в движение предприятия экономического сектора, освещая наши дома и облегчая наш труд, является бесценным богатством. И поэтому бережливое и рациональное использование электрической энергии является нашим неотъемлемым долгом.
+
+					.col-xs-12.col-sm-4
+						.last_review_item
+							a(href="javascript:void(0);").author_profile
+								.author_img
+									img(src="images/review/author-2.gif")
+								.author_inform
+									.author_name Азиз Талипов
+									.author_publish 56 отзывов
+
+							a(href="javascript:void(0);").company
+								.company_img
+									img(src="images/review/2.png")
+								.company_inform
+									.company_name(title="Палата адвокатов") Палата адвокатов
+									.comany_publishes 26 публикаций
+									.company_rating 
+										| Итоговый рейтинг: 
+										b.cool 9.2
+
+							a(href="javascript:void(0);").review_filial
+								.review_title(title="Визит делегации КНР в Палату Адвокатов Республики Узбекистан") Визит делегации КНР в Палату адвокатов Республики Узбекистан
+								.review_text
+									p   В марте текущего года Палату адвокатов посетила делегация Китайской Народной Республики. В составе делегации были представители Министерства юстиции КНР во главе заместителя начальника Управления нотариата и адвокатуры Министерства юстиции Ян Сянпинь, а также адвокаты города Пекин Чжоу Гуанцюнь и Чжан Чжэньли. 
+									| В ходе встречи гости из Китая ознакомились с работой Палаты адвокатов, обсудили вопросы, связанные с дальнейшим укреплением сотрудничества и взаимоотношений между адвокатурами двух стран в сфере оказания профессиональной юридической помощи в секторе предпринимательства для поддержания и юридического сопровождения обмена инвестициями между двух стран.
+				
+				.btn_wrap
+					a(href="javascript:void(0);").btn Посмотреть все отзывы
+
+			section.rating
+				h3 Итоговая оценка по критериям
+
+				table#widgetProductmetrics-.wpm.wpm-flip
+					caption
+						.wpm-nav.wpm-nav-left
+							span.fa.fa-chevron-left
+						.wpm-nav.wpm-nav-right
+							span.fa.fa-chevron-right
+					thead
+						tr.wpm-matrix-products
+							th.wpm-spec-title.subheading3
+								div Ведомства Узбекистана
+							th
+								.wpm-title
+									a.wpm-title-main.subheading2(href='javascript:void(0);') "Узавтойул" ГАК
+							th
+								.wpm-title
+									a.wpm-title-main.subheading2(href='javascript:void(0);') "Узавтосаноат" АК
+							th
+								.wpm-title
+									a.wpm-title-main.subheading2(href='javascript:void(0);') "Узагромашсервис" Ассосация
+							th
+								.wpm-title
+									a.wpm-title-main.subheading2(href='javascript:void(0);') "Узбекенгилсаноат" АО
+							th
+								.wpm-title
+									a.wpm-title-main.subheading2(href='javascript:void(0);') "Узбекистон Темир Йуллари" АО
+							th
+								.wpm-title
+									a.wpm-title-main.subheading2(href='javascript:void(0);') "Узбеккино" Национальное агенство
+							th
+								.wpm-title
+									a.wpm-title-main.subheading2(href='javascript:void(0);') "УзбекОзикОвкатЗахира" Ассосация
+							th
+								.wpm-title
+									a.wpm-title-main.subheading2(href='javascript:void(0);')  "Узбекчармпойабзали" Ассосация
+							th
+								.wpm-title
+									a.wpm-title-main.subheading2(href='javascript:void(0);') "УзбекЭнерго" АО
+							th
+								.wpm-title
+									a.wpm-title-main.subheading2(href='javascript:void(0);') "Узвинпром - Холдинг" ХК
+					tbody
+						tr.wpm-matrix-data
+							td.wpm-matrix-data-title.subheading3
+									| Итоговая оценка
+							td.wpm-matrix-data-value.subheading2.range2
+									| 8.9
+							td.wpm-matrix-data-value.subheading2.range2
+									| 8.4
+							td.wpm-matrix-data-value.subheading2.range2
+									| 7.3
+							td.wpm-matrix-data-value.subheading2.range2
+									| 7.1
+							td.wpm-matrix-data-value.subheading2.range1
+									| 6.3
+							td.wpm-matrix-data-value.subheading2.range1
+									| 5.8
+							td.wpm-matrix-data-value.subheading2.range1
+									| 5.7
+							td.wpm-matrix-data-value.subheading2.range1
+									| 4.9
+							td.wpm-matrix-data-value.subheading2.range1
+									| 4.7
+							td.wpm-matrix-data-value.subheading2.range1
+									| 4.4
+						tr.wpm-matrix-data
+							td.wpm-matrix-data-title.subheading3
+									| Информативность
+							td.wpm-matrix-data-value.subheading2.range2
+									| 10
+							td.wpm-matrix-data-value.subheading2.range2
+									| 10
+							td.wpm-matrix-data-value.subheading2.range2
+									| 10
+							td.wpm-matrix-data-value.subheading2.range1
+									| 5
+							td.wpm-matrix-data-value.subheading2.range2
+									| 10
+							td.wpm-matrix-data-value.subheading2.range0
+							td.wpm-matrix-data-value.subheading2.range2
+									| 10
+							td.wpm-matrix-data-value.subheading2.range0
+							td.wpm-matrix-data-value.subheading2.range1
+									| 5
+							td.wpm-matrix-data-value.subheading2.range1
+									| 5
+						tr.wpm-matrix-data
+							td.wpm-matrix-data-title.subheading3
+									| Инфраструктура
+							td.wpm-matrix-data-value.subheading2.range2
+									| 7
+							td.wpm-matrix-data-value.subheading2.range1
+									| 6.3
+							td.wpm-matrix-data-value.subheading2.range1
+									| 5.3
+							td.wpm-matrix-data-value.subheading2.range2
+									| 10
+							td.wpm-matrix-data-value.subheading2.range1
+									| 5.3
+							td.wpm-matrix-data-value.subheading2.range2
+									| 9.5
+							td.wpm-matrix-data-value.subheading2.range0
+									| 3.8
+							td.wpm-matrix-data-value.subheading2.range2
+									| 8.5
+							td.wpm-matrix-data-value.subheading2.range2
+									| 7
+							td.wpm-matrix-data-value.subheading2.range1
+									| 5.3
+						tr.wpm-matrix-data
+							td.wpm-matrix-data-title.subheading3
+									| Строительство
+							td.wpm-matrix-data-value.subheading2.range2
+									| 10
+							td.wpm-matrix-data-value.subheading2.range2
+									| 8.8
+							td.wpm-matrix-data-value.subheading2.range1
+									| 6
+							td.wpm-matrix-data-value.subheading2.range1
+									| 6.5
+							td.wpm-matrix-data-value.subheading2.range0
+									| 1.8
+							td.wpm-matrix-data-value.subheading2.range2
+									| 10
+							td.wpm-matrix-data-value.subheading2.range0
+									| 1.5
+							td.wpm-matrix-data-value.subheading2.range2
+									| 7.8
+							td.wpm-matrix-data-value.subheading2.range0
+									| 0.8
+							td.wpm-matrix-data-value.subheading2.range0
+									| 2.3
+						tr.wpm-matrix-specs
+							td.wpm-spec-title.subheading3
+									| Гос стандарт
+							td.wpm-spec-value
+								.txt1a.fa.fa-check
+							td.wpm-spec-value
+								.txt1a.fa.fa-check
+							td.wpm-spec-value
+								.txt1a.fa.fa-check
+							td.wpm-spec-value
+								.txt1a.fa.fa-check
+							td.wpm-spec-value
+								.txt1a.fa.fa-check
+							td.wpm-spec-value
+								.txt1a.fa.fa-minus
+							td.wpm-spec-value
+								.txt1a.fa.fa-check
+							td.wpm-spec-value
+								.txt1a.fa.fa-minus
+							td.wpm-spec-value
+								.txt1a.fa.fa-check
+							td.wpm-spec-value
+								.txt1a.fa.fa-check
+
+						tr.wpm-matrix-specs
+							td.wpm-spec-title.subheading3
+								div
+									| Вырост бьюджета
+							td.wpm-spec-value
+								.txt1a
+									| +36%
+							td.wpm-spec-value
+								.txt1a
+									| +52%
+							td.wpm-spec-value
+								.txt1a
+									| -31%
+							td.wpm-spec-value
+								.txt1a
+									| +5%
+							td.wpm-spec-value
+								.txt1a
+									| +95%
+							td.wpm-spec-value
+								.txt1a
+									| -16%
+							td.wpm-spec-value
+								.txt1a
+									| +23%
+							td.wpm-spec-value
+								.txt1a
+									| +20%
+							td.wpm-spec-value
+								.txt1a
+									| +1%
+							td.wpm-spec-value
+								.txt1a
+									| -13%
+
+						tr.wpm-matrix-specs
+							td.wpm-spec-title.subheading3
+								div
+									| Производство
+							td.wpm-spec-value
+								.txt1a
+									| +45%
+							td.wpm-spec-value
+								.txt1a
+									| +58%
+							td.wpm-spec-value
+								.txt1a
+									| -12%
+							td.wpm-spec-value
+								.txt1a
+									| -5%
+							td.wpm-spec-value
+								.txt1a
+									| -85%
+							td.wpm-spec-value
+								.txt1a
+									| -16%
+							td.wpm-spec-value
+								.txt1a
+									| +23%
+							td.wpm-spec-value
+								.txt1a
+									| +20%
+							td.wpm-spec-value
+								.txt1a
+									| +1%
+							td.wpm-spec-value
+								.txt1a
+									| -13%
+
+						tr.wpm-matrix-specs
+							td.wpm-spec-title.subheading3
+								div
+									| Веб-сайт
+							td.wpm-spec-value
+								.txt1a.fa.fa-check
+							td.wpm-spec-value
+								.txt1a.fa.fa-check
+							td.wpm-spec-value
+								.txt1a.fa.fa-check
+							td.wpm-spec-value
+								.txt1a.fa.fa-minus
+							td.wpm-spec-value
+								.txt1a.fa.fa-check
+							td.wpm-spec-value
+								.txt1a.fa.fa-minus
+							td.wpm-spec-value
+								.txt1a.fa.fa-check
+							td.wpm-spec-value
+								.txt1a.fa.fa-minus
+							td.wpm-spec-value
+								.txt1a.fa.fa-minus
+							td.wpm-spec-value
+								.txt1a.fa.fa-minus
+
+
+		footer
+			.container
+				.footer_inform Copyrights © 2018
+
+			
+
+		script(src="js/jquery.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/simplebar.js")
+		script(src="js/slick.min.js")
+		script(src="js/main.js")
