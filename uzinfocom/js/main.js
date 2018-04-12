@@ -16,7 +16,7 @@ $(document).ready(function() {
     });
     $("input,textarea").blur(function() {
         $(this).parents(".enter_group").removeClass("focus");
-        if ($(this).val().length !== 0) {
+        if ($(this).val().length) {
             $(this).parents(".enter_group").addClass("focused");
         } else {
             $(this).parents(".enter_group").removeClass("focused");
