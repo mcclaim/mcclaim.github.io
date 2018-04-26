@@ -497,7 +497,6 @@ section.video_block h3.widget_title:after {
 .category_block_sticky {
 	position: relative;
 	z-index: 4;
-	background-color: #fff;
 	padding: 20px 0 0 0;
 }
 aside {

@@ -44,11 +44,11 @@ $(document).ready(function () {
       });
     });
 
-    var a = new StickySidebar('.category_block', {
+    var a = new StickySidebar('.aside_wrap', {
       topSpacing: 0,
       bottomSpacing: 20,
       containerSelector: '.aside_cont',
-      innerWrapperSelector: '.category_block_sticky'
+      innerWrapperSelector: '.aside_sticky'
     });
 
   // Header block
