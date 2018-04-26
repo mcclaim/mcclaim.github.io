@@ -3,7 +3,7 @@ $(document).ready(function () {
 	var a = new StickySidebar('.aside_wrap', {
       topSpacing: 0,
       bottomSpacing: 20,
-      containerSelector: '.aside_cont'
+      containerSelector: 'aside'
     });
     // Video block
     $('.video_items').slick({

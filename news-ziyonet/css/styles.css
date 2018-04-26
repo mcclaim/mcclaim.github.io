@@ -46,6 +46,10 @@ footer {
     z-index: -1;
     background-color: #e8f9ff;
 }
+
+.aside_wrap {
+	position: relative;
+}
 /****** END WHEN LOADING ******/
 
 .pad-25 {
