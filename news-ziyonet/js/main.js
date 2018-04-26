@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-	var a = new StickySidebar('.aside_wrap', {
+	var a = new StickySidebar('.aside_sticky', {
       topSpacing: 0,
       bottomSpacing: 20,
-      containerSelector: 'aside'
+      containerSelector: '.aside_cont'
     });
     // Video block
     $('.video_items').slick({
