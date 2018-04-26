@@ -1,10 +1,11 @@
 $(document).ready(function () {
 
-	var a = new StickySidebar('.aside_sticky', {
-      topSpacing: 0,
-      bottomSpacing: 20,
-      containerSelector: '.aside_cont'
-    });
+	// var a = new StickySidebar('.aside_sticky', {
+ //      topSpacing: 0,
+ //      bottomSpacing: 20,
+ //      containerSelector: '.aside_cont'
+ //    });
+    $("#sidebar").stick_in_parent();
     // Video block
     $('.video_items').slick({
       dots: false,
@@ -57,9 +58,12 @@ $(document).ready(function () {
 
     toggleSlick = function () {
         if ($window.width() <= 480) {
-            $card.slick();
+            $card.not('.slick-initialized').slick();
         } else {
-            $card.slick('unslick');
+        	if (!$card.hasClass('.slick-initialized')) {
+        		$card.not('.slick-initialized').slick();
+        		$card.slick('unslick');	
+        	}
         }
     }
     toggleSlick2 = function () {
