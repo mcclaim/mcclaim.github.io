@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+	var a = new StickySidebar('.aside_wrap', {
+      topSpacing: 0,
+      bottomSpacing: 20,
+      containerSelector: '.aside_cont'
+    });
     // Video block
     $('.video_items').slick({
       dots: false,
@@ -42,12 +47,6 @@ $(document).ready(function () {
         },
         type: 'iframe'
       });
-    });
-
-    var a = new StickySidebar('.aside_sticky', {
-      topSpacing: 0,
-      bottomSpacing: 20,
-      containerSelector: '.aside_cont'
     });
 
   // Header block
