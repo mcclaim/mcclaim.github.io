@@ -47,8 +47,7 @@ $(document).ready(function () {
     var a = new StickySidebar('.aside_wrap', {
       topSpacing: 0,
       bottomSpacing: 20,
-      containerSelector: '.aside_cont',
-      innerWrapperSelector: '.aside_sticky'
+      containerSelector: '.aside_cont'
     });
 
   // Header block
