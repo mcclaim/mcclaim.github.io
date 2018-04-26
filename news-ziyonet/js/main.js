@@ -44,7 +44,7 @@ $(document).ready(function () {
       });
     });
 
-    var a = new StickySidebar('.category_block', {
+    var a = new StickySidebar('.aside_sticky', {
       topSpacing: 0,
       bottomSpacing: 20,
       containerSelector: '.aside_cont'
