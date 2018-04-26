@@ -67,10 +67,6 @@ $(document).ready(function () {
     toggleSlick2 = function () {
         if ($window.width() <= 480) {
             $card.slick();
-        } else {
-            if ($whenNot.length) {
-              $card.slick('unslick');
-            }
         }
     }
     $window.resize(toggleSlick);
