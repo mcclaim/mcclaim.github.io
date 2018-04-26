@@ -1,10 +1,18 @@
 $(document).ready(function () {
 
+    // Calendar
+    $('#calendar').jalendar({
+        color: '#577e9a', // Unlimited Colors
+        color2: '#57c8bf', // Unlimited Colors
+        lang: 'OZ',
+        sundayStart: true
+    });
+
     // Sticky Sidebar
 
     var window_width = $( window ).width();
 
-    if (window_width < 768) {
+    if (window_width < 991) {
         $("#sidebar").trigger("sticky_kit:detach");
     } else {
         make_sticky();
@@ -14,7 +22,7 @@ $(document).ready(function () {
 
         window_width = $( window ).width();
 
-        if (window_width < 768) {
+        if (window_width < 991) {
             $("#sidebar").trigger("sticky_kit:detach");
         } else {
             make_sticky();
