@@ -710,6 +710,11 @@ aside h3.widget_title span {
 	.news_item .news_item_img {
 		height: 300px;
 	}
+	
+	.minimal_item .minimal_item_title {
+		min-height: 100%;
+	}
+
 	.video_items .slick-prev, .video_items .slick-next {
 	    height: 25px;
 	    width: 25px;
