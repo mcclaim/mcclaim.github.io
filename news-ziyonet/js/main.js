@@ -36,8 +36,8 @@ $(document).ready(function () {
     //     });
     // }
 
-    // Video block
-    $('.video_items').slick({
+    // News Items
+    $('.news_slider').slick({
       dots: false,
       infinite: false,
       speed: 300,
@@ -70,6 +70,7 @@ $(document).ready(function () {
       ]
     });
 
+    // Video in Popup
     $('.video_items .video_item').each(function(index, element) {
       var href = $(element).find('.video_item_img a').attr('href');
       $(element).magnificPopup({
