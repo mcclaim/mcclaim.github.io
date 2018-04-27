@@ -1,10 +1,41 @@
 $(document).ready(function () {
 
-	var a = new StickySidebar('.aside_sticky', {
-      topSpacing: 0,
-      bottomSpacing: 20,
-      containerSelector: '.aside_cont'
+    // Calendar
+    $('#calendar').jalendar({
+        color: '#577e9a', // Unlimited Colors
+        color2: '#57c8bf', // Unlimited Colors
+        lang: 'OZ',
+        sundayStart: true
     });
+
+    // Sticky Sidebar
+
+    // var window_width = $( window ).width();
+
+    // if (window_width < 991) {
+    //     $("#sidebar").trigger("sticky_kit:detach");
+    // } else {
+    //     make_sticky();
+    // }
+
+    // $( window ).resize(function() {
+
+    //     window_width = $( window ).width();
+
+    //     if (window_width < 991) {
+    //         $("#sidebar").trigger("sticky_kit:detach");
+    //     } else {
+    //         make_sticky();
+    //     }
+
+    // });
+
+    // function make_sticky() {
+    //     $("#sidebar").stick_in_parent({
+    //         parent: '.aside_cont'
+    //     });
+    // }
+
     // Video block
     $('.video_items').slick({
       dots: false,
@@ -57,9 +88,12 @@ $(document).ready(function () {
 
     toggleSlick = function () {
         if ($window.width() <= 480) {
-            $card.slick();
+            $card.not('.slick-initialized').slick();
         } else {
-            $card.slick('unslick');
+        	if (!$card.hasClass('.slick-initialized')) {
+        		$card.not('.slick-initialized').slick();
+        		$card.slick('unslick');	
+        	}
         }
     }
     toggleSlick2 = function () {
