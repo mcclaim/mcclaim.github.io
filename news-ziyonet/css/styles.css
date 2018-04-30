@@ -136,6 +136,23 @@ a:focus {
 .social-nav .pinterest:hover {
     color: #cb2026;
 }
+.pagination_wrap {
+    text-align: center;
+}
+.pagination>li>a, .pagination>li>span {
+    border: 0;
+    border-radius: 2px;
+    color: #6f6f6f;
+}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover,
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #0a4e9a;
+    color: #fff;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span,
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-radius: 2px;
+}
 
 /******* END Social Buttons *******/
 header {
@@ -709,7 +726,8 @@ h3.widget_title span {
 }
 
 /****** News Item ******/
-
+section.tag_page h3.widget_title,
+section.category_page h3.widget_title,
 section.last_news h3.widget_title {
 	margin-top: 65px;
 }
@@ -728,13 +746,14 @@ section.last_news h3.widget_title {
 
 .news_item .news_item_img_wrap .news_item_category {
 	position: absolute;
-	top: -1px;
+	top: 0;
 	right: 0;
 }
 
 .news_item .news_item_img_wrap .news_item_category a {
-	padding: 3px 7px 3px 10px;
-	line-height: 25px;
+    display: block;
+	padding: 0 7px 0 10px;
+	line-height: 20px;
 	font-weight: 400;
 	background-color: #0a4e9a;
 	color: #fff;
@@ -1028,7 +1047,7 @@ aside h3.widget_title span {
     display: block;
     padding: 10px 40px 10px 10px;
     border-bottom: 1px dashed #fff;
-    background-color: #0085b1;
+    background-color: #3498db;
     color: #fff;
     white-space: nowrap;
     overflow: hidden;
@@ -1054,26 +1073,62 @@ aside h3.widget_title span {
 	border-bottom: 0;
 }
 
-.category_block ul li a:hover {
-	background-color: #0a4e9a;
+.category_block ul li a:hover,
+.category_block ul li.active_category a {
+	background-color: #366faf;
 }
-
-.tags_block a {
-    font-size: 13px;
+.tags_block ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.tags_block ul li {
+    display: inline-block;
+    margin: 0 .3em .3em 0;
+    padding: 0;
+}
+.tags_block ul li a {
+    position: relative;
+    display: inline-block;
+    max-width: 145px;
+    line-height: 28px;
+    padding: 0 2.5em 0 1em;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
     white-space: nowrap;
-    padding: 4px 9px 4px 9px;
-    border-radius: 4px;
-    margin: 0 5px;
-    border: 1px solid #7c95b1;
-    line-height: 35px;
-    background-color: transparent;
-    transition: all 0.3s ease;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    -webkit-transition: .2s;
+    transition: .2s;
 }
-
-.tags_block a:hover {
-    background: #0a396d;
+.tags_block li span {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    background-color: #3498db;
+    border-radius: 100%;
     color: #fff;
-    border: 1px solid #0a396d;
+    font-size: 12px;
+    text-align: center;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+.tags_block ul li a:hover {
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    color: #fff;
+}
+.tags_block ul li a:hover span {
+    background-color: #fff;
+    color: #3498db;
 }
 
 .reklama img {
@@ -1225,6 +1280,7 @@ aside h3.widget_title span {
 	}
 	.minimal_item .minimal_item_img {
 		height: 200px;
+        margin-bottom: 15px;
 	}
 	.minimal_item .minimal_item_inform_wrap {
 		height: auto;
