@@ -8,6 +8,11 @@ body {
 	border: 0;
 	border-radius: 0;
 	margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
 }
 .navbar .navbar_btn_wrap {
 	display: flex;
@@ -15,6 +20,7 @@ body {
 	align-items: flex-end;
 	background-color: #585858;
 	padding: 15px 10px;
+    box-shadow: 0 1px 10px #585858e6;
 }
 .navbar .navbar_btn_wrap .navbar_btn {
 	background-color: transparent;
