@@ -1,0 +1,310 @@
+body,html {
+	overflow-x: hidden;
+}
+body {
+	height: 10000px;
+}
+.navbar {
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+.navbar .navbar_btn_wrap {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	background-color: #585858;
+	padding: 15px 10px;
+    box-shadow: 0 1px 10px #585858e6;
+}
+.navbar .navbar_btn_wrap .navbar_btn {
+	background-color: transparent;
+    border: none;
+    width: 24px;
+    padding: 0;
+    outline: 0;
+}
+.navbar .navbar_btn_wrap .navbar_btn .icon-bar {
+	display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+
+.navbar .navbar_btn_wrap .navbar_btn .icon-bar:last-child {
+    margin-bottom: 0;
+}
+.navbar ul {
+	margin: -1px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.navbar ul li {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	flex-shrink: 0;
+	flex-grow: 1;
+	width: 55.86px;
+	max-height: 35px;
+	background-color: red;
+	padding: 5px;
+	transition: all 0.5s ease-in-out;
+}
+.navbar ul li a {
+    display: flex;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+.navbar ul li.active {
+	max-height: 200px;
+	flex-grow: 2;
+	width: 130px;
+}
+
+.navbar ul li.xs.active {
+	width: 100px;
+}
+
+.navbar ul li.lg.active {
+	width: 200px;
+}
+
+.navbar ul li.active + .tooltip {
+	display: none !important;
+}
+
+.navbar ul li a img {
+	max-width: 100%;
+	height: auto;
+}
+.navbar ul li.ziyonet {
+	order: -1;
+}
+.navbar ul li span.icon {
+	display: block;
+	width: 25px;
+	height: 25px;
+	flex-shrink: 0;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 5px;
+}
+.navbar ul li.ziyonet {
+	background: linear-gradient(to bottom, #f0fdfe 0, #d9f9fc 100%);
+    padding: 0;
+}
+.navbar ul li.ziyonet a {
+	background: url(../img/logo-uz3.png) no-repeat;
+	background-size: contain;
+	background-position: center -5px;
+}
+.navbar ul li.ziyonet a img {
+	display: none;
+}
+.navbar ul li.ziyonet span.icon {
+	width: auto;
+	height: auto;
+	background-image: url('../img/icons/logo-small.png');
+}
+.navbar ul li.enrollee {
+	background-color: #c3c;
+}
+.navbar ul li.enrollee span.icon {
+	background-image: url('../img/icons/abiturenti.png');
+}
+.navbar ul li.figures {
+	background-color: #39f;
+}
+.navbar ul li.figures span.icon {
+	background-image: url('../img/icons/deyateli.png');
+}
+.navbar ul li.army {
+	background-color: #039;
+}
+.navbar ul li.army span.icon {
+	background-image: url('../img/icons/army.png');
+}
+.navbar ul li.audio {
+	background-color: #703dcc;
+}
+.navbar ul li.audio span.icon {
+	background-image: url('../img/icons/audio.png');
+}
+.navbar ul li.nice {
+	background-color: #002f8c;
+}
+.navbar ul li.nice span.icon {
+	background-image: url('../img/icons/student.png');
+}
+.navbar ul li.library {
+	background-color: #01b2a1;
+}
+.navbar ul li.library span.icon {
+	background-image: url('../img/icons/library.png');
+}
+.navbar ul li.games {
+	background-color: #ea4c89;
+}
+.navbar ul li.games span.icon {
+	background-image: url('../img/icons/game.png');
+}
+.navbar ul li.inheritance {
+	background-color: #25d7fd;
+}
+.navbar ul li.inheritance span.icon {
+	background-image: url('../img/icons/uchrejeniya.png');
+}
+.navbar ul li.question {
+	background-color: #a09dd7;
+}
+.navbar ul li.question span.icon {
+	background-image: url('../img/icons/vopros.png');
+}
+.navbar ul li.setillit {
+	background-color: #ef6c00;
+}
+.navbar ul li.setillit span.icon {
+	background-image: url('../img/icons/satalite.png');
+}
+.navbar ul li.sites {
+	background-color: #900a00;
+}
+.navbar ul li.sites span.icon {
+	background-image: url('../img/icons/sites.png');
+}
+.navbar ul li.sport {
+	background-color: #f44336;
+}
+.navbar ul li.sport span.icon {
+	background-image: url('../img/icons/sport.png');
+}
+.navbar ul li.edu {
+	background-color: #0379f2;
+}
+.navbar ul li.edu span.icon {
+	background-image: url('../img/icons/sites.png');
+}
+.navbar ul li.foreign {
+	background-color: #47a912;
+}
+.navbar ul li.foreign span.icon {
+	background-image: url('../img/icons/lang.png');
+}
+.navbar ul li.textbook {
+	background-color: #4f5fb7;
+}
+.navbar ul li.textbook span.icon {
+	background-image: url('../img/icons/sites.png');
+}
+
+/************************** Media ******************************/
+@media (max-width: 1199px) {
+	.navbar ul {
+		overflow: auto;
+	}
+	.navbar ul li {
+		width: auto;
+		max-height: 60px;
+		min-width: 105px;
+		padding: 5px 8px;
+	}
+	.navbar ul li.active {
+		width: auto;
+		order: -1;
+	    box-shadow: inset 0px 0px 30px 0px rgba(255, 255, 255, 0.75);
+	}
+	.navbar ul li a img {
+		margin-top: 3px;
+	}
+	.navbar ul li.ziyonet {
+		width: 120px;
+		height: 60px;
+	    padding: 5px 8px;
+	}
+	.navbar ul li.ziyonet a {
+		background: none;
+	}
+	.navbar ul li.ziyonet a img {
+		display: block;
+	}
+	.navbar ul li.ziyonet:hover {
+		width: 120px;
+		height: 60px;
+	}
+}
+@media (max-width: 991px) {
+	.tooltip {
+        display: none !important;
+    }
+}
+@media (min-width: 768px) {
+	.navbar .navbar_btn_wrap {
+		display: none;
+	}
+}
+@media (max-width: 767px) {
+	.navbar ul {
+		flex-direction: column;
+		width: 240px;
+		position: fixed;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    transform: translateX(-110%);
+	    z-index: 1011;
+	    padding: 0;
+	    max-width: 100%;
+	    overflow-y: auto;
+	    -webkit-overflow-scrolling: touch;
+	    transition: transform .4s ease-in-out;
+	    text-align: center;
+	    background-color: #2d2d2d;
+	    box-shadow: 0 0px 26px rgba(0,0,0,.7);
+	}
+	.navbar ul.open_menu {
+		transform: translateX(0%);
+	}
+	.menu_close {
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    z-index: 1010;
+	    background: rgba(0,0,0,.6);
+	}
+	.navbar ul li {
+	    height: auto;
+	    padding: 8px 5px;
+	    max-width: 100%;
+	    max-height: 100%;
+	}
+	.navbar ul li a img {
+		margin: 0;
+	    max-width: 150px;
+	}
+	.navbar ul li.ziyonet {
+		width: 100% !important;
+		height: auto !important;
+	}
+}

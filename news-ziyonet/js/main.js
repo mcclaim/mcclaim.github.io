@@ -1,7 +1,43 @@
 $(document).ready(function () {
 
-    // Video block
-    $('.video_items').slick({
+    // Calendar
+    $('#calendar').jalendar({
+        color: '#577e9a', // Unlimited Colors
+        color2: '#57c8bf', // Unlimited Colors
+        lang: 'OZ',
+        sundayStart: true
+    });
+
+    // Sticky Sidebar
+
+    // var window_width = $( window ).width();
+
+    // if (window_width < 991) {
+    //     $("#sidebar").trigger("sticky_kit:detach");
+    // } else {
+    //     make_sticky();
+    // }
+
+    // $( window ).resize(function() {
+
+    //     window_width = $( window ).width();
+
+    //     if (window_width < 991) {
+    //         $("#sidebar").trigger("sticky_kit:detach");
+    //     } else {
+    //         make_sticky();
+    //     }
+
+    // });
+
+    // function make_sticky() {
+    //     $("#sidebar").stick_in_parent({
+    //         parent: '.aside_cont'
+    //     });
+    // }
+
+    // News Items
+    $('.news_slider').slick({
       dots: false,
       infinite: false,
       speed: 300,
@@ -34,6 +70,7 @@ $(document).ready(function () {
       ]
     });
 
+    // Video in Popup
     $('.video_items .video_item').each(function(index, element) {
       var href = $(element).find('.video_item_img a').attr('href');
       $(element).magnificPopup({
@@ -44,13 +81,6 @@ $(document).ready(function () {
       });
     });
 
-    var a = new StickySidebar('.category_block', {
-      topSpacing: 0,
-      bottomSpacing: 20,
-      containerSelector: '.aside_cont',
-      innerWrapperSelector: '.category_block_sticky'
-    });
-
   // Header block
   var $window = $(window),
       $card = $('.must_see_wrap'),
@@ -59,18 +89,17 @@ $(document).ready(function () {
 
     toggleSlick = function () {
         if ($window.width() <= 480) {
-            $card.slick();
+            $card.not('.slick-initialized').slick();
         } else {
-            $card.slick('unslick');
+        	if (!$card.hasClass('.slick-initialized')) {
+        		$card.not('.slick-initialized').slick();
+        		$card.slick('unslick');	
+        	}
         }
     }
     toggleSlick2 = function () {
         if ($window.width() <= 480) {
             $card.slick();
-        } else {
-            if ($whenNot.length) {
-              $card.slick('unslick');
-            }
         }
     }
     $window.resize(toggleSlick);

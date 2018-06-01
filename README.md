@@ -1,2 +1,1 @@
-# mcclaim.github.io
-# mcclaim.github.io
+# All projects
