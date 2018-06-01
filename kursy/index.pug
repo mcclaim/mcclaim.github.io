@@ -1,0 +1,406 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="utf-8")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1')
+		meta(name='MobileOptimized', content='width')
+		meta(name='HandheldFriendly', content='true')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='msapplication-tap-highlight', content='no')
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Курсы
+		link(href="css/bootstrap.min.css" rel="stylesheet")
+		link(href="css/slick.css" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+		| <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+		| <!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
+	body
+		
+		header
+			.header_inform_wrap
+				.container
+					.header_inform
+						.address
+							|400000 г. Волгоград,  ул. Невская,18
+						.contacts
+							.email u.expert@yandex.ru
+							.phone  8 (8442) 390-390,  37-14-74
+						.enter
+							a(href="javascript:void(0);") Вход
+							span |
+							a(href="javascript:void(0);") Регистрация
+
+			.header_main
+				.container
+					.header_menu_parent
+						.header_logo
+							a(href="javascript:void(0);") 
+								img(src="images/logo.png")
+						.header_menu_wrap
+							nav
+								ul
+									li
+										a(href="javascript:void(0);") Главная
+									li
+										a(href="javascript:void(0);") Новости
+									li.has-submenu
+										a(href="javascript:void(0);") 
+											| Курсы
+											i.dropdown_submenu
+
+										.submenu
+											.submenu_col
+												ul
+													li
+														a(href="javascript:void(0);") Бухгалтерские курсы в Волгограде
+													li
+														a(href="javascript:void(0);") Курсы дизайна в Волгограде
+													li
+														a(href="javascript:void(0);") Курсы парикмахеров в Волгограде
+
+											.submenu_col
+												ul
+													li
+														a(href="javascript:void(0);") Курсы сметчика в Волгограде
+													li
+														a(href="javascript:void(0);") Курсы массажа в Волгограде
+													li
+														a(href="javascript:void(0);") Курсы маникюра, педикюра и наращивания ногтей
+
+											.submenu_col
+												ul
+													li
+														a(href="javascript:void(0);") Компьютерные курсы
+													li
+														a(href="javascript:void(0);") Курсы кройки и шитья в Волгограде
+													li
+														a(href="javascript:void(0);") Курсы визажистов и стилистов в Волгограде
+
+											.submenu_col
+												ul
+													li
+														a(href="javascript:void(0);") Школа фотографии в Волгограде
+													li
+														a(href="javascript:void(0);") Курсы косметологов в Волгограде. Курсы шугаринга.
+
+									li
+										a(href="javascript:void(0);") Расписание
+									li
+										a(href="javascript:void(0);") Прайс
+									li
+										a(href="javascript:void(0);") Фото
+									li
+										a(href="javascript:void(0);") Отзывы
+									li
+										a(href="javascript:void(0);") Контакты
+
+							button#menu_btn.custom_navbar_toggle(type='button')
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+
+
+							form.header_search(action='/', method='get')
+								input.header_search_input(type='text', placeholder='Поиск...')
+								button(type='button').header_search_btn
+					
+					.header_text_wrap
+						h1 
+							| Ассоциация центров 
+							br
+							| делового и профессионального образования
+
+						p 
+							|это сообщество профессионалов в областях дизайна,
+							br
+							| индустрии красоты, менеджмента и финансов, компьютерных информационных 
+							br
+							| технологий, управления персоналом.
+
+		section.hot_links_wrap
+			.container
+				.row
+					.col-xs-12.col-sm-6.col-md-3.col-lg-3
+						a(href="javascript:void(0);").hot_link_item.item1
+							.hot_link_img
+								img(src="images/hot_links_img/graduate.png")
+							.hot_link_title Курсы
+							.hot_link_text Какое колпаки! Больным велено габерсуп давать, а у меня по всем коридорам несет такая капуста
+
+					.col-xs-12.col-sm-6.col-md-3.col-lg-3
+						a(href="javascript:void(0);").hot_link_item.item2
+							.hot_link_img
+								img(src="images/hot_links_img/shopping-cart.png")
+							.hot_link_title Магазин
+							.hot_link_text Какое колпаки! Больным велено габерсуп давать, а у меня по всем коридорам несет такая капуста
+
+					.col-xs-12.col-sm-6.col-md-3.col-lg-3
+						a(href="javascript:void(0);").hot_link_item.item3
+							.hot_link_img
+								img(src="images/hot_links_img/support.png")
+							.hot_link_title Стажёрский центр
+							.hot_link_text Какое колпаки! Больным велено габерсуп давать, а у меня по всем коридорам несет такая капуста
+
+					.col-xs-12.col-sm-6.col-md-3.col-lg-3
+						a(href="javascript:void(0);").hot_link_item.item4
+							.hot_link_img
+								img(src="images/hot_links_img/certificate.png")
+							.hot_link_title Проверка диплома
+							.hot_link_text Какое колпаки! Больным велено габерсуп давать, а у меня по всем коридорам несет такая капуста
+		
+		section.directions_wrap
+			.container
+				h3.white.center Наши направления
+
+				.direction_item_wrap.dots_white
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #e048ab;").direction_item
+							.direction_item_img
+								img(src="images/directions/manager.png")
+							.direction_item_title Бухгалтерия
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #1e51a6;").direction_item
+							.direction_item_img
+								img(src="images/directions/painter.png")
+							.direction_item_title Дизайн
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #00bff3;").direction_item
+							.direction_item_img
+								img(src="images/directions/hairdresser.png")
+							.direction_item_title Парихмахер
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #91c70c;").direction_item
+							.direction_item_img
+								img(src="images/directions/secretary.png")
+							.direction_item_title Менеджмент
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #fb8318;").direction_item
+							.direction_item_img
+								img(src="images/directions/programmer.png")
+							.direction_item_title Расчет сметы
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #09a659;").direction_item
+							.direction_item_img
+								img(src="images/directions/seamstress.png")
+							.direction_item_title Кройка, шитье
+
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #e048ab;").direction_item
+							.direction_item_img
+								img(src="images/directions/manager.png")
+							.direction_item_title Бухгалтерия
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #1e51a6;").direction_item
+							.direction_item_img
+								img(src="images/directions/painter.png")
+							.direction_item_title Дизайн
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #00bff3;").direction_item
+							.direction_item_img
+								img(src="images/directions/hairdresser.png")
+							.direction_item_title Парихмахер
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #91c70c;").direction_item
+							.direction_item_img
+								img(src="images/directions/secretary.png")
+							.direction_item_title Менеджмент
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #fb8318;").direction_item
+							.direction_item_img
+								img(src="images/directions/programmer.png")
+							.direction_item_title Расчет сметы
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #09a659;").direction_item
+							.direction_item_img
+								img(src="images/directions/seamstress.png")
+							.direction_item_title Кройка, шитье
+
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #e048ab;").direction_item
+							.direction_item_img
+								img(src="images/directions/manager.png")
+							.direction_item_title Бухгалтерия
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #1e51a6;").direction_item
+							.direction_item_img
+								img(src="images/directions/painter.png")
+							.direction_item_title Дизайн
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #00bff3;").direction_item
+							.direction_item_img
+								img(src="images/directions/hairdresser.png")
+							.direction_item_title Парихмахер
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #91c70c;").direction_item
+							.direction_item_img
+								img(src="images/directions/secretary.png")
+							.direction_item_title Менеджмент
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #fb8318;").direction_item
+							.direction_item_img
+								img(src="images/directions/programmer.png")
+							.direction_item_title Расчет сметы
+					
+					.carousel_item
+						a(href="javascript:void(0);" style="background-color: #09a659;").direction_item
+							.direction_item_img
+								img(src="images/directions/seamstress.png")
+							.direction_item_title Кройка, шитье
+		
+		section.popular_wrap
+			.container
+				h3 Популярные курсы
+
+				.popular_dots_container
+
+				.popular_item_wrap
+
+					.carousel_item
+						.popular_item
+							.popular_item_img
+								img(src="images/courses/buxgalter.png")
+								a(href="javascript:void(0);") Подробнее
+
+							a(href="javascript:void(0);").popular_item_title Бухгалтерские курсы
+
+					.carousel_item
+						.popular_item
+							.popular_item_img
+								img(src="images/courses/dizayn.png")
+								a(href="javascript:void(0);") Подробнее
+
+							a(href="javascript:void(0);").popular_item_title Курсы дизайна
+
+					.carousel_item
+						.popular_item
+							.popular_item_img
+								img(src="images/courses/parikmaxer.png")
+								a(href="javascript:void(0);") Подробнее
+
+							a(href="javascript:void(0);").popular_item_title Курсы парикмахеров
+
+					.carousel_item
+						.popular_item
+							.popular_item_img
+								img(src="images/courses/buxgalter.png")
+								a(href="javascript:void(0);") Подробнее
+
+							a(href="javascript:void(0);").popular_item_title Бухгалтерские курсы
+
+					.carousel_item
+						.popular_item
+							.popular_item_img
+								img(src="images/courses/dizayn.png")
+								a(href="javascript:void(0);") Подробнее
+
+							a(href="javascript:void(0);").popular_item_title Курсы дизайна
+
+					.carousel_item
+						.popular_item
+							.popular_item_img
+								img(src="images/courses/parikmaxer.png")
+								a(href="javascript:void(0);") Подробнее
+
+							a(href="javascript:void(0);").popular_item_title Курсы парикмахеров
+				
+				.text-center
+					a(href="javascript:void(0);").custom_btn Все курсы
+		
+		section.about_wrap
+			.container
+				h3.random.center О нас в цифрах
+				.row
+					.col-xs-12.col-sm-6.col-md-3.col-lg-3
+						.count_item
+							.count 9999
+							.count_name Студентов
+
+					.col-xs-12.col-sm-6.col-md-3.col-lg-3
+						.count_item
+							.count 15
+							.count_name Направлений
+
+					.col-xs-12.col-sm-6.col-md-3.col-lg-3
+						.count_item
+							.count 9999
+							.count_name Преподавателей
+
+					.col-xs-12.col-sm-6.col-md-3.col-lg-3
+						.count_item
+							.count 100%
+							.count_name Довольных клиентов
+
+		footer
+			.container
+				.col_wrap
+					.col-1
+						a(href="javascript:void(0);").logo
+							img(src="images/footer_logo.png")
+
+						.footer_desc
+							p Он встал, взял шляпу и вышел. Она посмотрела ему вослед с удивление.	Когда наступила полночь, он встал с своих кресел, вышел в соседнюю комнату, запер на ключ дверь, ведущую в переднюю, и возвратился на свое место; он недолго дожидался; опять раздался шорох, хлопанье туфелей, кашель старика, и в дверях показал(ась) его мертвая фигура.
+					.col-2
+						ul.list-1
+							li
+								a(href="javascript:void(0);") Главная 
+							li
+								a(href="javascript:void(0);") Новости 
+							li
+								a(href="javascript:void(0);") Курсы 
+							li
+								a(href="javascript:void(0);") Расписание 
+
+						ul.list-2
+							li
+								a(href="javascript:void(0);") Прайс 
+							li
+								a(href="javascript:void(0);") Фото 
+							li
+								a(href="javascript:void(0);") Отзывы 
+							li
+								a(href="javascript:void(0);") Контакты 
+
+						ul.list-3
+							li
+								a(href="javascript:void(0);") Курсы 
+							li
+								a(href="javascript:void(0);") Магазин 
+							li
+								a(href="javascript:void(0);") Стажёрский центр 
+							li
+								a(href="javascript:void(0);") Проверка диплома 
+							li
+								a(href="javascript:void(0);") Наши документы
+
+					.col-3
+						.inform.address 400000 г.  ул. Невская,18 
+						.inform.mail u.expert@yandex.ru
+						.inform.phone 8(8442) 390-390, 37-14-74
+
+						.social_links
+							a(href="javascript:void(0);").fb
+							a(href="javascript:void(0);").gp
+							a(href="javascript:void(0);").insta
+							a(href="javascript:void(0);").vk
+							a(href="javascript:void(0);").ok
+
+
+		script(src="js/jquery.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/slick.min.js")
+		script(src="js/main.js")

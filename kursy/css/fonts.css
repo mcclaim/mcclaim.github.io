@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),
+       url('../fonts/Roboto/Roboto-Regular.svg') format('svg'),
+       url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebasnue';
+  src: url('../fonts/Bebasnue/BebasNeueCyrillic.woff') format('woff'),
+  	   url('../fonts/Bebasnue/BebasNeueCyrillic.svg') format('svg'),
+       url('../fonts/Bebasnue/BebasNeueCyrillic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BebasNeueBold';
+  src: url('../fonts/Bebasnue/BebasNeueBold.woff') format('woff'),
+  	   url('../fonts/Bebasnue/BebasNeueBold.svg') format('svg'),
+       url('../fonts/Bebasnue/BebasNeueBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT-Sans-Narrow';
+  src: url('../fonts/PTSans/PTSans-Narrow.woff') format('woff'),
+  	   url('../fonts/PTSans/PTSans-Narrow.svg') format('svg'),
+       url('../fonts/PTSans/PTSans-Narrow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT-Sans-NarrowBold';
+  src: url('../fonts/PTSans/PTSans-NarrowBold.woff') format('woff'),
+  	   url('../fonts/PTSans/PTSans-NarrowBold.svg') format('svg'),
+       url('../fonts/PTSans/PTSans-NarrowBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
