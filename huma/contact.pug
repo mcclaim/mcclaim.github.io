@@ -1,0 +1,59 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="utf-8")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1')
+		meta(name='MobileOptimized', content='width')
+		meta(name='HandheldFriendly', content='true')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='msapplication-tap-highlight', content='no')
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Contacts
+		link(href="css/bootstrap.min.css" rel="stylesheet")
+		link(href="css/slick.css" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+		| <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+		| <!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
+	body
+
+		include ./pug-includes/header.pug
+		
+		.wrapper.contact_page
+			.custom_container
+				.contact_page_wrap
+					.feedback_form
+						h2 Contact Form
+						p Thank you for visiting our website. Please fill out the following form. When you are finished, click the ‘Submit’ button to send us your message.
+
+						form
+							input(type="text" placeholder="Your name").form-control
+							input(type="email" placeholder="Your email").form-control
+							textarea(type="email" placeholder="Your message").form-control
+							input(type="submit" value="Submit").custom_btn
+
+					.feedback_inform
+						h4 Other Information
+						.row
+							.col-12.col-md-5
+								a(href="tel:11122333").icon.phone 111-22-3333
+							.col-12.col-md-7
+								a(href="mailto:contact@companyname.com").icon.email contact@company.com
+						
+						.office_item
+							.office_adres New-York, USA
+							.office_phone +123 (45) 678-90-09
+							.office_email contact@companyname.com
+							
+						.office_item
+							.office_adres New-York, USA
+							.office_phone +123 (45) 678-90-09
+							.office_email contact@companyname.com
+
+		include ./pug-includes/footer.pug
+			
+
+		script(src="js/jquery.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/slick.min.js")
+		script(src="js/main.js")
