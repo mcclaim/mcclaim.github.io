@@ -317,10 +317,7 @@
 		<div class="container">
 			<div class="tt-header-row ">
 				<div class="tt-stuck-parent-menu"></div>
-				<div class="tt-stuck-parent-search tt-parent-box"></div>
 				<div class="tt-stuck-parent-cart tt-parent-box"></div>
-				<div class="tt-stuck-parent-account tt-parent-box"></div>
-				<div class="tt-stuck-parent-multi tt-parent-box"></div>
 			</div>
 		</div>
 	</div>
@@ -512,69 +509,162 @@
 				</div>
 			</div>
 			<div class="tt-shopcart-col">
+				<div class="tt-shopcart-box">
+					<h4 class="tt-title">
+						Адрес доставки
+					</h4>
+					<p>Поля со "<span style="color: #2879fe">*</span>" являются объязательном для заполнение.</p>
+					<form class="form-default">
+						<div class="row">
+							<div class="col-md-6 col-lg-4">
+								<div class="form-group">
+									<label for="1" class="control-label">Фамилия *</label>
+									<input type="text" class="form-control" id="1" placeholder="Укажите фамилию">
+								</div>
+								<div class="form-group">
+									<label for="2" class="control-label">Телефон *</label>
+									<input type="text" class="form-control" id="2" placeholder="Укажите телефон">
+								</div>
+								<div class="form-group">
+									<label for="3" class="control-label">Город *</label>
+									<input type="text" class="form-control" id="3" placeholder="Укажите ваш город">
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="form-group">
+									<label for="4" class="control-label">Имя *</label>
+									<input type="text" class="form-control" id="4" placeholder="Укажите имя">
+								</div>
+								<div class="form-group">
+									<label for="5" class="control-label">Email *</label>
+									<input type="text" class="form-control" id="5" placeholder="Укажите email">
+								</div>
+								<div class="form-group">
+									<label for="6" class="control-label">Адрес *</label>
+									<input type="text" class="form-control" id="6" placeholder="Укажите адрес">
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="form-group">
+									<label for="7" class="control-label">Отчество *</label>
+									<input type="text" class="form-control" id="7" placeholder="Укажите отчество">
+								</div>
+								<div class="form-group">
+									<label for="8" class="control-label">Регион *</label>
+									<input type="text" class="form-control" id="8" placeholder="Укажите регион">
+								</div>
+								<div class="form-group">
+									<label for="9" class="control-label">Почтовый индекс *</label>
+									<input type="text" class="form-control" id="9" placeholder="Укажите ваш почтовый индекс">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-group">
+									<label class="control-label">Комментарий</label>
+									<textarea id="" cols="30" rows="10" placeholder="Номер подъезда" class="form-control" style="max-height: 180px"></textarea>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="8" class="control-label">Выберите дату доставки *</label>
+									<input type="date" class="form-control" id="8" placeholder="Укажите дату">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="9" class="control-label">Выберите время доставки *</label>
+									<input type="time" class="form-control" id="9" placeholder="Укажите время">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
 				<div class="row">
 					<div class="col-md-6 col-lg-4">
 						<div class="tt-shopcart-box">
 							<h4 class="tt-title">
-								РАСЧЕТ СТОИМОСТИ ДОСТАВКИ И НАЛОГОВ
+								Выбор способа доставки
 							</h4>
-							<p>Введите пункт назначения, чтобы получить оценку стоимости доставки.</p>
+							<p>Выберите способ доставки и мы с радостью вам отправим</p>
 							<form class="form-default">
-								<div class="form-group">
-									<label for="address_country">СТРАНА <sup>*</sup></label>
-									<select id="address_country" class="form-control">
-										<option>Austria</option>
-										<option>Belgium</option>
-										<option>Cyprus</option>
-										<option>Croatia</option>
-										<option>Czech Republic</option>
-										<option>Denmark</option>
-										<option>Finland</option>
-										<option>France</option>
-										<option>Germany</option>
-										<option>Greece</option>
-										<option>Hungary</option>
-										<option>Ireland</option>
-										<option>France</option>
-										<option>Italy</option>
-										<option>Luxembourg</option>
-										<option>Netherlands</option>
-										<option>Poland</option>
-										<option>Portugal</option>
-										<option>Slovakia</option>
-										<option>Slovenia</option>
-										<option>Spain</option>
-										<option>United Kingdom</option>
-									</select>
+								<div class="form-group" style="margin: 0">
+									<div class="row">
+										<div class="col-12">
+											<div class="checkbox-group cart-checkbox">
+												<input type="checkbox" id="checkBox11" name="checkbox">
+												<label for="checkBox11">
+													<span class="check"></span>
+													<span class="box"></span>
+													Почта россии <b style="color: #2879fe">(600 &#8381;)</b>
+												</label>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="checkbox-group cart-checkbox">
+												<input type="checkbox" id="checkBox12" name="checkbox">
+												<label for="checkBox12">
+													<span class="check"></span>
+													<span class="box"></span>
+													Курьер по МКАД <b style="color: #2879fe">(150 &#8381;)</b>
+												</label>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="checkbox-group cart-checkbox">
+												<input type="checkbox" id="checkBox13" name="checkbox">
+												<label for="checkBox13">
+													<span class="check"></span>
+													<span class="box"></span>
+													Самовывоз <b style="color: #2879fe">(0 &#8381;)</b>
+												</label>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="form-group">
-									<label for="address_province">ШТАТ/ПРОВИНЦИЯ <sup>*</sup></label>
-									<select id="address_province" class="form-control">
-										<option>Штат/Провинция</option>
-									</select>
-								</div>
-								<div class="form-group">
-									<label for="address_zip">ПОЧТОВЫЙ ИНДЕКС <sup>*</sup></label>
-									<input type="text" name="name" class="form-control" id="address_zip" placeholder="Почтовый индекс">
-								</div>
-								<a href="#" class="btn btn-border">РАССЧИТАТЬ ДОСТАВКУ</a>
-								<p>
-									Бесплатная доставка действует только на территориях Алабама, Танзания, Объединенная Республика.
-								</p>
-								<ul class="tt-list-dot list-dot-large">
-									<li><a href="#">Международная доставка за 7000 &#8381;</a></li>
-								</ul>
 							</form>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-4">
 						<div class="tt-shopcart-box">
 							<h4 class="tt-title">
-								ОТМЕТИТЬ
+								Выбор способа оплаты
 							</h4>
-							<p>Добавьте специальные инструкции для вашего заказа...</p>
+							<p>Выберите способ оплаты для купли продукта.</p>
 							<form class="form-default">
-								<textarea class="form-control" rows="7"></textarea>
+								<div class="form-group" style="margin: 0">
+									<div class="row">
+										<div class="col-12">
+											<div class="checkbox-group cart-checkbox2">
+												<input type="checkbox" id="checkBox14" name="checkbox">
+												<label for="checkBox14">
+													<span class="check"></span>
+													<span class="box"></span>
+													Наличнимы курьеру
+												</label>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="checkbox-group cart-checkbox2">
+												<input type="checkbox" id="checkBox15" name="checkbox">
+												<label for="checkBox15">
+													<span class="check"></span>
+													<span class="box"></span>
+													Банковская карта
+												</label>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="checkbox-group cart-checkbox2">
+												<input type="checkbox" id="checkBox16" name="checkbox">
+												<label for="checkBox16">
+													<span class="check"></span>
+													<span class="box"></span>
+													Qiwi
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
 							</form>
 						</div>
 					</div>
@@ -583,13 +673,17 @@
 							<table class="tt-shopcart-table01">
 								<tbody>
 									<tr>
-										<th style="text-transform: uppercase;">Промежуточный итог</th>
+										<th style="text-transform: uppercase;">Итогавая сумма за товар</th>
 										<td>7000 &#8381;</td>
+									</tr>
+									<tr>
+										<th style="text-transform: uppercase;">Доставка</th>
+										<td>0 &#8381;</td>
 									</tr>
 								</tbody>
 								<tfoot>
 									<tr>
-										<th style="text-transform: uppercase;">ОБЩИЙ ИТОГ</th>
+										<th style="text-transform: uppercase;">Итого к оплате</th>
 										<td>7000 &#8381;</td>
 									</tr>
 								</tfoot>

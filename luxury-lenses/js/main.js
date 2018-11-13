@@ -1,6 +1,18 @@
 (function ($) {
     "use strict";
 
+    if ( $('[type="date"]').prop('type') != 'date' ) {
+        $('[type="date"]').datepicker();
+    }
+
+    $('.cart-checkbox input[type="checkbox"]').on('change', function() {
+       $('.cart-checkbox input[type="checkbox"]').not(this).prop('checked', false);
+    });
+
+    $('.cart-checkbox2 input[type="checkbox"]').on('change', function() {
+       $('.cart-checkbox2 input[type="checkbox"]').not(this).prop('checked', false);
+    });
+
     var $document = $(document),
         $window = $(window),
         $body = $('body'),
