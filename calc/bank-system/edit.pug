@@ -42,6 +42,10 @@ html(lang="ru-Ru")
 									i.icon.dripicons-article
 									span Link
 
+			aside.aside-helper-link
+				div.nav-item.helper-link
+					a(href='javascript:void(0);' data-toggle-state='helper-toggle')
+						i.icon.dripicons-information
 
 			.content-wrapper.client-selected
 				nav.top-toolbar.navbar.navbar-mobile.navbar-tablet
@@ -223,10 +227,6 @@ html(lang="ru-Ru")
 									i.icon.dripicons-lock-open
 									|  Выход
 
-						li.nav-item.helper-link
-							a(href='javascript:void(0);' data-toggle-state='helper-toggle')
-								i.icon.dripicons-information
-
 					form.navbar-form(role='search', action='')
 						.form-group
 							input.form-control.navbar-search(type='text', placeholder='Напишите запрос и нажмите enter...', autocomplete='off')
@@ -302,6 +302,14 @@ html(lang="ru-Ru")
 																i.fa.fa-vcard-o(aria-hidden='true')
 																| Персональные данные
 															.form-grouped
+																.form-group.text-center
+																	label.switch.set-one
+																		input(type='checkbox' id="check")
+																		span.slider-switch
+																			span.slider-switch-col
+																			span.switch-item.switch-1 Основная
+																			span.switch-item.switch-2 Совместительство
+
 																.form-group.row
 																	label.col-sm-4.col-form-label.text-right Address
 																	.col-sm-6

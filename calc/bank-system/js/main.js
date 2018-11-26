@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('[data-toggle="popover"]').popover()
 
   $("body").attr('data-offset', '130');
 

@@ -271,6 +271,40 @@ html(lang="ru-Ru")
 														input.js-switch(type='checkbox', checked='', data-switchery='true', style='display: none;')
 														span.switchery.switchery-small(style='background-color: rgb(116, 104, 189); border-color: rgb(116, 104, 189); box-shadow: rgb(116, 104, 189) 0px 0px 0px 0px inset; transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;')
 															small(style='left: 13px; background-color: rgb(255, 255, 255); transition: background-color 0.4s, left 0.2s;')
+						li.nav-item.dropdown.dropdown-mail.dropdown-menu-lg
+							a(href='javascript:void(0)', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+								i.icon.fa.fa-envelope-o
+									span.mail-count 13
+							.dropdown-menu.dropdown-menu-right
+								.card.card-notification.card-mail
+									.card-header
+										h5.card-title Сообщении
+									.card-body
+										.card-container
+											ul.mail-content
+												li.mail-item
+													.mail-item-img
+														//- img(src="")
+														i.icon.fa.fa-envelope
+													.mail-item-content
+														.mail-item-title Уведомление от системы
+														.mail-item-text.line-clamp.line-clamp-2 
+															| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga beatae laudantium necessitatibus eum sequi eveniet.
+														.mail-item-date
+															small.text-muted 11/11/2019 18:18
+
+												li.mail-item
+													.mail-item-img
+														//- img(src="")
+														i.icon.fa.fa-envelope
+													.mail-item-content
+														.mail-item-title Уведомление от системы
+														.mail-item-text.line-clamp.line-clamp-2 
+															| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga beatae laudantium necessitatibus eum sequi eveniet.
+														.mail-item-date
+															small.text-muted 11/11/2019 20:18
+												
+
 						li.nav-item.dropdown
 							a.nav-link.user-avatar(data-toggle='dropdown', href='javascript:void(0);', role='button', aria-haspopup='true', aria-expanded='false')
 								img.rounded-circle(src='images/avatars/businessman.png', alt='Albert Einstein')
@@ -307,6 +341,23 @@ html(lang="ru-Ru")
 								h1 Главная страница
 
 					section.page-content.container-fluid
+
+						section.dashboard-count-info
+							.row
+								.col-md-6.col-xl-3
+									.tile-stats-item.bg-purple
+										.icon
+											i.fa.fa-user
+										.count-num 124
+										.count-info-title.max-190 Общее количество физических лиц
+
+								.col-md-6.col-xl-3
+									.tile-stats-item.bg-darken-blue
+										.icon
+											i.fa.fa-users
+										.count-num 722
+										.count-info-title.max-190 Общее количество юридических лиц
+
 						section.inform-block
 							.row
 								.col-xl-3.col-md-6

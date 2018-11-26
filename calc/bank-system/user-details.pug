@@ -1,0 +1,764 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="utf-8")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1')
+		meta(name='MobileOptimized', content='width')
+		meta(name='HandheldFriendly', content='true')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='msapplication-tap-highlight', content='no')
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Администрирование
+		link(href="css/bootstrap.css" rel="stylesheet")
+		link(href="css/icons/dripicons.min.css" rel="stylesheet")
+		link(href="css/font-awesome.css" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+		| <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+		| <!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
+	body.pace-done
+		
+		#app
+			aside.sidebar.sidebar-left
+				.sidebar-content
+					.aside-toolbar
+						.site-logo
+							a(href='index.html').brand-text ASBT Technologic
+							button(type="button" data-toggle-state="minify-sidebar").menu-toggle
+								i.dripicons-list
+					nav.main-menu
+						ul.nav.metismenu
+							li.sidebar-header
+								span Основная панель
+
+							li
+								a(href='javascript:void(0);', aria-expanded='false')
+									i.icon.dripicons-user-id
+									span Администрирование
+
+							li
+								a(href='javascript:void(0);', aria-expanded='false')
+									i.icon.dripicons-store
+									span Здания
+							li
+								a(href='javascript:void(0);', aria-expanded='false')
+									i.icon.dripicons-article
+									span Документы
+
+							li
+								a(href='javascript:void(0);', aria-expanded='false')
+									i.icon.dripicons-wallet
+									span Бюджет
+								ul.collapse.nav-sub(aria-expanded='false')
+									li
+										a(href='javascript:void(0);')
+											span Входящие
+									li
+										a(href='javascript:void(0);')
+											span Исходящие
+									li
+										a(href='javascript:void(0);')
+											span Остатки
+
+							li.sidebar-header
+								span Документация
+							li
+								a(href='javascript:void(0);', aria-expanded='false')
+									i.icon.dripicons-user-group
+									span Отдел кадров
+
+							li
+								a(href='javascript:void(0);', aria-expanded='false')
+									i.icon.dripicons-retweet
+									span Приход - уход
+
+							li
+								a(href='javascript:void(0);', aria-expanded='false')
+									i.icon.dripicons-to-do
+									span Формы и бланки
+
+							li.sidebar-header
+								span Дополнительное
+							li
+								a(href='javascript:void(0);')
+									i.icon.dripicons-graph-line
+									span Калькулятор
+							li
+								a(href='javascript:void(0);')
+									i.icon.dripicons-message
+									span Оповещение
+							li
+								a(href='javascript:void(0);')
+									i.icon.dripicons-archive
+									span Конакты
+							li
+								a(href='javascript:void(0);')
+									i.icon.dripicons-calendar
+									span Календарь
+							li
+								a(href='javascript:void(0);')
+									i.icon.dripicons-help
+									span Помощник
+			
+			.content-wrapper
+				nav.top-toolbar.navbar.navbar-mobile.navbar-tablet
+					ul.navbar-nav.nav-left
+						li.nav-item
+							a(href='javascript:void(0)', data-toggle-state='aside-left-open')
+								i.icon.dripicons-align-left
+					ul.navbar-nav.nav-center.site-logo
+						li
+							a(href='index.html')
+								span.brand-text ASBT Technologic
+					ul.navbar-nav.nav-right
+						li.nav-item
+							a(href='javascript:void(0)', data-toggle-state='mobile-topbar-toggle')
+								i.icon.dripicons-dots-3.rotate-90
+
+				nav.top-toolbar.navbar.navbar-desktop.flex-nowrap
+					ul.navbar-nav.nav-left.fast-link
+						li.nav-item.nav-text.dropdown.dropdown-menu-xl
+							a(href='javascript:void(0)', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+								span
+									| Быстрые ссылки
+								i.dripicons-chevron-down.menu-arrow-down
+							.dropdown-menu.dropdown-menu-left
+								.row
+									.col
+										h3.menu-header Учеты
+										ul.list-items
+											li
+												a(href='javascript:void(0);') Бухгалтерский учет
+											li
+												a(href='javascript:void(0);') Кадровый учет
+											li
+												a(href='javascript:void(0);') Премиальный учет
+											li
+												a(href='javascript:void(0);') Учет активности
+											li
+												a(href='javascript:void(0);') Учет продуктов
+											li
+												a(href='javascript:void(0);') Учет компьютеров
+											li
+												a(href='javascript:void(0);') Учет успеваемости
+											li
+												a(href='javascript:void(0);') Учет
+											li
+												a(href='javascript:void(0);') Учет
+											li
+												a(href='javascript:void(0);') Учет
+									.col
+										h3.menu-header Выделение денег
+										ul.list-items
+											li
+												a(href='javascript:void(0);') Кредит
+											li
+												a(href='javascript:void(0);') Предприниматели
+											li
+												a(href='javascript:void(0);') Продажа
+											li
+												a(href='javascript:void(0);') Выделение денег
+											li
+												a(href='javascript:void(0);') Оборот
+											li
+												a(href='javascript:void(0);') Пассивный заработок
+											li
+												a(href='javascript:void(0);') Остаток
+											li
+												a(href='javascript:void(0);') Договора
+											li
+												a(href='javascript:void(0);') Не удавшийся договора
+											li
+												a(href='javascript:void(0);') Бюджет
+						
+					ul.navbar-nav.nav-right
+						li.nav-item
+							a.open-search-button(href='javascript:void(0)', data-q-action='open-site-search')
+								i.icon.dripicons-search
+						li.nav-item.dropdown.dropdown-menu-lg
+							a(href='javascript:void(0)', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+								i.icon.dripicons-view-apps
+							.dropdown-menu.dropdown-menu-right.p-0
+								.dropdown-menu-grid
+									.menu-grid-row
+										div
+											a.dropdown-item.border-bottom.border-right(href='javascript:void(0);')
+												i.icon.dripicons-cloud-upload
+												span Загруженные
+										div
+											a.dropdown-item.border-bottom(href='javascript:void(0);')
+												i.icon.dripicons-clock
+												span Посл. действие
+									.menu-grid-row
+										div
+											a.dropdown-item.border-right(href='javascript:void(0);')
+												i.icon.dripicons-archive
+												span Архив
+										div
+											a.dropdown-item(href='javascript:void(0);')
+												i.icon.dripicons-calendar
+												span Календарь
+						li.nav-item.dropdown.dropdown-notifications.dropdown-menu-lg
+							a(href='javascript:void(0)', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+								i.icon.dripicons-bell
+							.dropdown-menu.dropdown-menu-right
+								.card.card-notification
+									.card-header
+										h5.card-title Уведомление
+										ul.actions.top-right
+											li
+												a(href='javascript:void(0);', data-q-action='open-notifi-config')
+													i.icon.dripicons-gear
+									.card-body
+										.card-container-wrapper
+											.card-container
+												.timeline.timeline-border
+													.timeline-list
+														.timeline-info
+															div
+																| Азамат Абдуалимов добавил новый отчет 
+																a(href='javascript:void(0)')
+																	strong Отчет за 2018
+															small.text-muted 21/06/18, 14:00
+													.timeline-list.timeline-border.timeline-primary
+														.timeline-info
+															div Бизнес расчеты готовы
+															small.text-muted 21/06/18, 11:00
+													.timeline-list.timeline-border.timeline-accent
+														.timeline-info
+															div Калькулятор использован кассиром
+															small.text-muted 21/06/18, 09:00
+													.timeline-list.timeline-border.timeline-success
+														.timeline-info
+															div Настройде уведомление
+															small.text-muted 21/06/18, 08:00
+													.timeline-list.timeline-border.timeline-warning
+														.timeline-info
+															div
+																a(href='javascript:void(0);')
+																	strong Хочешь выиграть!
+																|  нужно
+															small.text-muted 20/06/18, 16:00
+													.timeline-list.timeline-border.timeline-info
+														.timeline-info
+															div
+																a(href='javascript:void(0);')
+																	strong МРЗП
+																|  минимальная зарплата.
+															small.text-muted 20/06/18, 14:00
+											.card-container
+												h6.p-0.m-0
+													| Show notifications from:
+												.row.m-b-20.m-t-30
+													.col-10
+														span.title
+															i.icon.dripicons-calendar
+															| Calendar
+													.col-2
+														input.js-switch(type='checkbox', checked='', data-switchery='true', style='display: none;')
+														span.switchery.switchery-small(style='background-color: rgb(116, 104, 189); border-color: rgb(116, 104, 189); box-shadow: rgb(116, 104, 189) 0px 0px 0px 0px inset; transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;')
+															small(style='left: 13px; background-color: rgb(255, 255, 255); transition: background-color 0.4s, left 0.2s;')
+												.row.m-b-20
+													.col-10
+														span.title
+															i.icon.dripicons-mail
+															| Email
+													.col-2
+														input.js-switch(type='checkbox', checked='', data-switchery='true', style='display: none;')
+														span.switchery.switchery-small(style='background-color: rgb(116, 104, 189); border-color: rgb(116, 104, 189); box-shadow: rgb(116, 104, 189) 0px 0px 0px 0px inset; transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;')
+															small(style='left: 13px; background-color: rgb(255, 255, 255); transition: background-color 0.4s, left 0.2s;')
+												.row.m-b-20
+													.col-10
+														span.title
+															i.icon.dripicons-message
+															| Messages
+													.col-2
+														input.js-switch(type='checkbox', data-switchery='true', style='display: none;')
+														span.switchery.switchery-small(style='box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset; border-color: rgb(223, 223, 223); background-color: rgb(255, 255, 255); transition: border 0.4s, box-shadow 0.4s;')
+															small(style='left: 0px; transition: background-color 0.4s, left 0.2s;')
+												.row.m-b-20
+													.col-10
+														span.title
+															i.icon.dripicons-stack
+															| Projects
+													.col-2
+														input.js-switch(type='checkbox', checked='', data-switchery='true', style='display: none;')
+														span.switchery.switchery-small(style='background-color: rgb(116, 104, 189); border-color: rgb(116, 104, 189); box-shadow: rgb(116, 104, 189) 0px 0px 0px 0px inset; transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;')
+															small(style='left: 13px; background-color: rgb(255, 255, 255); transition: background-color 0.4s, left 0.2s;')
+						li.nav-item.dropdown
+							a.nav-link.user-avatar(data-toggle='dropdown', href='javascript:void(0);', role='button', aria-haspopup='true', aria-expanded='false')
+								img.rounded-circle(src='images/avatars/businessman.png', alt='Albert Einstein')
+							.dropdown-menu.dropdown-menu-right.dropdown-menu-account
+								.dropdown-header.pb-3
+									.media.d-user
+										img.align-self-center.mr-3.rounded-circle(src='images/avatars/businessman.png', alt='Albert Einstein')
+										.media-body
+											h5.mt-0.mb-0 Лазиз Абдукаримов
+											span кассир
+								a.dropdown-item(href='pages.profile.html')
+									i.icon.dripicons-user
+									|  Профиль
+								a.dropdown-item(href='pages.my-account.html')
+									i.icon.dripicons-to-do
+									|  Отчеты
+								a.dropdown-item(href='pages.my-account.html')
+									i.icon.dripicons-gear
+									|  Настройки
+								a.dropdown-item(href='auth.sign-in.html')
+									i.icon.dripicons-lock-open
+									|  Выход
+
+					form.navbar-form(role='search', action='')
+						.form-group
+							input.form-control.navbar-search(type='text', placeholder='Напишите запрос и нажмите enter...', autocomplete='off')
+							i.icon.dripicons-cross.close-search(data-q-action='close-site-search')
+						button.d-none(type='submit') Поиск
+				
+				.content
+					header.page-header
+						.d-flex.align-items-center
+							.mr-auto
+								h1 Детали клиента
+						nav(aria-label='breadcrumb')
+							ol.breadcrumb
+								li.breadcrumb-item.home
+									a(href='#')
+										i.fa.fa-home
+								li.breadcrumb-item
+									a(href='#') Library
+								li.breadcrumb-item.active(aria-current='page') Data
+
+					section.page-content.container-fluid
+						.user
+							.user-left-inform
+								.user-profile-img
+									img(src="images/avatars/vendroid-09.png")
+								.user-profile-name
+									h4 Авдорова Светлана
+									.appointment Банкир высшего уровня
+								.user-profile-active-inf
+									table.table
+										tbody
+											tr
+												td Статус
+												td.bold 
+													span.status Активен
+											tr
+												td Тип
+												td.bold Клиент
+											tr
+												td Зарегистрирован
+												td.bold 11.09.2018
+
+							.user-right-inform
+								ul.nav.nav-tabs(role='tablist')
+									li.nav-item
+										a.nav-link.active(data-toggle='tab', href='#home') Профиль
+									li.nav-item
+										a.nav-link(data-toggle='tab', href='#menu1') Счета
+									li.nav-item
+										a.nav-link(data-toggle='tab', href='#menu2') Транзакции
+									//- li.nav-item
+									//- 	a.nav-link(data-toggle='tab', href='#menu3') События
+
+								.tab-content
+									#home.tab-pane.show.fade.active
+										h3 
+											i.icon.dripicons-user
+											| О пользователе
+										.row
+											.col-lg-6.mb-3.mb-lg-0
+												.user-main-inform
+													.inform-wrap.row
+														.inform-left.col-sm-6
+															span.bold Фамилия:
+														.inform-right.col-sm-6
+															span Авдорова
+													.inform-wrap.row
+														.inform-left.col-sm-6
+															span.bold Имя:
+														.inform-right.col-sm-6
+															span Светлана
+													.inform-wrap.row
+														.inform-left.col-sm-6
+															span.bold Отчество:
+														.inform-right.col-sm-6
+															span Курапаткина
+													.inform-wrap.row
+														.inform-left.col-sm-6
+															span.bold Дата рождения:
+														.inform-right.col-sm-6
+															span 11.02.1990
+													.inform-wrap.row
+														.inform-left.col-sm-6
+															span.bold Номер тел.:
+														.inform-right.col-sm-6
+															span +99899 833-39-22
+											.col-lg-6
+												.user-main-inform
+													.inform-wrap.row
+														.inform-left.col-sm-6
+															span.bold Страна:
+														.inform-right.col-sm-6
+															span Узбекистан
+													.inform-wrap.row
+														.inform-left.col-sm-6
+															span.bold Город:
+														.inform-right.col-sm-6
+															span Ташкент
+													.inform-wrap.row
+														.inform-left.col-sm-6
+															span.bold ИНН:
+														.inform-right.col-sm-6
+															span 329561957
+													.inform-wrap.row
+														.inform-left.col-sm-6
+															span.bold Паспорт серия и номер:
+														.inform-right.col-sm-6
+															span AA 876908
+													.inform-wrap.row
+														.inform-left.col-sm-6
+															span.bold Email:
+														.inform-right.col-sm-6
+															span 
+																a(href="mailto:temp-mail@gmail.com") temp-mail@gmail.com
+										.button_wrap
+											button.btn.btn-warning
+												i.fa.fa-pencil-square-o 
+												| Изменить данные
+
+									#menu1.tab-pane.fade
+										.account
+											h3
+												i.icon.dripicons-wallet
+												| Счета
+
+											.table-create-account
+												button.btn.btn-light-success
+													i.fa.fa-plus-circle
+													| Открыть счет
+											.new-table-wrap
+												.table-settings
+													.row
+														.col-lg-12.col-xl-8.order-1.order-lg-0
+															.sorting-column
+																.status-sort-wrap
+																	span.status-sort-label Статус:
+																	.status-sort-select
+																		i.fa.fa-chevron-down
+																		select
+																			option Активно
+																			option Закрыто
+																			option Не активно
+																.table-search
+																	input(type="text" placeholder="Поиск...").form-control
+																	span.search-icon
+																		i.fa.fa-search
+														.col-lg-4.col-xl-4
+
+												.table-responsive
+													table.table.new-table
+														thead
+															tr
+																th.text-center #
+																th Наименования
+																th Название
+																th МФО
+																th Номер счета
+																th Статус
+														tbody
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+												.table-footer-inform
+													.pagination-block
+														ul.table-pagination
+															li
+																a(href='#' disabled="disabled" class="prev-next")
+																	i.fa.fa-angle-double-left
+															li
+																a(href='#' disabled="disabled" class="prev-next")
+																	i.fa.fa-angle-left
+															li.input-pagination
+																input(type='text', title='Page number').form-control
+															li.active
+																a(href="javascript:void(0)") 1
+															li
+																a(href="javascript:void(0)") 2
+															li
+																a(href="javascript:void(0)") 3
+															li
+																a(href="javascript:void(0)") 4
+															li
+																a(href="javascript:void(0)") 5
+															li
+																a(href="javascript:void(0)") 6
+															li
+																a(title='Next' href="javascript:void(0)" class="prev-next")
+																	i.fa.fa-angle-right
+															li
+																a(title='Last' href="javascript:void(0)" class="prev-next")
+																	i.fa.fa-angle-double-right
+													.skip-block
+														.skip-select
+															i.fa.fa-angle-down
+															select.form-control
+																option 10
+																option 30
+																option 50
+														.skip-display
+															| Показано с 1 по 9 из 9 записей
+
+									#menu2.tab-pane.fade
+										.user-transaction-wrap
+											h3 
+												i.icon.dripicons-graph-pie
+												| Транзакции
+
+											.transaction-info
+												.transaction-info-item
+													.transaction-info-item-title.text-muted Переведено денег:
+													p.m-0 $ 45,867,210.00
+												.transaction-info-item
+													.transaction-info-item-title.text-muted Переведено денег:
+													p.m-0 $ 45,867,210.00
+												.transaction-info-item
+													.transaction-info-item-title.text-muted Переведено денег:
+													p.m-0 $ 45,867,210.00
+												.transaction-info-item
+													.transaction-info-item-title.text-muted Переведено денег:
+													p.m-0 $ 45,867,210.00
+
+											.new-table-wrap
+												.table-settings
+													.row
+														.col-lg-12.col-xl-8.order-1.order-lg-0
+															.sorting-column
+																.status-sort-wrap
+																	span.status-sort-label Статус:
+																	.status-sort-select
+																		i.fa.fa-chevron-down
+																		select
+																			option Активно
+																			option Закрыто
+																			option Не активно
+																.table-search
+																	input(type="text" placeholder="Поиск...").form-control
+																	span.search-icon
+																		i.fa.fa-search
+														.col-lg-4.col-xl-4
+															.table-create-account
+																button.btn.btn-light-success
+																	i.fa.fa-plus-circle
+																	| Открыть счет
+												.table-responsive
+													table.table.new-table
+														thead
+															tr
+																th.text-center #
+																th Наименования
+																th Название
+																th МФО
+																th Номер счета
+																th Статус
+														tbody
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+															tr
+																td 10062
+																td Салах Мухаммед
+																td САЛАХ МУХАМЕД
+																td 00401
+																td 44800012812345778012
+																td Открыт
+												.table-footer-inform
+													.pagination-block
+														ul.table-pagination
+															li
+																a(href='#' disabled="disabled" class="prev-next")
+																	i.fa.fa-angle-double-left
+															li
+																a(href='#' disabled="disabled" class="prev-next")
+																	i.fa.fa-angle-left
+															li.input-pagination
+																input(type='text', title='Page number').form-control
+															li.active
+																a(href="javascript:void(0)") 1
+															li
+																a(href="javascript:void(0)") 2
+															li
+																a(href="javascript:void(0)") 3
+															li
+																a(href="javascript:void(0)") 4
+															li
+																a(href="javascript:void(0)") 5
+															li
+																a(href="javascript:void(0)") 6
+															li
+																a(title='Next' href="javascript:void(0)" class="prev-next")
+																	i.fa.fa-angle-right
+															li
+																a(title='Last' href="javascript:void(0)" class="prev-next")
+																	i.fa.fa-angle-double-right
+													.skip-block
+														.skip-select
+															i.fa.fa-angle-down
+															select.form-control
+																option 10
+																option 30
+																option 50
+														.skip-display
+															| Показано с 1 по 9 из 9 записей
+									//- #menu3.tab-pane.fade
+										//- 	.user-events-wrap
+										//- 		h3
+										//- 			i.icon.dripicons-time-reverse
+										//- 			| События
+										//- 		ul.recent-activites
+										//- 			li
+										//- 				span.activity-icon.border-success
+										//- 				.media.align-items-center
+										//- 					.media-body
+										//- 						h6.mb-0
+										//- 							| Получение новой транзакции от 
+										//- 							strong "ALOQA BANK"
+										//- 							|  прошла успешно
+										//- 						small.text-muted Дата события: 12.09.2018 - 20:19
+										//- 			li
+										//- 				span.activity-icon.border-info
+										//- 				.media.align-items-center
+										//- 					.media-body
+										//- 						h6.mb-0
+										//- 							| Подключена новая услуга для использования 
+										//- 						small.text-muted Дата события: 12.09.2018 - 15:36
+										//- 			li
+										//- 				span.activity-icon.border-danger
+										//- 				.media.align-items-center
+										//- 					.media-body
+										//- 						h6.mb-0
+										//- 							| Не удалось получить баланс для открытия счета
+										//- 						small.text-muted Дата события: 12.09.2018 - 15:19
+
+										//- 			li
+										//- 				span.activity-icon.border-secondary
+										//- 				.media.align-items-center
+										//- 					.media-body
+										//- 						h6.mb-0
+										//- 							| К сожалению у пользователя не было прав для получение транзакции
+										//- 						small.text-muted Дата события: 12.09.2018 - 09:19
+
+										//- 			li
+										//- 				span.activity-icon.border-success
+										//- 				.media.align-items-center
+										//- 					.media-body
+										//- 						h6.mb-0
+										//- 							| Успешное подключение к клиенту 
+										//- 							strong Салах Мухаммед
+										//- 						small.text-muted Дата события: 11.09.2018 - 22:19
+
+										//- 			li
+										//- 				span.activity-icon.border-info
+										//- 				.media.align-items-center
+										//- 					.media-body
+										//- 						h6.mb-0
+										//- 							| Подключена новая услуга для использования 
+										//- 						small.text-muted Дата события: 12.09.2018 - 15:36
+
+										//- 			li
+										//- 				span.activity-icon.border-primary
+										//- 				.media.align-items-center
+										//- 					.media-body
+										//- 						h6.mb-0
+										//- 							| Подключена новая услуга для использования 
+										//- 						small.text-muted Дата события: 12.09.2018 - 15:36
+
+		script(src="js/jquery.min.js")
+		script(src="js/bootstrap.bundle.min.js")
+		script(src="js/chart.js")
+		script(src="js/main.js")
