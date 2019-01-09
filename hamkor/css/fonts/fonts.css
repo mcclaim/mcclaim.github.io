@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.ttf') format('truetype'), url('Poppins-Regular.woff') format('woff'), url('Poppins-Regular.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Bold.ttf') format('truetype'), url('Poppins-Bold.woff') format('woff'), url('Poppins-Bold.eot') format('eot');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Medium.ttf') format('truetype'), url('Poppins-Medium.woff') format('woff'), url('Poppins-Medium.eot') format('eot');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswaldbold.ttf') format('truetype'), url('Oswaldbold.woff') format('woff'), url('Oswaldbold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswaldlight.ttf') format('truetype'), url('Oswaldlight.woff') format('woff'), url('Oswaldlight.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswaldmedium.ttf') format('truetype'), url('Oswaldmedium.woff') format('woff'), url('Oswaldmedium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
