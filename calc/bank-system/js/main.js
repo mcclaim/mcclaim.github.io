@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('[data-toggle="popover"]').popover()
 
   $("body").attr('data-offset', '130');
 
@@ -7,24 +8,6 @@ $(document).ready(function() {
       $($(this).attr('href'))[0].scrollIntoView();
       scrollBy(0, -130);
   });
-
-  var conf = document.querySelector("#confirm-btn");
-  conf.addEventListener("click", function() {
-    msConfirm({
-      title: 'Вы хотите выйти из страницы?',
-      subtitle: 'Мы заметили что некоторые поля были изменены.',
-      okText: 'Да, выйти',
-      cancelText: 'Нет, остаться',
-      dismissOverlay: true,
-      onOk: function() {
-          msAlert('Вы вышли из страницы');
-      },
-      onCancel: function() {
-          msAlert('Вы остались');
-      }
-    });
-  });
-
 
   // Table responsive max-width
   var body = document.querySelector('body').offsetWidth,
@@ -92,6 +75,33 @@ $(document).ready(function() {
           $target.removeClass("open");
 
           break;
+
+        case "page-aside-right-open":
+          if (window.innerWidth < 1280) {
+            if (!($("aside.aside.aside-right").hasClass("open"))) {
+              var $target = $("aside.aside.aside-right");
+              $target.addClass("open");
+              $("body").addClass("call-overlay");
+            } else {
+              $("aside.aside.aside-right").removeClass("open");
+              $("body").removeClass("call-overlay");
+            }
+          }
+          break;
+
+        case "page-aside-left-open":
+          if (window.innerWidth < 670) {
+            if (!($("aside.aside.aside-left").hasClass("open"))) {
+              var $target = $("aside.aside.aside-left");
+              $target.addClass("open");
+              $("body").addClass("call-overlay2");
+            } else {
+              $("aside.aside.aside-left").removeClass("open");
+              $("body").removeClass("call-overlay2");
+            }
+          }
+          break;
+
         }
 	});
 

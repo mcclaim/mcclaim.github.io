@@ -11,6 +11,7 @@ html(lang="ru-Ru")
 		title Администрирование
 		link(href="css/bootstrap.css" rel="stylesheet")
 		link(href="css/icons/dripicons.min.css" rel="stylesheet")
+		link(href="css/font-awesome.css" rel="stylesheet")
 		link(href="css/style.css" rel="stylesheet")
 		| <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -325,6 +326,497 @@ html(lang="ru-Ru")
 								.card
 									.card-body
 										.data-tables
+											button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModal') Launch demo modal
+											// Modal
+											#exampleModal.m-user-profile-wrap.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+												.modal-dialog(role='document')
+													.modal-content
+														button.close(type='button', data-dismiss='modal', aria-label='Close')
+															span(aria-hidden='true') ×
+														.modal-body
+															.user
+																.user-left-inform
+																	.user-profile-img
+																		img(src="images/avatars/vendroid-09.png")
+																	.user-profile-name
+																		h4 Авдорова Светлана
+																		.appointment Банкир высшего уровня
+																	.user-profile-active-inf
+																		table.table
+																			tbody
+																				tr
+																					td Статус
+																					td.bold 
+																						span.status Активен
+																				tr
+																					td Тип
+																					td.bold Клиент
+																				tr
+																					td Зарегистрирован
+																					td.bold 11.09.2018
+
+																.user-right-inform
+																	ul.nav.nav-tabs(role='tablist')
+																		li.nav-item
+																			a.nav-link.active(data-toggle='tab', href='#home') Профиль
+																		li.nav-item
+																			a.nav-link(data-toggle='tab', href='#menu1') Счета
+																		li.nav-item
+																			a.nav-link(data-toggle='tab', href='#menu2') Транзакции
+																		//- li.nav-item
+																		//- 	a.nav-link(data-toggle='tab', href='#menu3') События
+
+																	.tab-content
+																		#home.tab-pane.show.fade.active
+																			h3 
+																				i.icon.dripicons-user
+																				| О пользователе
+																			.row
+																				.col-lg-6.mb-3.mb-lg-0
+																					.user-main-inform
+																						.inform-wrap.row
+																							.inform-left.col-sm-6
+																								span.bold Фамилия:
+																							.inform-right.col-sm-6
+																								span Авдорова
+																						.inform-wrap.row
+																							.inform-left.col-sm-6
+																								span.bold Имя:
+																							.inform-right.col-sm-6
+																								span Светлана
+																						.inform-wrap.row
+																							.inform-left.col-sm-6
+																								span.bold Отчество:
+																							.inform-right.col-sm-6
+																								span Курапаткина
+																						.inform-wrap.row
+																							.inform-left.col-sm-6
+																								span.bold Дата рождения:
+																							.inform-right.col-sm-6
+																								span 11.02.1990
+																						.inform-wrap.row
+																							.inform-left.col-sm-6
+																								span.bold Номер тел.:
+																							.inform-right.col-sm-6
+																								span +99899 833-39-22
+																				.col-lg-6
+																					.user-main-inform
+																						.inform-wrap.row
+																							.inform-left.col-sm-6
+																								span.bold Страна:
+																							.inform-right.col-sm-6
+																								span Узбекистан
+																						.inform-wrap.row
+																							.inform-left.col-sm-6
+																								span.bold Город:
+																							.inform-right.col-sm-6
+																								span Ташкент
+																						.inform-wrap.row
+																							.inform-left.col-sm-6
+																								span.bold ИНН:
+																							.inform-right.col-sm-6
+																								span 329561957
+																						.inform-wrap.row
+																							.inform-left.col-sm-6
+																								span.bold Паспорт серия и номер:
+																							.inform-right.col-sm-6
+																								span AA 876908
+																						.inform-wrap.row
+																							.inform-left.col-sm-6
+																								span.bold Email:
+																							.inform-right.col-sm-6
+																								span 
+																									a(href="mailto:temp-mail@gmail.com") temp-mail@gmail.com
+																			.button_wrap
+																				button.btn.btn-warning
+																					i.fa.fa-pencil-square-o 
+																					| Изменить данные
+
+																		#menu1.tab-pane.fade
+																			.account
+																				h3
+																					i.icon.dripicons-wallet
+																					| Счета
+
+																				.table-create-account
+																					button.btn.btn-light-success
+																						i.fa.fa-plus-circle
+																						| Открыть счет
+																				.new-table-wrap
+																					.table-settings
+																						.row
+																							.col-lg-12.col-xl-8.order-1.order-lg-0
+																								.sorting-column
+																									.status-sort-wrap
+																										span.status-sort-label Статус:
+																										.status-sort-select
+																											i.fa.fa-chevron-down
+																											select
+																												option Активно
+																												option Закрыто
+																												option Не активно
+																									.table-search
+																										input(type="text" placeholder="Поиск...").form-control
+																										span.search-icon
+																											i.fa.fa-search
+																							.col-lg-4.col-xl-4
+
+																					.table-responsive
+																						table.table.new-table
+																							thead
+																								tr
+																									th.text-center #
+																									th Наименования
+																									th Название
+																									th МФО
+																									th Номер счета
+																									th Статус
+																							tbody
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																					.table-footer-inform
+																						.pagination-block
+																							ul.table-pagination
+																								li
+																									a(href='#' disabled="disabled" class="prev-next")
+																										i.fa.fa-angle-double-left
+																								li
+																									a(href='#' disabled="disabled" class="prev-next")
+																										i.fa.fa-angle-left
+																								li.input-pagination
+																									input(type='text', title='Page number').form-control
+																								li.active
+																									a(href="javascript:void(0)") 1
+																								li
+																									a(href="javascript:void(0)") 2
+																								li
+																									a(href="javascript:void(0)") 3
+																								li
+																									a(href="javascript:void(0)") 4
+																								li
+																									a(href="javascript:void(0)") 5
+																								li
+																									a(href="javascript:void(0)") 6
+																								li
+																									a(title='Next' href="javascript:void(0)" class="prev-next")
+																										i.fa.fa-angle-right
+																								li
+																									a(title='Last' href="javascript:void(0)" class="prev-next")
+																										i.fa.fa-angle-double-right
+																						.skip-block
+																							.skip-select
+																								i.fa.fa-angle-down
+																								select.form-control
+																									option 10
+																									option 30
+																									option 50
+																							.skip-display
+																								| Показано с 1 по 9 из 9 записей
+
+
+																		#menu2.tab-pane.fade
+																			.user-transaction-wrap
+																				h3 
+																					i.icon.dripicons-graph-pie
+																					| Транзакции
+
+																				.transaction-info
+																					.transaction-info-item
+																						.transaction-info-item-title.text-muted Переведено денег:
+																						p.m-0 $ 45,867,210.00
+																					.transaction-info-item
+																						.transaction-info-item-title.text-muted Переведено денег:
+																						p.m-0 $ 45,867,210.00
+																					.transaction-info-item
+																						.transaction-info-item-title.text-muted Переведено денег:
+																						p.m-0 $ 45,867,210.00
+																					.transaction-info-item
+																						.transaction-info-item-title.text-muted Переведено денег:
+																						p.m-0 $ 45,867,210.00
+
+																				.new-table-wrap
+																					.table-settings
+																						.row
+																							.col-lg-12.col-xl-8.order-1.order-lg-0
+																								.sorting-column
+																									.status-sort-wrap
+																										span.status-sort-label Статус:
+																										.status-sort-select
+																											i.fa.fa-chevron-down
+																											select
+																												option Активно
+																												option Закрыто
+																												option Не активно
+																									.table-search
+																										input(type="text" placeholder="Поиск...").form-control
+																										span.search-icon
+																											i.fa.fa-search
+																							.col-lg-4.col-xl-4
+																								.table-create-account
+																									button.btn.btn-light-success
+																										i.fa.fa-plus-circle
+																										| Открыть счет
+																					.table-responsive
+																						table.table.new-table
+																							thead
+																								tr
+																									th.text-center #
+																									th Наименования
+																									th Название
+																									th МФО
+																									th Номер счета
+																									th Статус
+																							tbody
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																								tr
+																									td 10062
+																									td Салах Мухаммед
+																									td САЛАХ МУХАМЕД
+																									td 00401
+																									td 44800012812345778012
+																									td Открыт
+																					.table-footer-inform
+																						.pagination-block
+																							ul.table-pagination
+																								li
+																									a(href='#' disabled="disabled" class="prev-next")
+																										i.fa.fa-angle-double-left
+																								li
+																									a(href='#' disabled="disabled" class="prev-next")
+																										i.fa.fa-angle-left
+																								li.input-pagination
+																									input(type='text', title='Page number').form-control
+																								li.active
+																									a(href="javascript:void(0)") 1
+																								li
+																									a(href="javascript:void(0)") 2
+																								li
+																									a(href="javascript:void(0)") 3
+																								li
+																									a(href="javascript:void(0)") 4
+																								li
+																									a(href="javascript:void(0)") 5
+																								li
+																									a(href="javascript:void(0)") 6
+																								li
+																									a(title='Next' href="javascript:void(0)" class="prev-next")
+																										i.fa.fa-angle-right
+																								li
+																									a(title='Last' href="javascript:void(0)" class="prev-next")
+																										i.fa.fa-angle-double-right
+																						.skip-block
+																							.skip-select
+																								i.fa.fa-angle-down
+																								select.form-control
+																									option 10
+																									option 30
+																									option 50
+																							.skip-display
+																								| Показано с 1 по 9 из 9 записей
+
+																		//- #menu3.tab-pane.fade
+																		//- 	.user-events-wrap
+																		//- 		h3
+																		//- 			i.icon.dripicons-time-reverse
+																		//- 			| События
+																		//- 		ul.recent-activites
+																		//- 			li
+																		//- 				span.activity-icon.border-success
+																		//- 				.media.align-items-center
+																		//- 					.media-body
+																		//- 						h6.mb-0
+																		//- 							| Получение новой транзакции от 
+																		//- 							strong "ALOQA BANK"
+																		//- 							|  прошла успешно
+																		//- 						small.text-muted Дата события: 12.09.2018 - 20:19
+																		//- 			li
+																		//- 				span.activity-icon.border-info
+																		//- 				.media.align-items-center
+																		//- 					.media-body
+																		//- 						h6.mb-0
+																		//- 							| Подключена новая услуга для использования 
+																		//- 						small.text-muted Дата события: 12.09.2018 - 15:36
+																		//- 			li
+																		//- 				span.activity-icon.border-danger
+																		//- 				.media.align-items-center
+																		//- 					.media-body
+																		//- 						h6.mb-0
+																		//- 							| Не удалось получить баланс для открытия счета
+																		//- 						small.text-muted Дата события: 12.09.2018 - 15:19
+
+																		//- 			li
+																		//- 				span.activity-icon.border-secondary
+																		//- 				.media.align-items-center
+																		//- 					.media-body
+																		//- 						h6.mb-0
+																		//- 							| К сожалению у пользователя не было прав для получение транзакции
+																		//- 						small.text-muted Дата события: 12.09.2018 - 09:19
+
+																		//- 			li
+																		//- 				span.activity-icon.border-success
+																		//- 				.media.align-items-center
+																		//- 					.media-body
+																		//- 						h6.mb-0
+																		//- 							| Успешное подключение к клиенту 
+																		//- 							strong Салах Мухаммед
+																		//- 						small.text-muted Дата события: 11.09.2018 - 22:19
+
+																		//- 			li
+																		//- 				span.activity-icon.border-info
+																		//- 				.media.align-items-center
+																		//- 					.media-body
+																		//- 						h6.mb-0
+																		//- 							| Подключена новая услуга для использования 
+																		//- 						small.text-muted Дата события: 12.09.2018 - 15:36
+
+																		//- 			li
+																		//- 				span.activity-icon.border-primary
+																		//- 				.media.align-items-center
+																		//- 					.media-body
+																		//- 						h6.mb-0
+																		//- 							| Подключена новая услуга для использования 
+																		//- 						small.text-muted Дата события: 12.09.2018 - 15:36
+
+											// Button trigger modal
+											button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModal2') Launch demo modal2
+											// Modal
+											#exampleModal2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModal2Label', aria-hidden='true')
+												.modal-dialog.auth-modal.modal-dialog-centered(role='document')
+													.modal-content
+														button.close(type='button', data-dismiss='modal', aria-label='Close')
+															span(aria-hidden='true') ×
+														.modal-header
+															h5#exampleModalLabel.modal-title Авторизация
+														.modal-body 
+															.modal-inform-img
+																img(src="https://image.flaticon.com/icons/svg/891/891397.svg")
+															.auth-body
+																input(type="text" placeholder="Логин" id="oauth-login").form-control
+																input(type="text" placeholder="Пароль" id="oauth-password").form-control
+																button(type="button").btn.form-control Вход
+
+											// Button trigger modal
+											button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModal3') Launch demo modal3
+											// Modal
+											#exampleModal3.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModal3Label', aria-hidden='true')
+												.modal-dialog.token-generate-modal.modal-dialog-centered(role='document')
+													.modal-content
+														button.close(type='button', data-dismiss='modal', aria-label='Close')
+															span(aria-hidden='true') ×
+														.modal-header
+															h5#exampleModalLabel.modal-title Генерированный токен
+														.modal-body 
+															.check-content
+																.form-group
+																	.check-l-title Имя клиента
+																	.check-l-inform Салах Мухаммед
+																.form-group
+																	.check-l-title ИНН клиента
+																	.check-l-inform 002954379
+																.form-group
+																	.check-l-title Токен
+																	.check-l-inform O7J7-XRWR-8FYO-TRV
+																.form-group
+																	.check-l-title Когда создан
+																	.check-l-inform 18.10.2018 15:25:01
+																.form-group
+																	.check-l-title Срок
+																	.check-l-inform 18.10.2018 15:35:01
+															.text-center.mt-2
+																button.btn.btn-warning Печать
+
+
+
+
+												
 											.data-filter
 												.row
 													.col-sm-12.col-md-6

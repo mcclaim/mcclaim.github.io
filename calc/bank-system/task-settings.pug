@@ -17,17 +17,6 @@ html(lang="ru-Ru")
 		| <!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
 	body.pace-done.no-sidebar
 
-		//- .preloader
-		//- 	.preloader-position
-		//- 		.loader
-
-			//- .preloader-position
-			//- 	.loader03-wrap.universe
-			//- 		.logo-circle
-			//- 			svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='30px', height='30px', viewbox='0 0 30 30', enable-background='new 0 0 30 30', xml:space='preserve')
-			//- 				path(fill='#FFFFFF', d='M2.956,28.493L15.041,0.933l12.082,27.561h-4.406l-0.891-2.183H8.291l-0.927,2.183H2.956z M9.746,22.776h10.586l-5.291-12.632L9.746,22.776z')
-			//- 		.loader03-02
-
 		#app
 			aside.sidebar.sidebar-left
 				.aside-toolbar
@@ -257,278 +246,35 @@ html(lang="ru-Ru")
 						.d-flex.align-items-center
 							.mr-auto
 								h1 
-									| Настройки клиента 
-									span.client-position кассир
+									| Редактирование текущей задачи
 
 					section.page-content.container-fluid
 						.card
-							.card-body
-								.client-settings-page
-									.row
-										.col-12.col-md-4
-											.setting-item
-												h5 Модули
-												.setting-body(data-simplebar)
-													ul
-														li
-															span.setting-name Отчеты
-															label.switch.round
-																input(type="checkbox")
-																span.slider
-														li
-															span.setting-name Результаты
-															a(data-toggle="popover" title="Popover Header" data-content="Some content inside the popover") asd
-															label.switch.round
-																input(type="checkbox" checked)
-																span.slider
-														li
-															span.setting-name 
-																| Отчеты добавление
-																.popoverrr
-																	i.icon.dripicons-forward(data-toggle="popover" data-placement="top" title="Popover title" data-content="Подключите зависимости такие как")
-															label.switch.round
-																input(type="checkbox")
-																span.slider
-														li
-															span.setting-name Авторизация
-															label.switch.round
-																input(type="checkbox" checked)
-																span.slider
-														li
-															span.setting-name Регистрация
-															label.switch
-																input(type="checkbox" checked)
-																span.slider
-														li
-															span.setting-name Умный поиск
-															label.switch
-																input(type="checkbox")
-																span.slider
-														li
-															span.setting-name Считать деньги
-															label.switch
-																input(type="checkbox" checked)
-																span.slider
-														li
-															span.setting-name Отчеты
-															label.switch
-																input(type="checkbox" checked)
-																span.slider
-														li
-															span.setting-name Отчеты
-															label.switch
-																input(type="checkbox")
-																span.slider
-														li
-															span.setting-name Отчеты
-															label.switch
-																input(type="checkbox")
-																span.slider
-														li
-															span.setting-name Отчеты
-															label.switch
-																input(type="checkbox")
-																span.slider
-										.col-12.col-md-4
-											.setting-item
-												h5 Формы
-												.setting-body(data-simplebar)
-													ul
-														li.switching-on-off
-															span.setting-name Отчеты
-															label.switch.on-off
-																input(type="checkbox" checked)
-																span.slider
-														li
-															span.setting-name Результаты
-															label.switch.on-off
-																input(type="checkbox" checked)
-																span.slider
-														li
-															span.setting-name Отчеты добавление
-															label.switch.on-off
-																input(type="checkbox" checked)
-																span.slider
-														li
-															span.setting-name Авторизация
-															label.switch.on-off
-																input(type="checkbox" checked)
-																span.slider
-														li
-															span.setting-name Регистрация
-															label.switch.on-off
-																input(type="checkbox" checked)
-																span.slider
-														li
-															span.setting-name Умный поиск
-															label.switch.on-off
-																input(type="checkbox" checked)
-																span.slider
-														li
-															span.setting-name Считать деньги
-															label.switch.on-off
-																input(type="checkbox" checked)
-																span.slider
-														li
-															span.setting-name Отчеты
-															label.switch
-																input(type="checkbox" checked)
-																span.slider
-														li
-															span.setting-name Отчеты
-															label.switch
-																input(type="checkbox")
-																span.slider
-										.col-12.col-md-4
-											.setting-item.setting-item-functions
-												h5 Функции
-												.setting-body(data-simplebar)
-													ul
-														li
-															fieldset
-																legend Отчеты добавление
-																.row
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Insert
+							.card-body.task-settings
+								.row
+									.col-md-5
+										.task-time-wrap
+											.task-time-item
+												.row
+													.col-12.col-sm-6
+														span.time.time-from
+															span.time-title c:
+															input(type="text")
+													.col-12.col-sm-6
+														span.time.time-to
+															span.time-title по:
+															input(type="text")
+											button(type="button").add-time +
+										ul.timeouts
+											li
+												span.timeout-title Timeout
+											li
+												span.timeout-title Max Thread
+											li
+												span.timeout-title Max count
+								.text-right
+									button.btn.btn-primary Save
 
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Update
-
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Create
-
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Delete
-
-														li
-															fieldset
-																legend Результаты
-																.row
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Insert
-
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Update
-
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Create
-
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Delete
-														li
-															fieldset
-																legend Результаты
-																.row
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Insert
-
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Update
-
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Create
-
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Delete
-														li
-															fieldset
-																legend Результаты
-																.row
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Insert
-
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Update
-
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Create
-
-																	.col-6
-																		span.setting-name 
-																			label.custom-checkbox
-																				input(type="checkbox")
-																				.cr
-																					i.dripicons-checkmark
-																			| Delete
-		    															
-										.col-12
-											.mt-4.text-right
-												button(type="button").btn.btn-primary Сохранить
 						
 
 		script(src="js/jquery.min.js")
