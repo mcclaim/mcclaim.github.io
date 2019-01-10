@@ -8302,6 +8302,12 @@ fieldset.form-grouped-fieldset {
 				}
 			}
 		}
+
+		&.progressbar-item-10 {
+			li {
+				width: 10%;
+			}
+		}
 		
 		li {
 			list-style-type: none;
@@ -9247,7 +9253,7 @@ fieldset.form-grouped-fieldset {
 			margin: 0;
 		}
 		.mail-scroll-y {
-			height: calc(100vh - 30px);
+			height: calc(100vh - 130px);
 		}
 		.center-content {
 			.search-wrapper {

@@ -8889,6 +8889,8 @@ fieldset.form-grouped-fieldset {
       color: #dc3545; }
     .loan-error-block ul#progressbar.status-error-16 li.key-16:after {
       background-color: #2db36f; }
+  .loan-error-block ul#progressbar.progressbar-item-10 li {
+    width: 10%; }
   .loan-error-block ul#progressbar li {
     list-style-type: none;
     color: #848484;
@@ -9559,8 +9561,8 @@ fieldset.form-grouped-fieldset {
       height: calc(100vh - 65px);
       margin: 0; }
     #mail-wrapper .mail-scroll-y {
-      height: -webkit-calc(100vh - 30px);
-      height: calc(100vh - 30px); }
+      height: -webkit-calc(100vh - 130px);
+      height: calc(100vh - 130px); }
     #mail-wrapper .center-content .search-wrapper {
       left: 75px;
       border-left: 1px solid #eaf3fd !important; }
