@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1')
+		meta(name='MobileOptimized', content='width')
+		meta(name='HandheldFriendly', content='true')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='msapplication-tap-highlight', content='no')
+		title Главная страница
+		link(href="css/fullpage.min.css" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+		| <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+		| <!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
+	body
+		header
+			a(href="#mainPage" data-menuanchor='mainPage').logo
+			button#menu-btn.menu-hamburger(type='button')
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			ul#menu
+				li(data-menuanchor='mainPage')
+					a(href='#mainPage') Главная
+				li(data-menuanchor='aboutCompany')
+					a(href='#aboutCompany') О компании
+				li(data-menuanchor='catalog')
+					a(href='#catalog') Каталог
+				li
+					a#call-contact-block(href='javascript:void(0)') Контакты
+
+		#main-container
+			#section1.section
+				#section1.fp-bg
+				.intro
+					.welcome-text
+						h1 Добро пожаловать
+						p в мир мозаик для вашего дома 
+			#section2.section
+				#section2.fp-bg
+				.intro
+					.why-us
+						h2 Почему именно FISHKA PRO?
+						p 
+							| Мы предлагаем вам, мозаики, изготовленные из стекла и природного камня.
+							br
+							| Стеклянная мозаика тены и полы в любых закрытых и открытых помещениях:
+							br
+							| от кухонь до бассейнов и ванных комнат, а также поверхности мебели, камины, фасады зданий, турецкие бани (хаммам).
+							br
+							| Богатство цветовой палитры предоставляет широкие возможности для 
+							br
+							| создания декоративных панно, узоров и орнаментов.
+							br
+							| Природный камень применяют при отделке стен и пола, изготовлении каминов, колонн, столешниц, рам для зеркал, ваз, подсвечников, орнаментов и скульптур, подоконников, карнизов, плинтусов, перил, 
+							br
+							| журнальных столиков, барных стоек.
+							br
+							| Отличным дополнением к интерьеру может служить живописная мозаика из натурального камня, 
+							br
+							| воплощающая сюжетные картины, пейзажи.
+
+			#section3.section
+				#section3.fp-bg
+				.intro
+					.catalog-container
+						.catalog-item-wrap
+							.catalog-item
+								.catalog-item-img
+									img(src="img/catalog/1.png")
+								.catalog-item-title Грохот
+								.catalog-item-desc Rolling thunder
+
+							.catalog-item
+								.catalog-item-img
+									img(src="img/catalog/2.png")
+								.catalog-item-title 
+									| Андалузская
+									br
+									| ночь
+								.catalog-item-desc Andalusian night
+
+							.catalog-item
+								.catalog-item-img
+									img(src="img/catalog/3.png")
+								.catalog-item-title 
+									| Персидское
+									br
+									| убеждение
+								.catalog-item-desc Persion persuasion
+
+							.catalog-item
+								.catalog-item-img
+									img(src="img/catalog/4.png")
+								.catalog-item-title 
+									| Греческий- романтический
+									br
+									| курорт
+								.catalog-item-desc Greco-Roman Spa
+
+							.catalog-item
+								.catalog-item-img
+									img(src="img/catalog/5.png")
+								.catalog-item-title 
+									| Глубокое
+									br
+									| погружение в море
+								.catalog-item-desc Deep Sea Dive
+
+							.catalog-item
+								.catalog-item-img
+									img(src="img/catalog/6.png")
+								.catalog-item-title Морской тартан
+								.catalog-item-desc Ocean Tartan
+
+							.catalog-item
+								.catalog-item-img
+									img(src="img/catalog/7.png")
+								.catalog-item-title Цветы для всех сезонов
+								.catalog-item-desc Flowers for all Seasons
+
+							.catalog-item
+								.catalog-item-img
+									img(src="img/catalog/8.png")
+								.catalog-item-title Морские товарищи
+								.catalog-item-desc Marine mates
+
+							.catalog-item
+								.catalog-item-img
+									img(src="img/catalog/9.png")
+								.catalog-item-title 
+									| Дельфины
+									br
+									| сладостные песни
+								.catalog-item-desc Dolphin’s Sweet Songs
+
+							.catalog-item
+								.catalog-item-img
+									img(src="img/catalog/10.png")
+								.catalog-item-title Любители бабочек
+								.catalog-item-desc Butterfly Lovers
+
+		ul#social-links
+			li
+				a(href="javascript:void(0)").tg
+			li
+				a(href="javascript:void(0)").insta
+			li
+				a(href="javascript:void(0)").facebook
+
+
+		.contact-block
+			button#close-contact-block x
+			form(action="" method="post" autocomplete="off")
+				.form-field
+					//- label Ваше имя
+					input(type="text" placeholder="Ваше имя" name="name" required autocomplete="false")
+				.form-field
+					//- label Ваш номер
+					input(type="tel" placeholder="Ваш номер" name="phone" pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required autocomplete="false")
+				.form-field
+					//- label Ваша почта
+					input(type="email" placeholder="Ваша почта" name="email" required autocomplete="false")
+				.form-field.textarea-field
+					textarea(name="" placeholder="Вашы пожелание" autocomplete="false")
+				.form-field.button-field
+					button(type="submit") Отправить
+
+			.contact-address
+				p 
+					| Узбекистан
+					br
+					| Андижон шахри,
+					br
+					| Шимолий сароат худуди 14
+
+				a(href="mailto:info@fishkapro.uz").mailTo info@fishkapro.uz
+
+			a(href="tel:+998951420208").tel  +99895 142 02 08
+			.contact-social-links
+				ul
+					li
+						a(href="javascript:void(0)").tg
+					li
+						a(href="javascript:void(0)").insta
+					li
+						a(href="javascript:void(0)").facebook
+
+		#contact-backdrop
+
+		script(src="js/fullpage.min.js")
+		script(src="js/jquery-3.3.1.min.js")
+		script(src="js/main.js")
