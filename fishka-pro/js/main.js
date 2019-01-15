@@ -1,4 +1,9 @@
 // Initializing fullpage.js
+$(window).on('load', function(){
+    $("#preloader").delay(600).fadeOut("slow");
+    $("#preloader-img").fadeOut();
+    wellcome();
+});
 
 $(document).ready(function() {
 	initialize();
@@ -34,7 +39,7 @@ $(document).ready(function() {
 });
 
 function initialize(){
-	new fullpage('#main-container', {
+	$('#main-container').fullpage({
 		anchors: ['mainPage', 'aboutCompany', 'catalog'],
 		menu: '#menu',
 		licenseKey: null,
@@ -44,8 +49,23 @@ function initialize(){
         navigationTooltips: ['01', '02', '03'],
 		slidesNavigation: true,
 		scrollingSpeed: 1000,
-		responsiveWidth: 768,
+		responsiveWidth: 992,
 		autoScrolling: true,
-		fitToSection:false
+		fitToSection:false,
+		afterLoad: function(anchorLink, index){
+			if(index.index == 0){
+				wellcome();
+			} else if(index.index == 1) {
+				whyUs();
+			}
+
+		}
 	});
+}
+
+function wellcome() {
+	$('.welcome-text').addClass('active');
+}
+function whyUs() {
+	$('.why-us').addClass('active');
 }

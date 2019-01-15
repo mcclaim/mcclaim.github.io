@@ -12,6 +12,7 @@
     <link href="css/style.css" rel="stylesheet"/><!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
   </head>
   <body>
+    <div id="preloader"><img id="preloader-img" src="img/Loader.gif"/></div>
     <header><a class="logo" href="#mainPage" data-menuanchor="mainPage"></a>
       <button class="menu-hamburger" id="menu-btn" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
       <ul id="menu">
@@ -44,62 +45,154 @@
       <div class="section" id="section3">
         <div class="fp-bg" id="section3"></div>
         <div class="intro">
-          <div class="catalog-container">
-            <div class="catalog-item-wrap">
-              <div class="catalog-item">
-                <div class="catalog-item-img"><img src="img/catalog/1.png"/></div>
-                <div class="catalog-item-title">Грохот</div>
-                <div class="catalog-item-desc">Rolling thunder</div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-item-img"><img src="img/catalog/2.png"/></div>
-                <div class="catalog-item-title">
-                   Андалузская<br/>ночь</div>
-                <div class="catalog-item-desc">Andalusian night</div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-item-img"><img src="img/catalog/3.png"/></div>
-                <div class="catalog-item-title">
-                   Персидское<br/>убеждение</div>
-                <div class="catalog-item-desc">Persion persuasion</div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-item-img"><img src="img/catalog/4.png"/></div>
-                <div class="catalog-item-title">
-                   Греческий- романтический<br/>курорт</div>
-                <div class="catalog-item-desc">Greco-Roman Spa</div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-item-img"><img src="img/catalog/5.png"/></div>
-                <div class="catalog-item-title">
-                   Глубокое<br/>погружение в море</div>
-                <div class="catalog-item-desc">Deep Sea Dive</div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-item-img"><img src="img/catalog/6.png"/></div>
-                <div class="catalog-item-title">Морской тартан</div>
-                <div class="catalog-item-desc">Ocean Tartan</div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-item-img"><img src="img/catalog/7.png"/></div>
-                <div class="catalog-item-title">Цветы для всех сезонов</div>
-                <div class="catalog-item-desc">Flowers for all Seasons</div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-item-img"><img src="img/catalog/8.png"/></div>
-                <div class="catalog-item-title">Морские товарищи</div>
-                <div class="catalog-item-desc">Marine mates</div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-item-img"><img src="img/catalog/9.png"/></div>
-                <div class="catalog-item-title">
-                   Дельфины<br/>сладостные песни</div>
-                <div class="catalog-item-desc">Dolphin’s Sweet Songs</div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-item-img"><img src="img/catalog/10.png"/></div>
-                <div class="catalog-item-title">Любители бабочек</div>
-                <div class="catalog-item-desc">Butterfly Lovers</div>
+          <div class="catalog-container-wrap">
+            <div class="catalog-container" data-simplebar="data-simplebar">
+              <div class="catalog-item-wrap">
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <div class="item-c_hover">
+                      <div class="item_c_lines">
+                        <div class="item_c_line-t"></div>
+                        <div class="item_c_line-r"></div>
+                        <div class="item_c_line-b"></div>
+                        <div class="item_c_line-l"></div>
+                      </div>
+                    </div><img src="img/catalog/1.png"/>
+                  </div>
+                  <div class="catalog-item-title">Грохот</div>
+                  <div class="catalog-item-desc">Rolling thunder</div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <div class="item-c_hover">
+                      <div class="item_c_lines">
+                        <div class="item_c_line-t"></div>
+                        <div class="item_c_line-r"></div>
+                        <div class="item_c_line-b"></div>
+                        <div class="item_c_line-l"></div>
+                      </div>
+                    </div><img src="img/catalog/2.png"/>
+                  </div>
+                  <div class="catalog-item-title">
+                     Андалузская<br/>ночь</div>
+                  <div class="catalog-item-desc">Andalusian night</div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <div class="item-c_hover">
+                      <div class="item_c_lines">
+                        <div class="item_c_line-t"></div>
+                        <div class="item_c_line-r"></div>
+                        <div class="item_c_line-b"></div>
+                        <div class="item_c_line-l"></div>
+                      </div>
+                    </div><img src="img/catalog/3.png"/>
+                  </div>
+                  <div class="catalog-item-title">
+                     Персидское<br/>убеждение</div>
+                  <div class="catalog-item-desc">Persion persuasion</div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <div class="item-c_hover">
+                      <div class="item_c_lines">
+                        <div class="item_c_line-t"></div>
+                        <div class="item_c_line-r"></div>
+                        <div class="item_c_line-b"></div>
+                        <div class="item_c_line-l"></div>
+                      </div>
+                    </div><img src="img/catalog/4.png"/>
+                  </div>
+                  <div class="catalog-item-title">
+                     Греческий- романтический<br/>курорт</div>
+                  <div class="catalog-item-desc">Greco-Roman Spa</div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <div class="item-c_hover">
+                      <div class="item_c_lines">
+                        <div class="item_c_line-t"></div>
+                        <div class="item_c_line-r"></div>
+                        <div class="item_c_line-b"></div>
+                        <div class="item_c_line-l"></div>
+                      </div>
+                    </div><img src="img/catalog/5.png"/>
+                  </div>
+                  <div class="catalog-item-title">
+                     Глубокое<br/>погружение в море</div>
+                  <div class="catalog-item-desc">Deep Sea Dive</div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <div class="item-c_hover">
+                      <div class="item_c_lines">
+                        <div class="item_c_line-t"></div>
+                        <div class="item_c_line-r"></div>
+                        <div class="item_c_line-b"></div>
+                        <div class="item_c_line-l"></div>
+                      </div>
+                    </div><img src="img/catalog/6.png"/>
+                  </div>
+                  <div class="catalog-item-title">Морской тартан</div>
+                  <div class="catalog-item-desc">Ocean Tartan</div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <div class="item-c_hover">
+                      <div class="item_c_lines">
+                        <div class="item_c_line-t"></div>
+                        <div class="item_c_line-r"></div>
+                        <div class="item_c_line-b"></div>
+                        <div class="item_c_line-l"></div>
+                      </div>
+                    </div><img src="img/catalog/7.png"/>
+                  </div>
+                  <div class="catalog-item-title">Цветы для всех сезонов</div>
+                  <div class="catalog-item-desc">Flowers for all Seasons</div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <div class="item-c_hover">
+                      <div class="item_c_lines">
+                        <div class="item_c_line-t"></div>
+                        <div class="item_c_line-r"></div>
+                        <div class="item_c_line-b"></div>
+                        <div class="item_c_line-l"></div>
+                      </div>
+                    </div><img src="img/catalog/8.png"/>
+                  </div>
+                  <div class="catalog-item-title">Морские товарищи</div>
+                  <div class="catalog-item-desc">Marine mates</div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <div class="item-c_hover">
+                      <div class="item_c_lines">
+                        <div class="item_c_line-t"></div>
+                        <div class="item_c_line-r"></div>
+                        <div class="item_c_line-b"></div>
+                        <div class="item_c_line-l"></div>
+                      </div>
+                    </div><img src="img/catalog/9.png"/>
+                  </div>
+                  <div class="catalog-item-title">
+                     Дельфины<br/>сладостные песни</div>
+                  <div class="catalog-item-desc">Dolphin’s Sweet Songs</div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <div class="item-c_hover">
+                      <div class="item_c_lines">
+                        <div class="item_c_line-t"></div>
+                        <div class="item_c_line-r"></div>
+                        <div class="item_c_line-b"></div>
+                        <div class="item_c_line-l"></div>
+                      </div>
+                    </div><img src="img/catalog/10.png"/>
+                  </div>
+                  <div class="catalog-item-title">Любители бабочек</div>
+                  <div class="catalog-item-desc">Butterfly Lovers</div>
+                </div>
               </div>
             </div>
           </div>
@@ -143,8 +236,9 @@
       </div>
     </div>
     <div id="contact-backdrop"></div>
-    <script src="js/fullpage.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/simplebar.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

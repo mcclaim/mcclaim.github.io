@@ -14,6 +14,8 @@ html(lang="ru-Ru")
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 		| <!--[if (gte IE 6)&(lte IE 8)]> <script src="js/selectivizr-min.js"></script><![endif]-->
 	body
+		#preloader
+			img#preloader-img(src="img/Loader.gif")
 		header
 			a(href="#mainPage" data-menuanchor='mainPage').logo
 			button#menu-btn.menu-hamburger(type='button')
@@ -64,82 +66,143 @@ html(lang="ru-Ru")
 			#section3.section
 				#section3.fp-bg
 				.intro
-					.catalog-container
-						.catalog-item-wrap
-							.catalog-item
-								.catalog-item-img
-									img(src="img/catalog/1.png")
-								.catalog-item-title Грохот
-								.catalog-item-desc Rolling thunder
+					.catalog-container-wrap
+						.catalog-container(data-simplebar)
+							.catalog-item-wrap
+								.catalog-item
+									.catalog-item-img
+										.item-c_hover
+											.item_c_lines
+												.item_c_line-t
+												.item_c_line-r
+												.item_c_line-b
+												.item_c_line-l
+										img(src="img/catalog/1.png")
+									.catalog-item-title Грохот
+									.catalog-item-desc Rolling thunder
 
-							.catalog-item
-								.catalog-item-img
-									img(src="img/catalog/2.png")
-								.catalog-item-title 
-									| Андалузская
-									br
-									| ночь
-								.catalog-item-desc Andalusian night
+								.catalog-item
+									.catalog-item-img
+										.item-c_hover
+											.item_c_lines
+												.item_c_line-t
+												.item_c_line-r
+												.item_c_line-b
+												.item_c_line-l
+										img(src="img/catalog/2.png")
+									.catalog-item-title 
+										| Андалузская
+										br
+										| ночь
+									.catalog-item-desc Andalusian night
 
-							.catalog-item
-								.catalog-item-img
-									img(src="img/catalog/3.png")
-								.catalog-item-title 
-									| Персидское
-									br
-									| убеждение
-								.catalog-item-desc Persion persuasion
+								.catalog-item
+									.catalog-item-img
+										.item-c_hover
+											.item_c_lines
+												.item_c_line-t
+												.item_c_line-r
+												.item_c_line-b
+												.item_c_line-l
+										img(src="img/catalog/3.png")
+									.catalog-item-title 
+										| Персидское
+										br
+										| убеждение
+									.catalog-item-desc Persion persuasion
 
-							.catalog-item
-								.catalog-item-img
-									img(src="img/catalog/4.png")
-								.catalog-item-title 
-									| Греческий- романтический
-									br
-									| курорт
-								.catalog-item-desc Greco-Roman Spa
+								.catalog-item
+									.catalog-item-img
+										.item-c_hover
+											.item_c_lines
+												.item_c_line-t
+												.item_c_line-r
+												.item_c_line-b
+												.item_c_line-l
+										img(src="img/catalog/4.png")
+									.catalog-item-title 
+										| Греческий- романтический
+										br
+										| курорт
+									.catalog-item-desc Greco-Roman Spa
 
-							.catalog-item
-								.catalog-item-img
-									img(src="img/catalog/5.png")
-								.catalog-item-title 
-									| Глубокое
-									br
-									| погружение в море
-								.catalog-item-desc Deep Sea Dive
+								.catalog-item
+									.catalog-item-img
+										.item-c_hover
+											.item_c_lines
+												.item_c_line-t
+												.item_c_line-r
+												.item_c_line-b
+												.item_c_line-l
+										img(src="img/catalog/5.png")
+									.catalog-item-title 
+										| Глубокое
+										br
+										| погружение в море
+									.catalog-item-desc Deep Sea Dive
 
-							.catalog-item
-								.catalog-item-img
-									img(src="img/catalog/6.png")
-								.catalog-item-title Морской тартан
-								.catalog-item-desc Ocean Tartan
+								.catalog-item
+									.catalog-item-img
+										.item-c_hover
+											.item_c_lines
+												.item_c_line-t
+												.item_c_line-r
+												.item_c_line-b
+												.item_c_line-l
+										img(src="img/catalog/6.png")
+									.catalog-item-title Морской тартан
+									.catalog-item-desc Ocean Tartan
 
-							.catalog-item
-								.catalog-item-img
-									img(src="img/catalog/7.png")
-								.catalog-item-title Цветы для всех сезонов
-								.catalog-item-desc Flowers for all Seasons
+								.catalog-item
+									.catalog-item-img
+										.item-c_hover
+											.item_c_lines
+												.item_c_line-t
+												.item_c_line-r
+												.item_c_line-b
+												.item_c_line-l
+										img(src="img/catalog/7.png")
+									.catalog-item-title Цветы для всех сезонов
+									.catalog-item-desc Flowers for all Seasons
 
-							.catalog-item
-								.catalog-item-img
-									img(src="img/catalog/8.png")
-								.catalog-item-title Морские товарищи
-								.catalog-item-desc Marine mates
+								.catalog-item
+									.catalog-item-img
+										.item-c_hover
+											.item_c_lines
+												.item_c_line-t
+												.item_c_line-r
+												.item_c_line-b
+												.item_c_line-l
+										img(src="img/catalog/8.png")
+									.catalog-item-title Морские товарищи
+									.catalog-item-desc Marine mates
 
-							.catalog-item
-								.catalog-item-img
-									img(src="img/catalog/9.png")
-								.catalog-item-title 
-									| Дельфины
-									br
-									| сладостные песни
-								.catalog-item-desc Dolphin’s Sweet Songs
+								.catalog-item
+									.catalog-item-img
+										.item-c_hover
+											.item_c_lines
+												.item_c_line-t
+												.item_c_line-r
+												.item_c_line-b
+												.item_c_line-l
+										img(src="img/catalog/9.png")
+									.catalog-item-title 
+										| Дельфины
+										br
+										| сладостные песни
+									.catalog-item-desc Dolphin’s Sweet Songs
 
-							.catalog-item
-								.catalog-item-img
-									img(src="img/catalog/10.png")
-								.catalog-item-title Любители бабочек
-								.catalog-item-desc Butterfly Lovers
+								.catalog-item
+									.catalog-item-img
+										.item-c_hover
+											.item_c_lines
+												.item_c_line-t
+												.item_c_line-r
+												.item_c_line-b
+												.item_c_line-l
+										img(src="img/catalog/10.png")
+									.catalog-item-title Любители бабочек
+									.catalog-item-desc Butterfly Lovers
 
 		ul#social-links
 			li
@@ -189,6 +252,8 @@ html(lang="ru-Ru")
 
 		#contact-backdrop
 
-		script(src="js/fullpage.min.js")
 		script(src="js/jquery-3.3.1.min.js")
+		script(src="js/fullpage.min.js")
+		//- script(src="js/scrolloverflow.js")
+		script(src="js/simplebar.js")
 		script(src="js/main.js")
