@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	input {
+		display: block;
+		max-width: 200px;
+		margin: 10px;
+	}
+</style>
+<body>
+	<form action="">
+		<input type="text" placeholder="1">
+		<input type="text" placeholder="2">
+		<input type="text" placeholder="3">
+		<input type="text" placeholder="4">
+		<input type="text" placeholder="5">
+		<input type="text" placeholder="6">
+		<input type="text" placeholder="7">
+		<input type="text" placeholder="8">
+		<input type="text" placeholder="9">
+		<input type="text" placeholder="10">
+		<input type="text" placeholder="11">
+		<input type="text" placeholder="12">
+		<input type="text" placeholder="13">
+		<input type="text" placeholder="14">
+		<input type="text" placeholder="15">
+		<input type="text" placeholder="16">
+		<input type="text" placeholder="17">
+		<input type="text" placeholder="18">
+		<input type="text" placeholder="19">
+		<input type="text" placeholder="20">
+		<input type="submit" value="Отправить">
+	</form>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+        $("input").each(function(i, item){
+        	$(this).attr('tabindex', i+1);
+		});
+		$(":input:not(:disabled)").not($(":button")).keypress(function(evt) {
+	        // If the keypress event code is 13 (Enter)
+	        if (evt.keyCode == 13) {
+	            var type = $(this).prop('type');
+	          
+	          
+	          if (type === 'submit') {
+	             return;
+	          }
+	          
+	            var currentTabindex = $(this).attr('tabindex');
+	          
+	          if (!currentTabindex) {
+	             return;
+	          }
+	          
+	            currentTabindex = parseInt(currentTabindex, 10) + 1;
+	            var nextInput = $('input[tabindex=' + currentTabindex + ']');
+	                  
+	          if (!nextInput) {
+	              return;
+	           }
+	                  
+	             nextInput.focus();
+	             return false;
+	           }
+	        });
+	    });
+	
+	// $.each(array, function(i, item){
+
+	// });
+</script>
+</html>
